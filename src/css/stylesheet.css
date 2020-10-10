@@ -1,0 +1,35 @@
+body {
+  font-family: "HK Grotesk", sans-serif;
+  line-height: 1.5;
+  max-width: 700px;
+  margin: auto;
+}
+
+p { 
+  font-family: "Input Mono";
+}
+
+img {
+  max-width: 100%;
+}
+
+figcaption {
+  font-size: .85em;
+  color: #555;
+}
+
+section {
+  outline: 1px dotted #ddd;
+}
+
+.half {
+  width: 50%;
+}
+.left {
+ float: left;
+}
+
+<!-- for comments --> 
+blockquote {
+  color: blue;
+}
