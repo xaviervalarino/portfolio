@@ -1,6 +1,24 @@
 {
   "scripts": {
-    "build:html": "./scripts/convert_md.sh"
+    "build:html": "./scripts/convert_md.sh",
+    "build:img": "npm run clean:img && imagemin \"./src/img/**\" --out-dir=\"./dist/img\"",
+    "build": "npm run clean && npm run build:img & npm run build:html",
+    "clean:html": "rimraf \"./dist/**/*.html\"",
+    "clean:img": "rimraf \"./dist/img/*\"",
+    "clean": "rimraf \"./dist/*\"",
+    "watch:html": "chokidar \"./src/**/*.md\" -c \"if [ '{event}' = 'change' ]; then ./scripts/convert_md.sh {path}; fi\"",
+    "watch:img": "chokidar \"./src/img/**/*\" -c \"if [ '{event}' = 'change' ]; then imagemin {path} --out-dir=./dist/img; fi\"",
+    "watch:css": "catw -v \"./src/css/**/*\" -o \"./dist/stylesheet.css\"",
+    "watch": "npm run watch:img & npm run watch:html & npm run watch:css",
+    "serve": "live-server \"./dist\"",
+    "dev": "npm run build:html && npm run watch & npm run serve"
+  },
+  "devDependencies": {
+    "catw": "^1.0.1",
+    "chokidar-cli": "^2.1.0",
+    "imagemin-cli": "^6.0.0",
+    "live-server": "^1.2.1",
+    "rimraf": "^3.0.2"
   },
   "dependencies": {}
 }
