@@ -1,0 +1,6 @@
+{
+  "scripts": {
+    "build:html": "./scripts/convert_md.sh"
+  },
+  "dependencies": {}
+}
