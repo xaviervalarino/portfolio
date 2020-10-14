@@ -2,7 +2,9 @@
 A portfolio website built with Pandoc and NPM scripts.
 
 ## Dependencies
-Install `pandoc` and `nodeJS`.D
+* `cat`
+* `nodeJS`
+* `pandoc`
 
 ## Directory structure
 * `src`:  "Source" folder contains all the working files.

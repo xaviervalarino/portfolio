@@ -9,13 +9,12 @@
     "watch:html": "chokidar \"./src/**/*.md\" -c \"[ '{event}' = 'change' ] && ./scripts/convert_md.sh {path}\"",
     "watch:template": "chokidar \"./src/templates/\" -c \"[ '{event}' = 'change' ] && ./scripts/convert_md.sh\"",
     "watch:img": "chokidar \"./src/img/**/*\" -c \"[ '{event}' = 'change' ] && imagemin {path} --out-dir=./dist/img\"",
-    "watch:css": "catw -v \"./src/css/**/*\" -o \"./dist/stylesheet.css\"",
+    "watch:css": "chokidar \"./src/css/**/*\" -c \"[ '{event}' = 'change' ] && cat ./src/css/**/* > ./dist/stylesheet.css\"",
     "watch": "npm run watch:img & npm run watch:html & npm run watch:template & npm run watch:css",
     "serve": "live-server \"./dist\"",
     "dev": "npm run build:html && npm run watch & npm run serve"
   },
   "devDependencies": {
-    "catw": "^1.0.1",
     "chokidar-cli": "^2.1.0",
     "imagemin-cli": "^6.0.0",
     "live-server": "^1.2.1",
