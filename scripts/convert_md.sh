@@ -38,7 +38,7 @@ convert() {
   [[ ! -d "$outdir" ]] && mkdir -pv $outdir
 
   # convert the markdown to HTML
-  pandoc -f commonmark_x --template "src/templates/default.html" "$1" -L $PWD/scripts/links-filter.lua -o "$outdir$base.html"
+  pandoc --template "src/templates/default.html" "$1" -L $PWD/scripts/links-filter.lua -o "$outdir$base.html"
 
   echo -e "Created ${outdir#$PWD}$base.html\n$(timestamp)\n"
 }
