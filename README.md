@@ -11,6 +11,8 @@ A portfolio website built with Pandoc and NPM scripts.
 * `dist`: "Distribution"—where all the source files are outputted after compilation
 
 ## Commands
+NPM scripts are used build the site. 
+
 ```
 npm run build:html    Convert Markdown files into HTML
 npm run build:img     Optimize images
