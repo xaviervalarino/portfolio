@@ -41,6 +41,7 @@ convert() {
   pandoc \
     --template "src/templates/default.html" "$1"\
     --lua-filter $PWD/scripts/links-filter.lua \
+    --strip-comments \
     --output "$outdir$base.html"
 
   echo -e "Created ${outdir#$PWD}$base.html\n$(timestamp)\n"
