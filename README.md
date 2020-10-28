@@ -16,13 +16,14 @@ NPM scripts are used build the site.
 ```
 npm run build:html    Convert Markdown files into HTML
 npm run build:img     Optimize images
+npm run build:css     Concatenate all stylesheet files
 npm run build         Run all build scripts
 npm run clean:html    Delete HTML files in distribution dir
 npm run clean:img     Delete all image files in distribution dir
 npm run clean         Run all clean scripts
 npm run watch:html    Watch Markdown files, build when there are changes
 npm run watch:img     Watch image files, build when there are changes
-npm run watch:css     Watch CSS files, concatenate when there are changes
+npm run watch:css     Watch CSS files, build when there are changes
 npm run watch         Run all watch scripts
 npm run serve         Serve distribution dir from localhost
 npm run dev           Start server and watch files
