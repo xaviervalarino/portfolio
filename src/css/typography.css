@@ -1,0 +1,28 @@
+/* Typography */
+
+
+body {
+  font-family: "Inria Serif", serif;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "Inria Sans", sans-serif;
+  font-style: Bold;
+}
+
+nav {
+  font-family: "Inria Sans";
+  border-bottom: .2rem solid black;
+}
+nav a {
+  font-variant: all-small-caps;
+}
+
+figcaption {
+  font-style: italic;
+}
+
+em {
+  font-family: "Inria Serif", serif;
+}

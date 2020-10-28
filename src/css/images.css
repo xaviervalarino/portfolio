@@ -1,0 +1,21 @@
+/* Images */
+
+figure {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  /* border: 1px solid #555;  
+  */
+}
+.shadow {
+  box-shadow: 0px 1px 3px 3px #dedede;
+}
+
+
+figcaption {
+  font-size: .85em;
+  color: #555;
+}
+
