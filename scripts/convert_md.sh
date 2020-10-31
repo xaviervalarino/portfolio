@@ -2,7 +2,6 @@
 
 src="$PWD/src"
 dist="$PWD/dist"
-template="$src/templates/default.html"
 
 if ! which pandoc > /dev/null
 then
@@ -19,6 +18,14 @@ log() {
   local blue='\033[1;34m'
   local nc='\033[0m'
   echo -e "${blue}$1${nc}"
+}
+
+get_template() {
+  local path="src/templates"
+  local template="$(sed -n 's/^template:[ ][ ]*\(.*\)/\1/p' $1)"
+  # Fall back to default
+  [[ -z $template ]] && template="default.html"
+  echo "$path/$template"
 }
 
 convert() {
@@ -39,7 +46,7 @@ convert() {
 
   # convert the markdown to HTML
   pandoc "$1"\
-    --template "src/templates/default.html" \
+    --template "$(get_template $1)" \
     --lua-filter $PWD/scripts/links-filter.lua \
     --strip-comments \
     --output "$outdir$base.html"
