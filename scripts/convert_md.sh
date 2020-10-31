@@ -16,8 +16,8 @@ timestamp() {
 log() {
   #log with style
   # red='\033[1;31m'
-  blue='\033[1;34m'
-  nc='\033[0m'
+  local blue='\033[1;34m'
+  local nc='\033[0m'
   echo -e "${blue}$1${nc}"
 }
 
@@ -25,14 +25,14 @@ convert() {
   log "Processing ${1#$PWD/}"
 
   # strip basename of the `.md` file extension
-  base=$(basename "$1")
-  base="${base%.*}"
+  local base=$(basename "$1")
+  local base="${base%.*}"
 
   # keep the directory structure used in `src`
-  subdir=$(dirname "$1")
+  local subdir=$(dirname "$1")
   #set the subdirectory as a forward slash if the file is in root
-  subdir="${subdir#"$src"}/"
-  outdir="$dist$subdir"
+  local subdir="${subdir#"$src"}/"
+  local outdir="$dist$subdir"
  
   # create the subdirectory in `dist` if it doesn't exist
   [[ ! -d "$outdir" ]] && mkdir -pv $outdir
