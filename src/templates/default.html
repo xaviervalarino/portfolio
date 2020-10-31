@@ -7,30 +7,13 @@ $for(include-before)$
   $include-before$
 $endfor$
 
-${ partials/nav() }
-
-$if(title)$
-<header id="title-block-header">
-  <h1 class="title">$title$</h1>
-  $if(subtitle)$
-  <p class="subtitle">$subtitle$</p>
-  $endif$
-</header>
-$endif$
-
-$if(toc)$
-<nav id="$idprefix$TOC" role="doc-toc">
-  $if(toc-title)$
-  <h2 id="$idprefix$toc-title">$toc-title$</h2>
-  $endif$
-  $table-of-contents$
-</nav>
-$endif$
-
-$body$
+<r-grid class="debug" column=5 column-s=3>
+  ${ partials/nav() }
+  $body$
+</r-grid>
 
 $for(include-after)$
-$include-after$
+  $include-after$
 $endfor$
 </body>
 </html>
