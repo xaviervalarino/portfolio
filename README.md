@@ -6,6 +6,9 @@ A portfolio website built with Pandoc and NPM scripts.
 * `nodeJS`
 * `pandoc`
 
+## Dev Dependencies
+* `git-lfs`
+
 ## Directory structure
 * `src`:  "Source" folder contains all the working files.
 * `dist`: "Distribution"—where all the source files are outputted after compilation
@@ -65,3 +68,11 @@ should output this HTML:
 ```
 **Reference**
 - https://talk.commonmark.org/t/consistent-attribute-syntax/272
+
+### Git LFS
+I'm using Git Large File Storage to track my the source files for my mockups.
+
+TODO: document this workflow
+```bash
+git lfs checkout mockups/${source}.afdesign  
+```
