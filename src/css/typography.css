@@ -81,7 +81,7 @@ h3, h4 {
   padding-bottom: calc(var(--baseline) * 0.25);
   margin-bottom: var(--baseline);
 }
-h4, {
+h4 {
   font-weight: 700;
   letter-spacing: -0.012em;
   font-size: var(--h4-size);
