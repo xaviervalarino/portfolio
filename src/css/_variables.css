@@ -20,6 +20,12 @@
   --fg-dark: rgba(255,255,255,0.9);
   --bkg-dark:  #404040;
 
+  /* original colors */
+  /* --riso-blue: #1644FF; */
+  /* --riso-pink: #FF3882; */
+  --riso-pink: #FF48B0;
+  --riso-blue: #0078BF;
+
   /* colors */
   --foreground-color: rgba(0, 0, 0, 0.8);
 

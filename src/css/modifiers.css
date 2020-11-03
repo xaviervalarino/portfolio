@@ -16,3 +16,20 @@
   color: var(--fg-dark);
   background-color: var(--bkg-dark);
 }
+
+.riso-rgstr {
+  position: relative;
+  color: var(--riso-blue);
+  mix-blend-mode: multiply;
+  text-align-last: right;
+}
+.riso-rgstr::after {
+  position: absolute;
+  content: attr(data-echo);
+  color: var(--riso-pink);
+  mix-blend-mode: multiply;
+  top: 0;
+  left: -0.7rem;
+  right: 0.7rem;
+  text-align-last: right;
+}
