@@ -1,26 +1,28 @@
 ---
-title: Xavier Valarino | Product Designer
+title: X R V
+template: index.html
+landing:
+    title: product designer
+    # mission_statement: I design products for companies with complex problems.
+    mission_statement: I navigate the complexity of your software so your customers don't have to... because life is too short for lousy software.
+toc:
+    title: Case Studies
+    id: case-studies
+    projects:
+
+    - title: 	Defining a variable design system
+      subtitle:	Identifying elements of an application
+      href: 	/case-studies/security-score.html
+
+    - title: 	Specifications for a flexible captive portal
+      subtitle:	Defining limits 
+      href: 	/case-studies/netgear-captive-portal.html
+
+    - title:	Designing a customizable dashboard
+      subtitle: Understanding how parts make up the whole
+      href: 	/case-studiesies/gears-dashboard.html
+
+    - title: 	Programming an interactive furniture tool
+      subtitle: Making it all work together
+      href: 	/case-studies/fringe-studio.html
 ---
-
-## I am a designer in Oakland, California. I design products for companies with complex problems.
-
----
-
-## Case Studies
-
-### 1. [Defining a variable design system][1]
-Identifying elements of an application
-
-### 2. [Specifications for a flexible captive portal][2]
-Defining limits 
-
-### 3. [Designing a customizable dashboard][3]
-Understanding how parts make up the whole
-
-###  4. [Programming an interactive furniture tool][4]
-Making it all work together
-
-[1]: /case-studies/security-score.md
-[2]: /case-studies/netgear-captive-portal.md
-[3]: /case-studies/gears-dashboard.md
-[4]: /case-studies/fringe-studio.md
