@@ -45,7 +45,7 @@ convert() {
   [[ ! -d "$outdir" ]] && mkdir -pv $outdir
 
   # convert the markdown to HTML
-  pandoc "$1"\
+  pandoc "$1" \
     --template "$(get_template $1)" \
     --lua-filter $PWD/scripts/links-filter.lua \
     --strip-comments \
