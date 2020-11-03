@@ -15,7 +15,3 @@ body {
   }
 }
 
-.padding {
-  padding: calc(var(--lineHeight) * 2);
-  padding-bottom: calc(var(--lineHeight) * 3);
-}
