@@ -26,6 +26,13 @@ em, .italic {
   font-style: italic;
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
+.smallcaps {
+  font-variant: small-caps;
+}
+
 /* headings */
 h1 {
   font-weight: 720;
