@@ -1,6 +1,7 @@
 /*
- * Variables
+ * VARIABLES
  */
+
 :root {
   /* Veiwport-relative (100% / EMs-across-viewport) */
   --fontSize: calc(100vw / 80);

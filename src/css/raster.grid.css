@@ -1,4 +1,10 @@
-/* Raster grid subsystem (rsms.me/raster) */
+/*
+ * RASTER GRID
+ * modified version of:
+ * Raster Grid Subsystem
+ * (rsms.me/raster)
+ */
+
 .r-grid {
   display: grid;
   --grid-tc: repeat(4, 1fr);
