@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Dotted Text</title>
+    <style>
+      html {
+	font-size: 16px;
+      }
+      h1,h2,h3,h4,h5 {
+	font-family: "Uxum Grotesque";
+	font-weight: 600;
+	margin: 0;
+	position:relative;
+      }
+      h1 {
+	font-size: 17rem;
+      }
+      h2 {
+	font-size: 14rem;
+      }
+      h3 {
+	font-size: 10rem;
+      }
+      h4 {
+	font-size: 6rem;
+      }
+      h5 {
+	font-size: 3rem;
+      }
+      .dottedText {
+	position: relative;
+	mix-blend-mode: multiply;
+	color: rgba(100, 100, 100, 0.5);
+      }
+      .dottedText:before {
+	content: " ";
+	display: inline-block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+
+	background: radial-gradient(circle, fuchsia 50%, transparent 51%),
+		    radial-gradient(circle, turquoise 50%, transparent 51%) ; 
+	background-position: 0 0, .6rem .6rem;
+	background-size: .5rem .5rem;
+	/* <blend-mode> = normal | multiply | screen | overlay | darken |
+			  lighten | color-dodge | color-burn | hard-light |
+			  soft-light | difference | exclusion | hue |
+			  saturation | color | luminosity */
+	background-blend-mode: multiply;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="dottedText">The quick brown fox</h1>
+    <h2 class="dottedText">The quick brown fox</h2>
+    <h3 class="dottedText">The quick brown fox</h3>
+    <h4 class="dottedText">The quick brown fox</h4>
+    <h5 class="dottedText">The quick brown fox</h5>
+  </body>
+</html>
