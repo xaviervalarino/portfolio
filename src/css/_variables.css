@@ -15,6 +15,10 @@
   --sans: "Inria Sans";
   --serif: "Inria Serif";
 
+  --fg-light: rgba(0,0,0,0.9);
+  --bkg-light: #EADEC8;
+  --fg-dark: rgba(255,255,255,0.9);
+  --bkg-dark:  #404040;
 
   /* colors */
   --foreground-color: rgba(0, 0, 0, 0.8);
