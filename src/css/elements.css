@@ -70,7 +70,3 @@ li > p + ol {
   /* shave off 1 baseline from space in between paragraph and list */
   margin-top: calc(var(--baseline) * -1);
 }
-
-li.task-list-item {
-  list-style-type: none;
-}
