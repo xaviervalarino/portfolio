@@ -119,27 +119,22 @@ h5, h6 {
   margin-bottom: 0;
 }
 
-
-/* large headers */
-h1.large, .h1.large {
-  --h1-size: 4rem;
+/* large text */
+.large {
+  font-size: 4rem;
   line-height: calc(var(--lineHeight) * 3);
-  font-weight: 730;
 }
-h1.xlarge, .h1.xlarge {
-  --h1-size: 5.5rem;
+.xlarge {
+  font-size: 5.5rem;
   line-height: calc(var(--lineHeight) * 4);
-  font-weight: 740;
 }
-h1.xxlarge, .h1.xxlarge {
-  --h1-size: 7.5rem;
+.xxlarge {
+  font-size: 7.5rem;
   line-height: calc(var(--lineHeight) * 5);
-  font-weight: 750;
 }
-h1.xxxlarge, .h1.xxxlarge {
-  --h1-size: 10.5rem;
+.xxxlarge {
+  font-size: 10.5rem;
   line-height: calc(var(--lineHeight) * 7);
-  font-weight: 760;
 }
 
 /* small text */
