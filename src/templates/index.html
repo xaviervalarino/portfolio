@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+${ partials/head() }
+<body>
+$for(include-before)$
+  $include-before$
+$endfor$
+<div class="r-grid bkg-light" column-s="3">
+  ${ partials/nav() }
+  <header class="r-passthrough">
+    <div class="r-cell" span="1-4">
+      <h1 class="xxxlarge riso-rgstr" data-echo="$landing.title$">$landing.title$</h1>
+    </div>
+    <div class="r-cell" span="3-5">
+      <p class="large">$landing.mission_statement$</p>
+    </div>
+  </header>
+</div>
+
+<div class="r-grid bkg-dark" column-s="3">
+  <div class="r-cell" span="1">
+    <h2 id="$toc.id$" class="uppercase">$toc.title$</h2>
+  </div>
+  $for(toc.projects)$
+  <a href="$toc.projects.href$" class="r-cell" span="3-4">
+    <hr/>
+    <header>
+      <p class="smallcaps">↘&numsp;project</p>
+      <h3>$toc.projects.title$</h3>
+      <p>$toc.projects.subtitle$</p>
+    </header>
+  </a>
+  $endfor$
+</div>
+
+$for(include-after)$
+  $include-after$
+$endfor$
+<script>${ debug.js() }</script>
+</body>
+</html>
