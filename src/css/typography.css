@@ -37,7 +37,6 @@ em, .italic {
 h1 {
   font-weight: 720;
   letter-spacing: -0.01em;
-  letter-spacing: inherit;
   font-size: var(--h1-size);
   line-height: calc(var(--lineHeight) * 2);
   margin-left: calc(var(--h1-size) / -22);
