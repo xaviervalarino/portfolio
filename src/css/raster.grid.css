@@ -7,7 +7,7 @@
 
 .r-grid {
   display: grid;
-  --grid-tc: repeat(4, 1fr);
+  --grid-tc: repeat(5, 1fr);
   grid-template-columns: var(--grid-tc);
   --grid-cs: 1; /* column start */
   --grid-ce: -1 /* column end */
