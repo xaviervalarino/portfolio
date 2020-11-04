@@ -4,7 +4,7 @@
 
 /* block */
 address, article, aside, blockquote, dd, dl, dt, fieldset, figure, form,
-.r-grid, h1, h2, h3, h4, h5, h6, li, nav, ol, p, pre, table, tfoot, ul, video {
+h1, h2, h3, h4, h5, h6, li, nav, ol, p, pre, table, tfoot, ul, video {
   margin-top: var(--blockSpacingTop);
   margin-bottom: var(--blockSpacingBottom);
 }
