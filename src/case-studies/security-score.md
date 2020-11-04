@@ -1,10 +1,8 @@
 ---
-title: Creating branding guidelines
+title: Creating a variable design system
+subtitle: Identifying elements of an application
 project: Security Score
-goal: 
-role: Design systems designer
-company: 
-year: 2013
+template: case-study.html
 ---
 Identifying discreet parts of an application
 

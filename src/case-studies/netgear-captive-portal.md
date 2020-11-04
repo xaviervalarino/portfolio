@@ -1,8 +1,8 @@
 ---
-title: Specifications for a captive portal
-project:
-goal:
-year: 2014
+title: Specifications for a flexible captive portal
+subtitle: Defining limits
+project: Netgear CWM
+template: case-study.html
 ---
 Defining how the parts behave
 ![Image uploader used in the captive portal customizer](../img/netgear-captive-portal-image-uploader.jpg)

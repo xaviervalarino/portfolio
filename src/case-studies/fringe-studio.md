@@ -1,15 +1,8 @@
 ---
 title: Programming an interactive furniture tool
-project: Fringe Studio's Mixi Modular configurator
-goal:
-type:
-    - visual design
-    - user experience design
-    - web development
-role:
-    - visual design
-    - developer
-year: 2016
+subtitle: Making it all work together
+project: Mixi Configurator
+template: case-study.html
 ---
 Making all the parts work together
 

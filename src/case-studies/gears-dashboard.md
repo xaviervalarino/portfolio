@@ -1,15 +1,8 @@
 ---
 title: Designing a customizable dashboard
-project: GEARS dashboard v.2
-goal:
-type:
-    - web design
-    - user experience design
-role:
-    - Information Architecture
-    - Interaction Design
-    - Visual Design
-year: 2015
+subtitle: Understanding how parts make up the whole
+project: GEARS Dashboard v2.0
+template: case-study.html
 ---
 Understanding how parts make up the whole
 
