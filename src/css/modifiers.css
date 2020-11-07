@@ -7,16 +7,6 @@
   padding-bottom: calc(var(--lineHeight) * 3);
 }
 
-/* Change the background and text color */
-.bkg-light {
-	color: var(--fg-light);
-  background-color: var(--bkg-light);
-}
-.bkg-dark {
-  color: var(--fg-dark);
-  background-color: var(--bkg-dark);
-}
-
 .riso-rgstr {
   position: relative;
   color: var(--riso-blue);
