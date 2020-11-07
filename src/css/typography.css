@@ -7,6 +7,7 @@ html {
   font-family: var(--bodyFont);
   font-size: var(--fontSize);
   line-height: var(--lineHeight);
+  color: var(--black);
   letter-spacing: -0.01em; 
   text-size-adjust: 100%;
   font-variant-ligatures: contextual common-ligatures;
