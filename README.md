@@ -2,12 +2,14 @@
 A portfolio website built with Pandoc and NPM scripts.
 
 ## Dependencies
+Tools used for building the site:
+* `cp`
 * `cat`
 * `nodeJS`
 * `pandoc`
 
-## Dev Dependencies
-* `git-lfs`
+Also, using `git-lfs` for storing binary files (mockups).
+
 
 ## Directory structure
 * `src`:  "Source" folder contains all the working files.
@@ -17,19 +19,23 @@ A portfolio website built with Pandoc and NPM scripts.
 NPM scripts are used build the site. 
 
 ```
-npm run build:html    Convert Markdown files into HTML
-npm run build:img     Optimize images
-npm run build:css     Concatenate all stylesheet files
-npm run build         Run all build scripts
-npm run clean:html    Delete HTML files in distribution dir
-npm run clean:img     Delete all image files in distribution dir
-npm run clean         Run all clean scripts
-npm run watch:html    Watch Markdown files, build when there are changes
-npm run watch:img     Watch image files, build when there are changes
-npm run watch:css     Watch CSS files, build when there are changes
-npm run watch         Run all watch scripts
-npm run serve         Serve distribution dir from localhost
-npm run dev           Start server and watch files
+npm run build            Run all build scripts
+npm run build:css        Concatenate all stylesheet files
+npm run build:fonts      Copy fonts directory to distribution dir
+npm run build:html       Convert Markdown files into HTML
+npm run build:img        Optimize images
+npm run build:js         Copy JS files to distribution dir
+npm run clean            Run all clean scripts
+npm run clean:html       Delete HTML files in distribution dir
+npm run clean:img        Delete all image files in distribution dir
+npm run dev              Start server and watch files
+npm run serve            Serve distribution dir from localhost
+npm run watch            Run all watch scripts
+npm run watch:css        Watch CSS files, lint and build when there are changes
+npm run watch:html       Watch Markdown files, build changed file when there are changes
+npm run watch:img        Watch image files, build when there are changes
+npm run watch:js         Watch JS files, run build:js when changed
+npm run watch:template   Watch template, rebuild all markdown files when changed
 ```
 
 ## Templates
@@ -68,11 +74,3 @@ should output this HTML:
 ```
 **Reference**
 - https://talk.commonmark.org/t/consistent-attribute-syntax/272
-
-### Git LFS
-I'm using Git Large File Storage to track my the source files for my mockups.
-
-TODO: document this workflow
-```bash
-git lfs checkout mockups/${source}.afdesign  
-```
