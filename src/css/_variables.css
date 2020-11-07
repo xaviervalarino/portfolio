@@ -12,8 +12,8 @@
     }
   }
 
-  --sans: "Inria Sans";
-  --serif: "Inria Serif";
+  --displayFont: "Uxum Grotesque";
+  --bodyFont: "Inter";
 
   --fg-light: rgba(0,0,0,0.9);
   --bkg-light: #EADEC8;

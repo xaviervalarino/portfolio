@@ -1,0 +1,102 @@
+/*
+ * FONT UXUM
+ */
+
+@font-face {
+  font-family: "Uxum Grotesque";
+  font-style:  normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url("/fonts/UxumGrotesque-UltraLight.woff2") format("woff2"),
+       url("/fonts/UxumGrotesque-UltraLight.woff") format("woff");
+}
+@font-face {
+  font-family: "Uxum Grotesque";
+  font-style:  italic;
+  font-weight: 200;
+  font-display: swap;
+  src: url("/fonts/UxumGrotesque-UltraLightItalic.woff2") format("woff2"),
+       url("/fonts/UxumGrotesque-UltraLightItalic.woff") format("woff");
+}
+@font-face {
+  font-family: "Uxum Grotesque";
+  font-style:  normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/fonts/UxumGrotesque-Light.woff2") format("woff2"),
+       url("/fonts/UxumGrotesque-Light.woff") format("woff");
+}
+@font-face {
+  font-family: "Uxum Grotesque";
+  font-style:  italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/fonts/UxumGrotesque-LightItalic.woff2") format("woff2"),
+       url("/fonts/UxumGrotesque-LightItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Uxum Grotesque";
+  font-style:  normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/UxumGrotesque-Regular.woff2") format("woff2"),
+       url("/fonts/UxumGrotesque-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Uxum Grotesque";
+  font-style:  italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/UxumGrotesque-Italic.woff2") format("woff2"),
+       url("/fonts/UxumGrotesque-Italic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Uxum Grotesque";
+  font-style:  normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/fonts/UxumGrotesque-Medium.woff2") format("woff2"),
+       url("/fonts/UxumGrotesque-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: "Uxum Grotesque";
+  font-style:  italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/fonts/UxumGrotesque-MediumItalic.woff2") format("woff2"),
+       url("/fonts/UxumGrotesque-MediumItalic.woff") format("woff");
+}
+@font-face {
+  font-family: "Uxum Grotesque";
+  font-style:  normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/fonts/UxumGrotesque-Bold.woff2") format("woff2"),
+       url("/fonts/UxumGrotesque-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "Uxum Grotesque";
+  font-style:  italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/fonts/UxumGrotesque-BoldItalic.woff2") format("woff2"),
+       url("/fonts/UxumGrotesque-BoldItalic.woff") format("woff");
+}
+@font-face {
+  font-family: "Uxum Grotesque";
+  font-style:  normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("/fonts/UxumGrotesque-Ultra.woff2") format("woff2"),
+       url("/fonts/UxumGrotesque-Ultra.woff") format("woff");
+}
+@font-face {
+  font-family: "Uxum Grotesque";
+  font-style:  italic;
+  font-weight: 900;
+  font-display: swap;
+  src: url("/fonts/UxumGrotesque-UltraItalic.woff2") format("woff2"),
+       url("/fonts/UxumGrotesque-UltraItalic.woff") format("woff");
+}
