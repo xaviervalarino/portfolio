@@ -11,6 +11,7 @@
   "scripts": {
     "build": "npm run clean && npm run build:img & npm run build:html",
     "build:css": "cat ./src/css/*.css > ./dist/stylesheet.css",
+    "build:fonts": "cp -rfv ./src/fonts ./dist",
     "build:html": "./scripts/convert_md.sh",
     "build:img": "npm run clean:img && imagemin \"./src/img/**\" --out-dir=\"./dist/img\"",
     "build:js": "cp ./src/*.js > ./dist/",
