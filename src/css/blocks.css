@@ -7,19 +7,19 @@ nav {
 }
 
 nav ul {
-	list-style-type: none;
-	text-align: right;
+  list-style-type: none;
+  text-align: right;
 }
 
 nav a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 nav li:not(:first-child)::after {
-	content: " ";
-	display: block;
-	width: calc(var(--baseline)*2);
-	margin-left: auto;
-	margin-top: calc(var(--baseline) -3px);
-	border-bottom: 3px solid var(--bkg-dark);
+  content: " ";
+  display: block;
+  width: calc(var(--baseline)*2);
+  margin-left: auto;
+  margin-top: calc(var(--baseline) -3px);
+  border-bottom: 3px solid var(--bkg-dark);
 }

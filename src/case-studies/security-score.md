@@ -32,10 +32,10 @@ To produce a design system document that would allow third-party vendors to easi
 - Met with stakeholders to understand the requirements and technical limitations
 - Studied existing mockups and design assets
 - Identified four main areas that the system should cover:
-	- Application states
-	- Application elements
-	- Colors and images
-	- Customization options
+  - Application states
+  - Application elements
+  - Colors and images
+  - Customization options
 
 ![Documenting colors and assets used in the application](../img/security-score-UI-elements.png)
 
