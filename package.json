@@ -14,7 +14,7 @@
     "build:fonts": "cp -rfv ./src/fonts ./dist",
     "build:html": "./scripts/convert_md.sh",
     "build:img": "npm run clean:img && imagemin \"./src/img/**\" --out-dir=\"./dist/img\"",
-    "build:js": "cp -rv ./src/**/*.js > ./dist/",
+    "build:js": "cp -rv ./src/*.js ./dist/",
     "clean": "rimraf \"./dist/*\"",
     "clean:html": "rimraf \"./dist/**/*.html\"",
     "clean:img": "rimraf \"./dist/img/*\"",
@@ -24,7 +24,7 @@
     "watch:css": "chokidar \"./src/css\" -c \"[ '{event}' = 'change' ] && stylelint {path} && npm run build:css\"",
     "watch:html": "chokidar \"./src/**/*.md\" -c \"[ '{event}' = 'change' ] && ./scripts/convert_md.sh {path}\"",
     "watch:img": "chokidar \"./src/img/**/*\" -c \"[ '{event}' = 'change' ] && imagemin {path} --out-dir=./dist/img\"",
-    "watch:js": "chokidar \"./src/**/*.js\" -c npm run build:js",
+    "watch:js": "chokidar \"./src/*.js\" -c \"npm run build:js\"",
     "watch:template": "chokidar \"./src/templates/\" -c \"./scripts/convert_md.sh\""
   },
   "stylelint": {
