@@ -1,0 +1,29 @@
+/*
+ * EFFECTS
+ */
+
+.off-register {
+  position: relative;
+  color: var(--magenta);
+}
+.off-register::before {
+  content: attr(data-echo);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: var(--yellow);
+  transform: translate(-0.35rem, -0.35rem);
+}
+.off-register::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: attr(data-echo);
+  color: var(--cyan);
+  transform: translate(0.35rem, 0.35rem);
+}
+.off-register,
+.off-register::before,
+.off-register::after {
+  mix-blend-mode: multiply;
+}

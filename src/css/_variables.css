@@ -15,11 +15,9 @@
   --displayFont: "Uxum Grotesque";
   --bodyFont: "Inter";
 
-  /* original colors */
-  /* --riso-blue: #1644FF; */
-  /* --riso-pink: #FF3882; */
-  --riso-pink: #FF48B0;
-  --riso-blue: #0078BF;
+  --cyan: #009cdd;
+  --magenta: #d60078;
+  --yellow: #fedd00;
   --black:  #1b1e23; /*midnight black*/
 
   /* colors */
