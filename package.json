@@ -4,22 +4,29 @@
     "chokidar-cli": "^2.1.0",
     "imagemin-cli": "^6.0.0",
     "live-server": "^1.2.1",
-    "rimraf": "^3.0.2"
+    "rimraf": "^3.0.2",
+    "stylelint": "^13.7.2",
+    "stylelint-config-recommended": "^3.0.0"
   },
   "scripts": {
     "build": "npm run clean && npm run build:img & npm run build:html",
     "build:css": "cat ./src/css/*.css > ./dist/stylesheet.css",
     "build:html": "./scripts/convert_md.sh",
     "build:img": "npm run clean:img && imagemin \"./src/img/**\" --out-dir=\"./dist/img\"",
+    "build:js": "cp ./src/*.js > ./dist/",
     "clean": "rimraf \"./dist/*\"",
     "clean:html": "rimraf \"./dist/**/*.html\"",
     "clean:img": "rimraf \"./dist/img/*\"",
     "dev": "npm run build:html && npm run watch & npm run serve",
     "serve": "live-server \"./dist\"",
     "watch": "npm run watch:img & npm run watch:html & npm run watch:template & npm run watch:css",
-    "watch:css": "chokidar \"./src/css\" -c \"npm run build:css\"",
+    "watch:css": "chokidar \"./src/css\" -c \"[ '{event}' = 'change' ] && stylelint {path} && npm run build:css\"",
     "watch:html": "chokidar \"./src/**/*.md\" -c \"[ '{event}' = 'change' ] && ./scripts/convert_md.sh {path}\"",
     "watch:img": "chokidar \"./src/img/**/*\" -c \"[ '{event}' = 'change' ] && imagemin {path} --out-dir=./dist/img\"",
-    "watch:template": "chokidar \"./src/templates/\" -c \"./scripts/convert_md.sh\"",
+    "watch:js": "chokidar \"./src/**/*.js\" -c npm run build:js",
+    "watch:template": "chokidar \"./src/templates/\" -c \"./scripts/convert_md.sh\""
+  },
+  "stylelint": {
+    "extends": "stylelint-config-recommended"
   }
 }
