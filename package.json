@@ -20,7 +20,7 @@
     "clean:img": "rimraf \"./dist/img/*\"",
     "dev": "npm run build:html && npm run watch & npm run serve",
     "serve": "live-server \"./dist\"",
-    "watch": "npm run watch:img & npm run watch:html & npm run watch:template & npm run watch:css",
+    "watch": "npm run watch:css & npm run watch:html & npm run watch:img & npm run watch:js & npm run watch:template",
     "watch:css": "chokidar \"./src/css\" -c \"[ '{event}' = 'change' ] && stylelint {path} && npm run build:css\"",
     "watch:html": "chokidar \"./src/**/*.md\" -c \"[ '{event}' = 'change' ] && ./scripts/convert_md.sh {path}\"",
     "watch:img": "chokidar \"./src/img/**/*\" -c \"[ '{event}' = 'change' ] && imagemin {path} --out-dir=./dist/img\"",
