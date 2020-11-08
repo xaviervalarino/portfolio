@@ -3,8 +3,7 @@ title: X R V
 template: index.html
 landing:
     title: product designer
-    # mission_statement: I design products for companies with complex problems.
-    mission_statement: I navigate the complexity of your software so your customers don't have to... because life is too short for lousy software.
+    mission_statement: The tools we use are meant to be practical—I navigate the complexity of your software so your customers don't have to.
 toc:
     title: Case Studies
     id: case-studies
