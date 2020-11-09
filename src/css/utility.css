@@ -76,3 +76,7 @@
 [class*="border"][class*=":h4"] {
   border-width: calc(var(--h4-size) / 6)
 }
+
+.shadow {
+  box-shadow: 0px 1px 3px 3px #dedede;
+}
