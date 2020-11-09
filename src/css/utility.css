@@ -80,3 +80,8 @@
 .shadow {
   box-shadow: 0px 1px 3px 3px #dedede;
 }
+
+.passthrough,
+.r-grid > .passthrough {
+  display: contents
+}

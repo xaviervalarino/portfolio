@@ -217,9 +217,6 @@
   }
 }
 
-.r-passthrough {
-  display: contents;
-}
 
 /* .debug can be added to a .r-grid to visualize its effective cells */
 .r-grid.debug {
