@@ -15,14 +15,12 @@
   --displayFont: "Uxum Grotesque";
   --bodyFont: "Inter";
 
+  /* colors */
   --cyan: #009cdd;
   --magenta: #d60078;
   --yellow: #fedd00;
   --black:  #1b1e23; /*midnight black*/
   --dark: #555;
-
-  /* colors */
-  --foreground-color: rgba(0, 0, 0, 0.8);
 
   /* line height is the basis for vertical spacing */
   --lineHeight: calc(var(--fontSize) * 1.5);
