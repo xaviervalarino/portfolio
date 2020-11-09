@@ -16,19 +16,20 @@ ${ partials/head() }
   </section>
 
   <section class="r-grid columns:6 column-s3 padding">
-    <h2 id="$toc.id$" class="r-cell large vert:100">$toc.title$</h2>
-    $for(toc.projects)$
-    <nav class="r-cell span:3+2">
-      <a href="$toc.projects.href$" class="r-cell" span="3-4">
-	<hr/>
-	<header>
-	  <p class="smallcaps">↘&numsp;project</p>
-	  <h3>$toc.projects.title$</h3>
-	  <p>$toc.projects.subtitle$</p>
-	</header>
+    <h2 id="$toc.id$" class="r-cell large span:2+1 cross4 justify-v:center align-r">$toc.title$</h2>
+    <nav class="r-cell passthrough">
+      $for(toc.projects)$
+      <a href="$toc.projects.href$" class="r-cell span:4+3 padding-bottom:s">
+	<section>
+	  <p class="smallcaps outdent:1">↘&numsp;project</p>
+	  <div class="border-left:h3 padding-left:s ">
+	    <h3>$toc.projects.title$</h3>
+	    <p>$toc.projects.subtitle$</p>
+	  </div>
+	</section>
       </a>
+      $endfor$
     </nav>
-  $endfor$
 </div>
 
 $for(include-after)$
