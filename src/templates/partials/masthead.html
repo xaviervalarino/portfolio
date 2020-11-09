@@ -1,14 +1,15 @@
-<div "r-cell" span="1">
-  <p id="debug-toggle">DEBUG: <span>OFF</span></p>
-  <p id="baseline-toggle">BASELINE: <span>OFF</span></p>
-</div>
-
-<nav class="r-cell" span="5.." role="navigation">
-  <ul>
-    <li><h2><a class="uppercase" href="/">Xavier</br>Valarino</a></h2></li>
-    <li><a href="/#case-studies">Work</a>
-      $if(case-study)$ &#10095; $title$ $endif$
-    </li>
-    <li><a href="/about.html">About</a></li>
-  </ul>
-</nav>
+<header class="r-grid columns:6 columns-s:3 padding">
+  <div "r-cell">
+    <p id="debug-toggle">DEBUG: <span>OFF</span></p>
+    <p id="baseline-toggle">BASELINE: <span>OFF</span></p>
+  </div>
+  <nav class="r-cell span:5.." role="navigation">
+    <ul>
+      <li><h2><a class="uppercase" href="/">Xavier</br>Valarino</a></h2></li>
+      <li><a href="/#case-studies">Work</a>
+	$if(case-study)$ &#10095; $title$ $endif$
+      </li>
+      <li><a href="/about.html">About</a></li>
+    </ul>
+  </nav>
+</header>

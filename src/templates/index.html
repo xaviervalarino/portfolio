@@ -2,34 +2,32 @@
 <html lang="en">
 ${ partials/head() }
 <body>
-$for(include-before)$
-  $include-before$
-$endfor$
-<div class="r-grid padding" column-s="3">
+  $for(include-before)$
+    $include-before$
+  $endfor$
   ${ partials/masthead() }
-  <header class="r-passthrough">
-    <div class="r-cell" span="1-4">
+  <section class="r-grid columns:6 column-s:3 padding">
+    <div class="r-cell span:1-4">
       <h1 class="xxxlarge off-register" data-echo="$landing.title$">$landing.title$</h1>
     </div>
-    <div class="r-cell" span="3-5">
+    <div class="r-cell span:3-5">
       <p class="large">$landing.mission_statement$</p>
     </div>
-  </header>
-</div>
+  </section>
 
-<div class="r-grid padding" column-s="3">
-  <div class="r-cell" span="1">
-    <h2 id="$toc.id$" class="uppercase">$toc.title$</h2>
-  </div>
-  $for(toc.projects)$
-  <a href="$toc.projects.href$" class="r-cell" span="3-4">
-    <hr/>
-    <header>
-      <p class="smallcaps">↘&numsp;project</p>
-      <h3>$toc.projects.title$</h3>
-      <p>$toc.projects.subtitle$</p>
-    </header>
-  </a>
+  <section class="r-grid columns:6 column-s3 padding">
+    <h2 id="$toc.id$" class="r-cell large vert:100">$toc.title$</h2>
+    $for(toc.projects)$
+    <nav class="r-cell span:3+2">
+      <a href="$toc.projects.href$" class="r-cell" span="3-4">
+	<hr/>
+	<header>
+	  <p class="smallcaps">↘&numsp;project</p>
+	  <h3>$toc.projects.title$</h3>
+	  <p>$toc.projects.subtitle$</p>
+	</header>
+      </a>
+    </nav>
   $endfor$
 </div>
 
