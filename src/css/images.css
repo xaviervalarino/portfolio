@@ -16,10 +16,6 @@ img:only-child {
   margin:0;
 }
 
-* + img {
-  margin-top: calc(var(--baseline) * -1);
-}
-
 img.fill, img.cover {
   object-fit: cover;
 }
@@ -32,6 +28,6 @@ img.fill, img.cover {
 
 figcaption {
   font-size: .85em;
-  color: #555;
+  color: var(--dark);
 }
 

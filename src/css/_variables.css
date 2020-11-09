@@ -19,6 +19,7 @@
   --magenta: #d60078;
   --yellow: #fedd00;
   --black:  #1b1e23; /*midnight black*/
+  --dark: #555;
 
   /* colors */
   --foreground-color: rgba(0, 0, 0, 0.8);
