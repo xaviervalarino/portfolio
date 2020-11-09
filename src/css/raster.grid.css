@@ -217,6 +217,15 @@
   }
 }
 
+/* span over rows */
+.r-cell.cross  { grid-row-end: span 1 }
+.r-cell.cross2 { grid-row-end: span 2 }
+.r-cell.cross3 { grid-row-end: span 3 }
+.r-cell.cross4 { grid-row-end: span 4 }
+.r-cell.cross5 { grid-row-end: span 5 }
+.r-cell.cross6 { grid-row-end: span 6 }
+.r-cell.cross7 { grid-row-end: span 7 }
+.r-cell.cross8 { grid-row-end: span 8 }
 
 /* .debug can be added to a .r-grid to visualize its effective cells */
 .r-grid.debug {
