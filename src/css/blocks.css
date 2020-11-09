@@ -15,8 +15,8 @@ nav a {
 nav li:not(:first-child)::after {
   content: " ";
   display: block;
-  width: calc(var(--baseline)*2);
+  width: calc(var(--baseline) * 2);
   margin-left: auto;
-  margin-top: calc(var(--baseline) -3px);
+  margin-top: calc(var(--baseline) - 3px);
   border-bottom: 3px solid var(--bkg-dark);
 }
