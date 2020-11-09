@@ -65,8 +65,8 @@ h2 {
 h3, h4 {
   letter-spacing: -0.02em;
   font-size: var(--h3-size);
-  padding-top: calc(var(--baseline) * 0.75);
-  padding-bottom: calc(var(--baseline) * 0.25);
+  /* padding-top: calc(var(--baseline) * 0.75); */
+  /* padding-bottom: calc(var(--baseline) * 0.25); */
   margin-bottom: var(--baseline);
 }
 h4 {

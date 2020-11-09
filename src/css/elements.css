@@ -5,45 +5,45 @@
 /* block */
 address, article, aside, blockquote, dd, dl, dt, fieldset, figure, form,
 h1, h2, h3, h4, h5, h6, li, nav, ol, p, pre, table, tfoot, ul, video {
-  margin-top: var(--blockSpacingTop);
+   margin-top: var(--blockSpacingTop);
   margin-bottom: var(--blockSpacingBottom);
 }
 
 /* first|last element has no top|bottom margin */
-:first-child { margin-top: unset; }
-:last-child { margin-bottom: unset; }
+/* :first-child { margin-top: unset; } */
+/* :last-child { margin-bottom: unset; } */
 
-/* hr */
-hr:first-child {
-  margin-top: calc(var(--hrThickness) / -2);
-  margin-bottom: calc(var(--lineHeight) - calc(var(--hrThickness) / 2));
-}
-hr:last-child {
-  margin-top: calc(var(--lineHeight) - calc(var(--hrThickness) / 2));
-  margin-bottom: calc(var(--hrThickness) / -2);
-}
+/* /1* hr *1/ */
+/* hr:first-child { */
+/*   margin-top: calc(var(--hrThickness) / -2); */
+/*   margin-bottom: calc(var(--lineHeight) - calc(var(--hrThickness) / 2)); */
+/* } */
+/* hr:last-child { */
+/*   margin-top: calc(var(--lineHeight) - calc(var(--hrThickness) / 2)); */
+/*   margin-bottom: calc(var(--hrThickness) / -2); */
+/* } */
 hr, hr:only-child {
   border: none;
-  background: var(--foreground-color);
+  background: var(--black);
   height: var(--hrThickness);
   margin-top: calc(var(--lineHeight) - calc(var(--hrThickness) / 2));
   margin-bottom: calc(var(--lineHeight) - calc(var(--hrThickness) / 2));
 }
-* + hr:last-child {
-  /* hr following block has hrThickness removed from its top spacing */
-  margin-top: calc(var(--hrThickness) / -2);
-}
-hr:not(:first-child) {
-  /* note: collapses with preceeding block bottom margin */
-  margin-top: var(--lineHeight);
-  margin-bottom: calc(var(--lineHeight) - var(--hrThickness));
-}
+/* * + hr:last-child { */
+/*   /1* hr following block has hrThickness removed from its top spacing *1/ */
+/*   margin-top: calc(var(--hrThickness) / -2); */
+/* } */
+/* hr:not(:first-child) { */
+/*   /1* note: collapses with preceeding block bottom margin *1/ */
+/*   margin-top: var(--lineHeight); */
+/*   margin-bottom: calc(var(--lineHeight) - var(--hrThickness)); */
+/* } */
 .r-grid > hr { grid-column: 1 / -1 }
-.r-grid > hr,
-.r-grid > hr:not(:first-child):not(:last-child) {
-  margin-top: calc(var(--lineHeight) - var(--hrThickness)); /* BOTTOM-bias */
-  margin-bottom: 0;
-}
+/* .r-grid > hr, */
+/* .r-grid > hr:not(:first-child):not(:last-child) { */
+/*   margin-top: calc(var(--lineHeight) - var(--hrThickness)); /1* BOTTOM-bias *1/ */
+/*   margin-bottom: 0; */
+/* } */
 
 /* list */
 ul, ol {
