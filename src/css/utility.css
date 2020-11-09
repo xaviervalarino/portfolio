@@ -1,6 +1,8 @@
 /*
- * MODIFIERS
+ * UTILITY
  */
+
+/* padding */
 [class*="padding"] {
   --padding: calc(var(--lineHeight) * 2);
   padding: var(--padding);
@@ -18,7 +20,7 @@
   padding: 0 0 0 var(--padding);
 }
 
-
+/* margin */
 [class*="margin"] {
   --margin: calc(var(--lineHeight) * 2);
   margin: var(--margin);
@@ -41,6 +43,8 @@
  * Is there a way to make this composable?
  * e.g., border-top-right
  */
+
+/* border */
 [class*="border"] {
   border-color: var(--black);
   border-top-width: calc(var(--fontSize) / 12);
@@ -59,6 +63,7 @@
   border-style: none none none solid ;
 }
 
+/* border sizes */
 [class*="border"][class*=":h1"] {
   border-width: calc(var(--h1-size) / 12)
 }
