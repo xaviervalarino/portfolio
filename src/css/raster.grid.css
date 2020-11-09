@@ -35,17 +35,21 @@
 .r-grid .r-cell[class*="span:7"] { --grid-cs: 7 }
 .r-grid .r-cell[class*="span:8"] { --grid-cs: 8 }
 
-/* span=...+width, span=...-end */
+/* TODO
+ * Careful---any other classes that contain +1 or -1 could cause issues,
+ * it might be prudent to include `[class*="span:"]`, but the `.r-cell` might be enough
+ */
 
-.r-grid .r-cell[class$="+1"], .r-grid .r-cell.span\:1 { --grid-ce: 1 }
-.r-grid .r-cell[class$="+2"], .r-grid .r-cell[class$="-1"], .r-grid .r-cell.span\:2 { --grid-ce: 2 }
-.r-grid .r-cell[class$="+3"], .r-grid .r-cell[class$="-2"], .r-grid .r-cell.span\:3 { --grid-ce: 3 }
-.r-grid .r-cell[class$="+4"], .r-grid .r-cell[class$="-3"], .r-grid .r-cell.span\:4 { --grid-ce: 4 }
-.r-grid .r-cell[class$="+5"], .r-grid .r-cell[class$="-4"], .r-grid .r-cell.span\:5 { --grid-ce: 5 }
-.r-grid .r-cell[class$="+6"], .r-grid .r-cell[class$="-5"], .r-grid .r-cell.span\:6 { --grid-ce: 6 }
-.r-grid .r-cell[class$="+7"], .r-grid .r-cell[class$="-6"], .r-grid .r-cell.span\:7 { --grid-ce: 7 }
-.r-grid .r-cell[class$="+8"], .r-grid .r-cell[class$="-7"], .r-grid .r-cell.span\:8 { --grid-ce: 8 }
-.r-grid .r-cell[class$="-8"] { --grid-ce: 9 }
+/* span=...+width, span=...-end */
+.r-grid .r-cell[class*="+1"], .r-grid .r-cell.span\:1 { --grid-ce: 1 }
+.r-grid .r-cell[class*="+2"], .r-grid .r-cell[class*="-1"], .r-grid .r-cell.span\:2 { --grid-ce: 2 }
+.r-grid .r-cell[class*="+3"], .r-grid .r-cell[class*="-2"], .r-grid .r-cell.span\:3 { --grid-ce: 3 }
+.r-grid .r-cell[class*="+4"], .r-grid .r-cell[class*="-3"], .r-grid .r-cell.span\:4 { --grid-ce: 4 }
+.r-grid .r-cell[class*="+5"], .r-grid .r-cell[class*="-4"], .r-grid .r-cell.span\:5 { --grid-ce: 5 }
+.r-grid .r-cell[class*="+6"], .r-grid .r-cell[class*="-5"], .r-grid .r-cell.span\:6 { --grid-ce: 6 }
+.r-grid .r-cell[class*="+7"], .r-grid .r-cell[class*="-6"], .r-grid .r-cell.span\:7 { --grid-ce: 7 }
+.r-grid .r-cell[class*="+8"], .r-grid .r-cell[class*="-7"], .r-grid .r-cell.span\:8 { --grid-ce: 8 }
+.r-grid .r-cell[class*="-8"] { --grid-ce: 9 }
 
 /* connect vars */
 
@@ -79,7 +83,7 @@
 .r-grid .r-cell[class*=".."] {
   grid-column-end: var(--grid-ce)
 }
-.r-grid .r-cell[class$="row"] {
+.r-grid .r-cell[class*="row"] {
   grid-column: 1 / -1
 }
 
@@ -106,15 +110,15 @@
 
   /* span=...+width, span=...-end */
 
-  .r-grid .r-cell[class$="+1"], .r-grid .r-cell.span-s\:1 { --grid-ce: 1 }
-  .r-grid .r-cell[class$="+2"], .r-grid .r-cell[class$="-1"], .r-grid .r-cell.span-s\:2 { --grid-ce: 2 }
-  .r-grid .r-cell[class$="+3"], .r-grid .r-cell[class$="-2"], .r-grid .r-cell.span-s\:3 { --grid-ce: 3 }
-  .r-grid .r-cell[class$="+4"], .r-grid .r-cell[class$="-3"], .r-grid .r-cell.span-s\:4 { --grid-ce: 4 }
-  .r-grid .r-cell[class$="+5"], .r-grid .r-cell[class$="-4"], .r-grid .r-cell.span-s\:5 { --grid-ce: 5 }
-  .r-grid .r-cell[class$="+6"], .r-grid .r-cell[class$="-5"], .r-grid .r-cell.span-s\:6 { --grid-ce: 6 }
-  .r-grid .r-cell[class$="+7"], .r-grid .r-cell[class$="-6"], .r-grid .r-cell.span-s\:7 { --grid-ce: 7 }
-  .r-grid .r-cell[class$="+8"], .r-grid .r-cell[class$="-7"], .r-grid .r-cell.span-s\:8 { --grid-ce: 8 }
-  .r-grid .r-cell[class$="-8"] { --grid-ce: 9 }
+  .r-grid .r-cell[class*="+1"], .r-grid .r-cell.span-s\:1 { --grid-ce: 1 }
+  .r-grid .r-cell[class*="+2"], .r-grid .r-cell[class*="-1"], .r-grid .r-cell.span-s\:2 { --grid-ce: 2 }
+  .r-grid .r-cell[class*="+3"], .r-grid .r-cell[class*="-2"], .r-grid .r-cell.span-s\:3 { --grid-ce: 3 }
+  .r-grid .r-cell[class*="+4"], .r-grid .r-cell[class*="-3"], .r-grid .r-cell.span-s\:4 { --grid-ce: 4 }
+  .r-grid .r-cell[class*="+5"], .r-grid .r-cell[class*="-4"], .r-grid .r-cell.span-s\:5 { --grid-ce: 5 }
+  .r-grid .r-cell[class*="+6"], .r-grid .r-cell[class*="-5"], .r-grid .r-cell.span-s\:6 { --grid-ce: 6 }
+  .r-grid .r-cell[class*="+7"], .r-grid .r-cell[class*="-6"], .r-grid .r-cell.span-s\:7 { --grid-ce: 7 }
+  .r-grid .r-cell[class*="+8"], .r-grid .r-cell[class*="-7"], .r-grid .r-cell.span-s\:8 { --grid-ce: 8 }
+  .r-grid .r-cell[class*="-8"] { --grid-ce: 9 }
 
   /* connect vars */
   .r-grid .r-cell[class*="span-s:"] {
@@ -143,7 +147,7 @@
   .r-grid .r-cell[class*=".."] {
     grid-column-end: var(--grid-ce)
   }
-  .r-grid .r-cell[class$="row"] {
+  .r-grid .r-cell[class*="row"] {
     grid-column: 1 / -1
   }
 }
@@ -171,15 +175,15 @@
 
   /* span=...+width, span=...-end */
 
-  .r-grid .r-cell[class$="+1"], .r-grid .r-cell.span-l\:1 { --grid-ce: 1 }
-  .r-grid .r-cell[class$="+2"], .r-grid .r-cell[class$="-1"], .r-grid .r-cell.span-l\:2 { --grid-ce: 2 }
-  .r-grid .r-cell[class$="+3"], .r-grid .r-cell[class$="-2"], .r-grid .r-cell.span-l\:3 { --grid-ce: 3 }
-  .r-grid .r-cell[class$="+4"], .r-grid .r-cell[class$="-3"], .r-grid .r-cell.span-l\:4 { --grid-ce: 4 }
-  .r-grid .r-cell[class$="+5"], .r-grid .r-cell[class$="-4"], .r-grid .r-cell.span-l\:5 { --grid-ce: 5 }
-  .r-grid .r-cell[class$="+6"], .r-grid .r-cell[class$="-5"], .r-grid .r-cell.span-l\:6 { --grid-ce: 6 }
-  .r-grid .r-cell[class$="+7"], .r-grid .r-cell[class$="-6"], .r-grid .r-cell.span-l\:7 { --grid-ce: 7 }
-  .r-grid .r-cell[class$="+8"], .r-grid .r-cell[class$="-7"], .r-grid .r-cell.span-l\:8 { --grid-ce: 8 }
-  .r-grid .r-cell[class$="-8"] { --grid-ce: 9 }
+  .r-grid .r-cell[class*="+1"], .r-grid .r-cell.span-l\:1 { --grid-ce: 1 }
+  .r-grid .r-cell[class*="+2"], .r-grid .r-cell[class*="-1"], .r-grid .r-cell.span-l\:2 { --grid-ce: 2 }
+  .r-grid .r-cell[class*="+3"], .r-grid .r-cell[class*="-2"], .r-grid .r-cell.span-l\:3 { --grid-ce: 3 }
+  .r-grid .r-cell[class*="+4"], .r-grid .r-cell[class*="-3"], .r-grid .r-cell.span-l\:4 { --grid-ce: 4 }
+  .r-grid .r-cell[class*="+5"], .r-grid .r-cell[class*="-4"], .r-grid .r-cell.span-l\:5 { --grid-ce: 5 }
+  .r-grid .r-cell[class*="+6"], .r-grid .r-cell[class*="-5"], .r-grid .r-cell.span-l\:6 { --grid-ce: 6 }
+  .r-grid .r-cell[class*="+7"], .r-grid .r-cell[class*="-6"], .r-grid .r-cell.span-l\:7 { --grid-ce: 7 }
+  .r-grid .r-cell[class*="+8"], .r-grid .r-cell[class*="-7"], .r-grid .r-cell.span-l\:8 { --grid-ce: 8 }
+  .r-grid .r-cell[class*="-8"] { --grid-ce: 9 }
 
   /* connect vars */
   .r-grid .r-cell[class*="span-l:"] {
@@ -208,7 +212,7 @@
   .r-grid .r-cell[class*=".."] {
     grid-column-end: var(--grid-ce)
   }
-  .r-grid .r-cell[class$="row"] {
+  .r-grid .r-cell[class*="row"] {
     grid-column: 1 / -1
   }
 }

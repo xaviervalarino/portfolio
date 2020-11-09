@@ -1,8 +1,73 @@
 /*
  * MODIFIERS
  */
+[class*="padding"] {
+  --padding: calc(var(--lineHeight) * 2);
+  padding: var(--padding);
+}
+[class*="padding-top"] {
+  padding: var(--padding) 0 0 0;
+}
+[class*="padding-right"] {
+  padding: 0 var(--padding) 0 0;
+}
+[class*="padding-bottom"] {
+  padding: 0 0 var(--padding) 0;
+}
+[class*="padding-left"] {
+  padding: 0 0 0 var(--padding);
+}
 
-.padding {
-  padding: calc(var(--lineHeight) * 2);
-  padding-bottom: calc(var(--lineHeight) * 3);
+
+[class*="margin"] {
+  --margin: calc(var(--lineHeight) * 2);
+  margin: var(--margin);
+}
+[class*="margin-top"] {
+  margin: var(--margin) 0 0 0;
+}
+[class*="margin-right"] {
+  margin: 0 var(--margin) 0 0;
+}
+[class*="margin-bottom"] {
+  margin: 0 0 var(--margin) 0;
+}
+[class*="margin-left"] {
+  margin: 0 0 0 var(--margin);
+}
+
+/*
+ * TODO:
+ * Is there a way to make this composable?
+ * e.g., border-top-right
+ */
+[class*="border"] {
+  border-color: var(--black);
+  border-top-width: calc(var(--fontSize) / 12);
+  border-style: solid;
+}
+[class*="border-top"] {
+  border-style: solid none none none;
+}
+[class*="border-right"] {
+  border-style: none solid none none;
+}
+[class*="border-bottom"] {
+  border-style: none none solid none;
+}
+[class*="border-left"] {
+  border-style: none none none solid ;
+}
+
+[class*="border"][class*=":h1"] {
+  border-width: calc(var(--h1-size) / 12)
+}
+[class*="border"][class*=":h2"] {
+  border-width: calc(var(--h2-size) / 10)
+}
+[class*="border"][class*=":h3"] {
+  border-width: calc(var(--h3-size) / 8)
+}
+[class*="border"][class*=":h4"] {
+  border-width: calc(var(--h4-size) / 6)
 }
