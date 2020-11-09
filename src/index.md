@@ -19,7 +19,7 @@ toc:
 
     - title:     Designing a customizable dashboard
       subtitle:  Understanding how parts make up the whole
-      href:      /case-studiesies/gears-dashboard.html
+      href:      /case-studies/gears-dashboard.html
 
     - title:     Programming an interactive furniture tool
       subtitle:  Making it all work together
