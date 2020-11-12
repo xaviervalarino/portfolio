@@ -2,40 +2,65 @@
  * EFFECTS
  */
 
-@keyframes off-register {
-  0% { transform: translate(0,0); }
-}
-
-.off-register {
+.registration {
   position: relative;
   color: var(--magenta);
 }
-.off-register::before {
+.registration::before,
+.registration::after {
   content: attr(data-echo);
   position: absolute;
   top: 0;
   left: 0;
+}
+.registration::before {
   color: var(--yellow);
 }
-.off-register::after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  content: attr(data-echo);
+.registration::after {
   color: var(--cyan);
 }
 
-.off-register,
-.off-register::before,
-.off-register::after {
-  mix-blend-mode: multiply;
-  transform: translate(0, 0); /* initial value*/
-  transition: transform 3.5s ease-out;
-}
-
-.off-register.effect,
-.off-register.effect::before,
-.off-register.effect::after {
+.registration,
+.registration::before,
+.registration::after {
   mix-blend-mode: multiply;
   transition: transform 1s ease-out;
 }
+/*
+ * off-registration effect is divided into 4 quadrants,
+ * ordered counter-clockwise
+ *           top
+ *    +-------+-------+
+ *    |       |       |
+ *  l |   2   |   1   | r
+ *  e |       |       | i
+ *  f +---------------+ g
+ *  t |       |       | h
+ *    |   3   |   4   | t
+ *    |       |       |
+ *    +-------+-------+
+ *          bottom
+ */
+ 
+/* top right */
+.off-register\:1::before { transform: translate( 0.2rem, -0.2rem); }
+.off-register\:1::after  { transform: translate(-0.2rem,  0.2rem); }
+
+/* top left */
+.off-register\:2::before { transform: translate(-0.2rem, -0.2rem); }
+.off-register\:2::after  { transform: translate( 0.2rem,  0.2rem); }
+
+/* bottom left */
+.off-register\:3::before { transform: translate(-0.2rem,  0.2rem); }
+.off-register\:3::after  { transform: translate( 0.2rem, -0.2rem); }
+
+/* bottom right */
+.off-register\:4::before { transform: translate( 0.2rem,  0.2rem); }
+.off-register\:4::after  { transform: translate(-0.2rem, -0.2rem); }
+
+/* .off-register::before { */
+/*   transform: translateZ(1rem); */ 
+/* } */
+/* .off-register::after { */
+/*   transform: translateY(-1rem); */ 
+/* } */

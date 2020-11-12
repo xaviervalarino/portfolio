@@ -20,7 +20,7 @@ ${ partials/head() }
   ${ partials/masthead() }
   <section class="r-grid columns:6 column-s:3 padding">
     <div class="r-cell span:1-4">
-      <h1 class="xxxlarge off-register" data-echo="$landing.title$">$landing.title$</h1>
+      <h1 class="xxxlarge registration" data-echo="$landing.title$">$landing.title$</h1>
     </div>
     <div class="r-cell span:3-5">
       <p class="large">$landing.mission_statement$</p>
@@ -47,7 +47,8 @@ ${ partials/head() }
 $for(include-after)$
   $include-after$
 $endfor$
+
 <script>${ debug.js() }</script>
-<script src="off-reg-effect.js" async>
+<script type="text/javascript" src="off-register.js" async defer></script>
 </body>
 </html>
