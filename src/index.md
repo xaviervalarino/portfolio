@@ -1,9 +1,9 @@
 ---
-title: X R V
+title: XV
 template: index.html
 landing:
-    title: product designer
     mission_statement: The tools we use are meant to be practical—I navigate the complexity of your software so your customers don't have to.
+    description: Just like CMYK printing process, the details of a design are usually imperceptible when everything lines up.
 toc:
     title: Case Studies
     id: case-studies
