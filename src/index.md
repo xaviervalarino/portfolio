@@ -1,5 +1,5 @@
 ---
-title: XV
+title: Home
 template: index.html
 landing:
     mission_statement: The tools we use are meant to be practical—I navigate the complexity of your software so your customers don't have to.

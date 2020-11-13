@@ -1,5 +1,5 @@
 ---
-title: XRV » About
+title: About
 ---
 
 # About Me {.r-cell .large .span:1-2 .align-r }
