@@ -1,63 +1,38 @@
 (function () {
   const el = document.querySelector('.registration');
-  const rects = el.getClientRects()[0];
-  // const offRegistration {
-  let quadrant;
+  let lastScrollTop = 0;
+  let isScrolling;
+  let lastClass; 
 
-  function getQuadrant (e) {
-    let quadrant = [];
-    const coordinates = {}
-    // note: position idenfitiers are counter-clockwise
-    coordinates.lat = {
-      id: [ [2,3], [1,4] ],
-      dimension: {
-        left: e.x - rects.left,
-        right: rects.right - e.x,
-      }
-    },
-    coordinates.lon = {
-      id: [ [1,2], [3,4] ],
-      dimension: {
-        top: e.y - rects.top,
-        bottom: rects.bottom - e.y,
-      },
-    }
-    Object.keys(coordinates).forEach( (pos) => {
-      let closestSide;
-      const d = coordinates[pos].dimension;
-      const side = Object.entries(d).map( (side) => {
-        return side[0];
-      });
-      // test for shortest distance 
-      closestSide = d[side[0]] < d[side[1]] ?
-        coordinates[pos].id[0] :
-        coordinates[pos].id[1] ;
-      quadrant = quadrant.concat(closestSide)
-    });
-    quadrant= quadrant.filter( (el, i, arr) => {
-      if  (el, arr.lastIndexOf(el) !== i ) {
-        return el;
-      }
-    });
-    return quadrant[0];
-  }
-  el.addEventListener('mousemove', function (e) {
-    const last = quadrant;
-    const current =  getQuadrant(e);
-    if (current !== last) {
-      requestAnimationFrame( () => {
-          el.classList.remove(`off-register:${last}`)
-          el.classList.add(`off-register:${current}`)
-      });
-      console.log(quadrant)
-      quadrant = current;
-    }
-  });
-  el.addEventListener('mouseout', function () {
+  function changeOffRegisterStyle (last, current) {
     requestAnimationFrame( () => {
-      el.classList.remove(`off-register:${quadrant}`) 
+       if ( last) {
+         el.classList.remove(`off-register:${last}`)
+       }
+       if (current) {
+         el.classList.add(`off-register:${current}`)
+       }
     });
-    console.log('mouseout')
-  });
-}());
+  return current;
+  }
+  window.addEventListener("scroll", () => { 
+    const position = window.pageYOffset || document.documentElement.scrollTop; 
+    const distance =  position - el.offsetTop; 
+    let currentClass; 
+    if ( position < 50 ) { currentClass = '' } 
+    else if ( position < 250 ) { currentClass = 's' } 
+    else if ( position < 450 ) { currentClass = 'm' } 
+    else { currentClass = 'l' } 
+    console.log(currentClass, position)
+    lastClass = changeOffRegisterStyle(lastClass, currentClass);
 
+    lastScrollTop = position <= 0 ? 0 : position; // For Mobile or negative scrolling
+
+    // isScrolling = setTimeout( () => {
+    //   console.log('timeout over')
+    //   lastClass = changeOffRegisterStyle(lastClass, '');
+    // }, 2000)
+}, false);
+ 
+  window.on
+} ())
