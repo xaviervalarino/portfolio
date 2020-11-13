@@ -7,6 +7,7 @@ Tools used for building the site:
 * `cat`
 * `nodeJS`
 * `pandoc`
+* `ffmpeg`
 
 Also, using `git-lfs` for storing binary files (mockups).
 
@@ -25,6 +26,7 @@ npm run build:fonts      Copy fonts directory to distribution dir
 npm run build:html       Convert Markdown files into HTML
 npm run build:img        Optimize images
 npm run build:js         Copy JS files to distribution dir
+npm run build:video      Convert and compress videos in '/assets' directory 
 npm run clean            Run all clean scripts
 npm run clean:html       Delete HTML files in distribution dir
 npm run clean:img        Delete all image files in distribution dir
@@ -36,6 +38,7 @@ npm run watch:html       Watch Markdown files, build changed file when there are
 npm run watch:img        Watch image files, build when there are changes
 npm run watch:js         Watch JS files, run build:js when changed
 npm run watch:template   Watch template, rebuild all markdown files when changed
+npm run watch:video      Watch for changes in /assets,run build ffmpeg script
 ```
 
 ## Templates
