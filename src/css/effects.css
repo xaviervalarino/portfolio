@@ -27,11 +27,29 @@
   transition: transform 1s ease-out;
 }
 
-.off-register\:s::before { transform: translate( 0rem, -0.2rem); }
-.off-register\:s::after  { transform: translate( 0rem,  0.2rem); }
+.off-register\:1::before { transform: translate( 0rem, -0.1rem); }
+.off-register\:1::after  { transform: translate( 0rem,  0.1rem); }
 
-.off-register\:m::before { transform: translate( 0rem, -0.4rem); }
-.off-register\:m::after  { transform: translate( 0rem,  0.4rem); }
+.off-register\:2::before { transform: translate( 0rem, -0.2rem); }
+.off-register\:2::after  { transform: translate( 0rem,  0.2rem); }
 
-.off-register\:l::before { transform: translate( 0rem, -0.8rem); }
-.off-register\:l::after  { transform: translate( 0rem,  0.8rem); }
+.off-register\:3::before { transform: translate( 0rem, -0.3rem); }
+.off-register\:3::after  { transform: translate( 0rem,  0.3rem); }
+
+.off-register\:4::before { transform: translate( 0rem, -0.4rem); }
+.off-register\:4::after  { transform: translate( 0rem,  0.4rem); }
+
+.off-register\:5::before { transform: translate( 0rem, -0.5rem); }
+.off-register\:5::after  { transform: translate( 0rem,  0.5rem); }
+
+.off-register\:6::before { transform: translate( 0rem, -0.6rem); }
+.off-register\:6::after  { transform: translate( 0rem,  0.6rem); }
+
+.off-register\:7::before { transform: translate( 0rem, -0.7rem); }
+.off-register\:7::after  { transform: translate( 0rem,  0.7rem); }
+
+.off-register\:8::before { transform: translate( 0rem, -0.8rem); }
+.off-register\:8::after  { transform: translate( 0rem,  0.8rem); }
+
+.off-register\:9::before { transform: translate( 0rem, -0.9rem); }
+.off-register\:9::after  { transform: translate( 0rem,  0.9rem); }
