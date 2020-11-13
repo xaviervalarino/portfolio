@@ -9,22 +9,26 @@
   $endfor$
   ${ partials/masthead() }
   <section class="r-grid columns:6 column-s:3 padding">
-    <div class="r-cell span:1-4">
-      <h1 class="xxxlarge registration" data-echo="$landing.title$">$landing.title$</h1>
-    </div>
-    <div class="r-cell span:3-5">
-      <p class="large">$landing.mission_statement$</p>
+    <div class="r-cell span:row justify:center">
+      <h1 class="font:light registration"
+	  data-echo="$landing.mission_statement$">
+	$landing.mission_statement$
+      </h1>
     </div>
   </section>
 
-  <section class="r-grid columns:6 column-s3 padding">
-    <h2 id="$toc.id$" class="r-cell large span:2+1 cross4 justify-v:center align-r">$toc.title$</h2>
+  <section class="r-grid columns:6 column-s3 padding margin-top">
+    <div class="r-cell span:1+2 cross4 justify-v:center">
+      <h2 id="$toc.id$" class="large align-r padding-bottom margin-left ">
+	$toc.title$
+      </h2>
+    </div>
     <nav class="r-cell passthrough">
       $for(toc.projects)$
       <a href="$toc.projects.href$" class="r-cell span:4+3 padding-bottom:s">
 	<section>
-	  <p class="smallcaps outdent:1">↘&numsp;project</p>
-	  <div class="border-left:h3 padding-left:s ">
+	  <p class="font:smallcaps outdent:1">↘&numsp;project</p>
+	  <div class="border-left padding-left">
 	    <h3>$toc.projects.title$</h3>
 	    <p>$toc.projects.subtitle$</p>
 	  </div>
