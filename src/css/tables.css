@@ -1,0 +1,22 @@
+/* table */
+table {
+  border: var(--size-4) solid var(--dark);
+}
+thead {
+  font-weight: 600;
+  border-bottom-width: var(--size-4);
+}
+tr {
+  border: var(--size-5) solid var(--dark);
+}
+td, th {
+  padding: var(--size-1) 0;
+}
+td:first-child,
+th:first-child {
+  padding-left: var(--size-1);
+}
+td:last-child,
+th:last-child {
+  padding-right: var(--size-1);
+}
