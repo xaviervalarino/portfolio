@@ -2,12 +2,29 @@
  * ELEMENTS
  */
 
-/* block */
-address, article, aside, blockquote, dd, dl, dt, fieldset, figure, form,
-h1, h2, h3, h4, h5, h6, li, nav, ol, p, pre, table, tfoot, ul, video {
-   margin-top: var(--blockSpacingTop);
-  margin-bottom: var(--blockSpacingBottom);
+/* measure */
+* {
+  max-width: var(--measure);
 }
+
+html,
+body,
+div,
+header,
+nav,
+main,
+article,
+section,
+footer {
+  max-width: none;
+}
+
+/* block */
+/* address, article, aside, blockquote, dd, dl, dt, fieldset, figure, form, */
+/* h1, h2, h3, h4, h5, h6, li, nav, ol, p, pre, table, tfoot, ul, video { */
+/*    margin-top: var(--blockSpacingTop); */
+/*   margin-bottom: var(--blockSpacingBottom); */
+/* } */
 
 /* first|last element has no top|bottom margin */
 /* :first-child { margin-top: unset; } */

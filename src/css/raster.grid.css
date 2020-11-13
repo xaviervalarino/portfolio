@@ -229,7 +229,7 @@
 
 /* .debug can be added to a .r-grid to visualize its effective cells */
 .r-grid.debug {
- box-shadow: inset 0 0 0 2px rgba(50,50,50,0.3); 
+ box-shadow: inset 0 0 0 1px rgba(50,50,50,0.3); 
 }
 .r-grid.debug *.r-cell {
   --color: rgba(248,110,91 ,0.3);

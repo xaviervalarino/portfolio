@@ -3,46 +3,69 @@
  */
 
 :root {
-  /* Veiwport-relative (100% / EMs-across-viewport) */
-  --fontSize: calc(100vw / 80);
-
-  @media only screen and (max-width: 600px) {
-    :root {
-      --fontSize: calc(100vw / 30);
-    }
-  }
-
-  --displayFont: "Uxum Grotesque";
-  --bodyFont: "Inter";
 
   /* colors */
   --cyan: #009cdd;
   --magenta: #d60078;
   --yellow: #fedd00;
   --black:  #1b1e23; /*midnight black*/
-  --dark: #555;
+  --dark: #777;
+
+
+  --font-body: "Inter";
+  --font-display: "Uxum Grotesque";
+
+  --font-size: calc(0.333vw + 1rem);
+  
+  --ratio: 1.4;
+
+  /* Scale is exponential
+   * if 1rem is 16px
+   *  -5: 16 / 1.4 / 1.4 / 1.4 / 1.4 / 1.4 = 2.9
+   *  -4: 16 / 1.4 / 1.4 / 1.4 / 1.4 = 4.2 
+   *  -3: 16 / 1.4 / 1.4 / 1.4 = 5.8 
+   *  -2: 16 / 1.4 / 1.4 = 8.6 
+   *  -1: 16 / 1.4 = 11.428 
+   *   0: 16
+   *   1: 16 * 1.4 = 22.4
+   *   2: 16 * 1.4 * 1.4 = 31.4
+   *   3: 16 * 1.4 * 1.4 * 1.4 = 43.9
+   *   4: 16 * 1.4 * 1.4 * 1.4 * 1.4 = 61.5
+   *   5: 16 * 1.4 * 1.4 * 1.4 * 1.4 * 1.4 = 86.l
+   */
+  --size-6: calc(var(--size-5) / var(--ratio));
+  --size-5: calc(var(--size-4) / var(--ratio));
+  --size-4: calc(var(--size-3) / var(--ratio));
+  --size-3: calc(var(--size-2) / var(--ratio));
+  --size-2: calc(var(--size-1) / var(--ratio));
+  --size-1: calc(var(--size0) / var(--ratio));
+  --size0: 1rem;
+  --size1: calc(var(--size0) * var(--ratio));
+  --size2: calc(var(--size1) * var(--ratio));
+  --size3: calc(var(--size2) * var(--ratio));
+  --size4: calc(var(--size3) * var(--ratio));
+  --size5: calc(var(--size4) * var(--ratio));
+  --size6: calc(var(--size5) * var(--ratio));
+  --size7: calc(var(--size6) * var(--ratio));
 
   /* line height is the basis for vertical spacing */
-  --lineHeight: calc(var(--fontSize) * 1.5);
+  --line-height: calc(var(--ratio));
+  --line-height-small: calc(0.7 * var(--ratio));
+
+  /* max character width for text */
+  --measure: 60ch;
+
+  /* Use a relative point size for border widths */
+  --1pt: calc( var(--font-size) / 12 );
+  --2pt: calc( var(--1pt) * 2 );
+  --3pt: calc( var(--1pt) * 3 );
+  --4pt: calc( var(--1pt) * 4 );
+  --5pt: calc( var(--1pt) * 5 );
 
   /* horizontal and vertical spacing basis */
-  --baseline: calc(var(--lineHeight) / 2);
+  --baseline: calc( var(--font-size) * var(--line-height) / 2);
 
-  /* spacing around blocks */
-  --blockSpacingTop: 0px;
-  --blockSpacingBottom: var(--lineHeight);
-
-  /* horizontal rule */
-  /* TODO: <hr> thickness em so it's proportional to the heading? */
-  --hrThickness: 2px;
-
-  /* heading size */
-  /* TODO: consider a typographic scale based on device size */
-  --h1-size: 2.8rem;
-  --h2-size: 2.2rem;
-  --h3-size: 1.4rem;
-  --h4-size: 1.1rem;
-  
   /* Lists */
   --list-indentation: 2em;
+
 }

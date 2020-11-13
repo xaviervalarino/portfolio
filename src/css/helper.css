@@ -2,9 +2,35 @@
  * HELPERS
  */
 
+
+/*
+ * Test classes
+ * used for showing what the utility clases are doing
+ * check /test.html
+ */
+.test {
+  background: #e5e5e5;
+}
+.test div {
+  text-align: center;
+}
+
+.test > .r-cell {
+  background: cyan;
+  overflow: visible;
+  align-self: center;
+}
+
+.test > .r-cell > div {
+  height: 100%;
+  background: salmon;
+}
+
 /* Show baseline grid */
 body.baseline { position: relative } 
 body.baseline::after {
+  --line: calc( var(--1pt) / 2);
+
   content: " ";
   position: absolute;
   top: 0;
@@ -12,21 +38,19 @@ body.baseline::after {
   bottom: 0;
   right: 0;
   pointer-events: none;
-
-  --base-grid-color1: DeepSkyBlue;
-  --base-grid-color2: cyan;
   mix-blend-mode: colorBurn;
   opacity: 0.5;
   background-image: repeating-linear-gradient(
     0deg,
-    var(--base-grid-color2),
-    var(--base-grid-color2) 1px,transparent 0,
-    transparent calc(var(--baseline)/2),
-    var(--base-grid-color1) calc(var(--baseline)/2),
-    var(--base-grid-color1) calc(var(--baseline)/2 + 1px),
-    transparent calc(var(--baseline)/2 + 1px),transparent var(--baseline)
+    transparent,
+    var(--cyan),
+    var(--cyan) var(--line),transparent 0,
+    transparent calc(var(--baseline) / 2 + var(--line))
+    /* var(--magenta) var(--baseline), */
+    /* var(--magenta) calc(var(--baseline) / 2 + var(--line)), */
+    /* transparent calc(var(--baseline) / 2 + var(--line)),transparent var(--baseline) */
   );
   background-repeat: repeat-y;
   background-size: 100% var(--baseline);
-  /* background-position: 0 .5px; */
+  background-position: 0 calc( var(--line) / 2 );
 }
