@@ -3,18 +3,18 @@ A portfolio website built with Pandoc and NPM scripts.
 
 ## Dependencies
 Tools used for building the site:
-* `cp`
-* `cat`
-* `nodeJS`
-* `pandoc`
-* `ffmpeg`
 
-Also, using `git-lfs` for storing binary files (mockups).
-
+| tools            | version | use                                                                            |
+| ---              | ---     | --                                                                             |
+| **`core-utils`** |  -      | for commands like **`cp`**, **`cat`**, **`mkdir`**,                            |
+| **`nodeJS`**     | 12.11   | running build scripts through NPM, watching for changes, and optimizing images |
+| **`pandoc`**     | 2.11    | converting Markdown to HTML                                                    |
+| **`ffmpeg`**     | 4.3.1   | converting and compressing videos                                              |
+| **`git-lfs`**    | 2.13    | storing binary files ( images, source files for mockups                        |
 
 ## Directory structure
-* `src`:  "Source" folder contains all the working files.
-* `dist`: "Distribution"—where all the source files are outputted after compilation
+- **`src`:**  "Source" folder contains all the working files.
+- **`dist`:** "Distribution"—where all the source files are outputted after compilation
 
 ## Commands
 NPM scripts are used build the site. 
