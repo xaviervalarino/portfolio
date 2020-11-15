@@ -6,7 +6,7 @@ Tools used for building the site:
 
 | tools            | version | use                                                                            |
 | ---              | ---     | --                                                                             |
-| **`core-utils`** |  -      | for commands like **`cp`**, **`cat`**, **`mkdir`**,                            |
+| **`core-utils`** |  -      | for commands like **`cp`**, **`cat`**, **`mkdir`**                             |
 | **`nodeJS`**     | 12.11   | running build scripts through NPM, watching for changes, and optimizing images |
 | **`pandoc`**     | 2.11    | converting Markdown to HTML                                                    |
 | **`ffmpeg`**     | 4.3.1   | converting and compressing videos                                              |
