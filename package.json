@@ -26,7 +26,7 @@
     "watch:html": "chokidar \"./src/**/*.md\" -c \"[ '{event}' = 'change' ] && ./scripts/convert_md.sh {path}\"",
     "watch:img": "chokidar \"./src/img/**/*\" -c \"[ '{event}' = 'change' ] && imagemin {path} --out-dir=./dist/img\"",
     "watch:js": "chokidar \"./src/*.js\" -c \"npm run build:js\"",
-    "watch:template": "chokidar \"./src/templates/\" -c \"./scripts/convert_md.sh\",
+    "watch:template": "chokidar \"./src/templates/\" -c \"./scripts/convert_md.sh\"",
     "watch:video": "chokidar \"./src/assets/*\" -c \"npm run build:video\""
   },
   "stylelint": {
