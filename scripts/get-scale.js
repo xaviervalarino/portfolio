@@ -1,7 +1,5 @@
 #!/usr/bin/env node
 
-// simple script for getting typographic scales
-// useful when mocking up different devices
 const message = `
 GET SCALE
 A simple script for getting typographic scales
@@ -15,7 +13,7 @@ ex. "./get-scale.js 16 1.4"
 
 const args = process.argv
 
-if ( !args[2] && !args[3] ) {
+if ( !args[2] || !args[3] ) {
   console.log(message)
   process.exit(1)
 }
