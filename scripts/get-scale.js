@@ -22,7 +22,7 @@ function getScale (base, ratio) {
   const scale = [];
   // base = parseFloat(base);
   // ratio = parseFloat(ratio);
-  for ( let i = 7; i > 0 ; i--) {
+  for ( let i = 6; i > 0 ; i--) {
     scale.push( Number.parseFloat(base / Math.pow(ratio, i) ).toFixed(2) )
   };
   scale.push(base);
