@@ -15,6 +15,7 @@ ${ partials/head() }
 $for(include-after)$
   $include-after$
 $endfor$
-<script>${ debug.js() }</script>
-</body>
+    ${ partials/footer() }
+    ${ partials/scripts() }
+  </body>
 </html>
