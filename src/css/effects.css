@@ -4,19 +4,15 @@
 
 .registration {
   position: relative;
-  color: var(--magenta);
-}
-.registration::before {
-  color: var(--yellow);
-}
-.registration::after {
   color: var(--cyan);
 }
 .registration,
 .registration::before,
 .registration::after {
-  mix-blend-mode: multiply;
   transition: transform 1s ease-out;
+  /* clean up overshoot wierdness */
+  animation-iteration-count: 1;
+  animation-fill-mode: both;  
 }
 .registration::before,
 .registration::after {
@@ -24,31 +20,31 @@
   position: absolute;
   top: 0;
   left: 0;
+  transform: translateY(var(--position));
 }
 
-.off-register\:1::before { transform: translate( 0rem, -0.1rem); }
-.off-register\:1::after  { transform: translate( 0rem,  0.1rem); }
+/* off-register seperates vertically */
 
-.off-register\:2::before { transform: translate( 0rem, -0.2rem); }
-.off-register\:2::after  { transform: translate( 0rem,  0.2rem); }
+/* .registration::before { */
+/*   --position: calc( var(--scroll) * 20px ); */
+/*   color: var(--yellow); */
+/* } */
+/* .registration::after { */
+/*   --position: calc( var(--scroll) * 10px ); */
+/*   color: var(--magenta); */
+/* } */
 
-.off-register\:3::before { transform: translate( 0rem, -0.3rem); }
-.off-register\:3::after  { transform: translate( 0rem,  0.3rem); }
+/* alternate version */
+/* off-register seperates diagonally */
 
-.off-register\:4::before { transform: translate( 0rem, -0.4rem); }
-.off-register\:4::after  { transform: translate( 0rem,  0.4rem); }
-
-.off-register\:5::before { transform: translate( 0rem, -0.5rem); }
-.off-register\:5::after  { transform: translate( 0rem,  0.5rem); }
-
-.off-register\:6::before { transform: translate( 0rem, -0.6rem); }
-.off-register\:6::after  { transform: translate( 0rem,  0.6rem); }
-
-.off-register\:7::before { transform: translate( 0rem, -0.7rem); }
-.off-register\:7::after  { transform: translate( 0rem,  0.7rem); }
-
-.off-register\:8::before { transform: translate( 0rem, -0.8rem); }
-.off-register\:8::after  { transform: translate( 0rem,  0.8rem); }
-
-.off-register\:9::before { transform: translate( 0rem, -0.9rem); }
-.off-register\:9::after  { transform: translate( 0rem,  0.9rem); }
+/* .registration::before { */
+.registration::before {
+  --position: calc( var(--scroll) * 10px );
+  color: var(--magenta);
+  transform: translate(var(--position), var(--position));
+}
+.registration::after {
+  --position: calc( var(--scroll) * -10px );
+  color: var(--yellow);
+  transform: translate(var(--position), var(--position));
+}
