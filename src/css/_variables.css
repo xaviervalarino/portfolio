@@ -67,5 +67,6 @@
 
   /* Lists */
   --list-indentation: 2em;
+  --grid-gap: var(--size0);
 
 }
