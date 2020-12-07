@@ -14,7 +14,7 @@
     "build:fonts": "cp -rfv ./src/fonts ./dist",
     "build:html": "./scripts/convert_md.sh",
     "build:img": "npm run clean:img && imagemin \"./src/img/**\" --out-dir=\"./dist/img\"",
-    "build:js": "cp -rv ./src/js ./dist/",
+    "build:js": "cat ./src/js/*.js > ./dist/bundle.js",
     "build:video": "./scripts/ffmpeg.sh",
     "clean": "rimraf \"./dist/*\"",
     "clean:html": "rimraf \"./dist/**/*.html\"",
