@@ -1,5 +1,7 @@
+
 /*
- * VARIABLES
+ * Variables
+ * * * * * *
  */
 
 :root {
@@ -10,7 +12,6 @@
   --yellow: #fedd00;
   --black:  #1b1e23; /*midnight black*/
   --dark: #777;
-
 
   --font-body: "Inter";
   --font-display: "Uxum Grotesque";
