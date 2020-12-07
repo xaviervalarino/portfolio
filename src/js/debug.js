@@ -1,29 +1,48 @@
-const body = document.querySelectorAll('body')
-const grids = document.querySelectorAll('.r-grid');
+// Debug
+(function(){
+  let fontSize = getFontSize()
 
-function toggleTextContent (span) {   
-  span.textContent = span.textContent === 'OFF' ? 'ON' : 'OFF';
+  function bodyWidth () {
+    return Math.round( document.body.clientWidth);
+  }
+  function getFontSize () {
+    var value = parseFloat(getComputedStyle(document.documentElement).fontSize);
+    return Math.round( value * 10)/ 10 // round to one decimal place
+  }
+  // TODO: collapse these three into one function
+  function setWidthReadout (value) {
+    document.querySelector('#width-readout').textContent = value + "px";
+  }
+  function setFontSizeReadout (fontSize) {
+    document.querySelector('#fontsize-readout').textContent = fontSize + "px";
+  }
+  function toggleTextContent (span) {   
+    span.textContent = span.textContent === 'OFF' ? 'ON' : 'OFF';
+  }
 
-}
+  // initial
+  setWidthReadout(bodyWidth());
+  setFontSizeReadout(fontSize)
 
-function toggleClasses (nodeList, className) {
-  Array.prototype.forEach.call(nodeList, el => {
-    el.classList.toggle(className);
+  window.addEventListener("resize", () => {
+    fontSize = getFontSize();
+    setFontSizeReadout(fontSize)
+    setWidthReadout(bodyWidth())
   });
-}
 
-document.querySelector('#debug-toggle')
-  .addEventListener('click', function () {
-    let span = this.querySelector('span');
-    toggleTextContent(span);
-    toggleClasses(grids, 'debug');
-  })
-;
+  document.querySelector('#column-toggle')
+    .addEventListener('click', function () {
+      let span = this.querySelector('span');
+      toggleTextContent(span);
+      document.body.classList.toggle('grid-columns');
+    })
+  ;
 
-document.querySelector('#baseline-toggle')
-  .addEventListener('click', function () {
-    let span = this.querySelector('span');
-    toggleTextContent(span);
-    toggleClasses(body, 'baseline');
-  })
-;
+  document.querySelector('#baseline-toggle')
+    .addEventListener('click', function () {
+      let span = this.querySelector('span');
+      toggleTextContent(span);
+      document.body.classList.toggle('baseline');
+    })
+  ;
+}());
