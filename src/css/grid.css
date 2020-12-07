@@ -1,0 +1,72 @@
+
+/*
+ * Grid
+ * ::::
+ */
+
+/*
+ * Note: `.subrid` is a kludge
+ * Ideally, we would pass `display: passthrough`, or better yet, `display: subgrid`
+ * it's a double workaround: poor browser support, and Pandoc's DOM
+ * doesn't allow classes or attributes to be applied to ol/ul lists,
+ * so we'll just reach in from the top with inheritance.
+ */
+
+.grid,
+.subgrid,
+.subgrid > ul,
+.subgrid > ol {
+  display: grid;
+  grid-gap: var(--grid-gap);
+  grid-template-columns: repeat( var(--subgrid-tc, var(--grid-tc)), 1fr );
+}
+.grid {
+  --grid-tc: 6;
+}
+.subgrid {
+  --grid-tc: calc( var(--grid-ce) - var(--grid-cs) );
+}
+.grid * {
+  /* default grid cell behavior: span all columns */
+  --grid-cs: 1;
+  --grid-ce: 7;
+  grid-column-start: var(--grid-cs);
+  grid-column-end: var(--grid-ce);
+}
+.subgrid * {
+  --subgrid-ce: calc( var(--grid-tc) + 1 );
+  grid-column-end: var(--subgrid-ce);
+}
+.subgrid > .subgrid,
+.subgrid > ul,
+.subgrid > ol {
+  --subgrid-tc: calc( var(--subgrid-ce) - var(--grid-cs) );
+}
+
+/*
+ * Grid composable classes
+ * Hijacking `span` to specify alignment along grid columns
+ * inspired by @rsms raster.grid: https://rsms.me/raster/
+ */
+
+/* column start */
+.grid [span^="1/"] { --grid-cs: 1; }
+.grid [span^="2/"] { --grid-cs: 2; }
+.grid [span^="3/"] { --grid-cs: 3; }
+.grid [span^="4/"] { --grid-cs: 4; }
+.grid [span^="5/"] { --grid-cs: 5; }
+.grid [span^="6/"] { --grid-cs: 6; }
+/* column end */
+.grid [span$="/1"] { --grid-ce: 2; }
+.grid [span$="/2"] { --grid-ce: 3; }
+.grid [span$="/3"] { --grid-ce: 4; }
+.grid [span$="/4"] { --grid-ce: 5; }
+.grid [span$="/5"] { --grid-ce: 6; }
+.grid [span$="/6"] { --grid-ce: 7; }
+/* column end */
+.subgrid [span$="/1"] { --subgrid-ce: 2; }
+.subgrid [span$="/2"] { --subgrid-ce: 3; }
+.subgrid [span$="/3"] { --subgrid-ce: 4; }
+.subgrid [span$="/4"] { --subgrid-ce: 5; }
+.subgrid [span$="/5"] { --subgrid-ce: 6; }
+.subgrid [span$="/6"] { --subgrid-ce: 7; }
