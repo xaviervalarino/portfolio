@@ -1,0 +1,74 @@
+
+/*
+ * Masthead
+ * ::::::::
+ */
+.masthead {
+  margin-bottom: var(--size5);
+}
+.masthead h2 {
+  --grid-ce: 2;
+}
+.masthead button {
+  display: none;
+}
+.masthead nav  {
+  --grid-cs: 2;
+}
+.masthead li {
+  --grid-cs: auto;
+  --subgrid-ce: auto;
+}
+.masthead  li[aria-current] {
+  --subgrid-ce: span 3;
+  font-weight: bold;
+}
+.masthead li a {
+  display: block;
+}
+
+@media only screen and (max-width: 700px) {
+  .masthead h2 {
+    --grid-ce: 4;
+  }
+  .masthead nav {
+    --grid-cs: 1;
+    --grid-gap: 0;
+  }
+  .masthead li,
+  .masthead li[aria-current=page] {
+    --grid-cs: 1;
+    --subgrid-ce: 7;
+  }
+  .with-js .masthead li[aria-current=page] {
+    grid-row-end: 4;
+    display: block;
+  }
+  /* with javascript enabled */
+  .with-js .masthead li {
+    display: none;
+  }
+  .with-js [aria-expanded=true] + nav li {
+    display: block;
+  }
+  .with-js .masthead button {
+    --grid-cs: 5;
+    --grid-ce: 7;
+    display: inline-block;
+    border: none;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+    text-decoration: none;
+    background: unset;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 250ms ease-in-out, 
+                transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  .masthead button:active {
+      transform: scale(0.99);
+  }
+}

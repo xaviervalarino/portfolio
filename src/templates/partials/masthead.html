@@ -1,15 +1,44 @@
-<header class="r-grid columns:6 columns-s:3 padding">
-  <div "r-cell">
-    <p id="debug-toggle">DEBUG: <span>OFF</span></p>
-    <p id="baseline-toggle">BASELINE: <span>OFF</span></p>
-  </div>
-  <nav class="r-cell span:5.." role="navigation">
-    <ul>
-      <li><h2><a class="" href="/">Xavier</br>Valarino</a></h2></li>
-      <li><a href="/#case-studies">Work</a>
-	$if(case-study)$ &#10095; $title$ $endif$
-      </li>
-      <li class="padding-top"><a href="/about.html">About</a></li>
+
+<header class="masthead grid">
+  <a href="#" hidden> Skip to content </a>
+  <h2 href="/" class="h4">Xavier Valarino</h2>
+  <button aria-expanded="false">
+    <span>
+      <svg class="hamberder" focusable="false" viewBox="0 0 32 32">
+	<path d="M3,3 29,3 M3,16 29,16 M3,29 29,29"></path>
+      </svg> 
+    </span>
+    Menu
+  </button>
+  <nav class="subgrid" aria-label="main menu">
+    <ul >
+      <li $if(masthead.home)$aria-current="page"$endif$><a href="/">Home</a></li>
+      <li $if(masthead.work)$aria-current="page"$endif$><a href="/work.html">Work</a></li>
+      <li $if(masthead.about)$aria-current="page"$endif$><a href="/about.html">About</a></li>
     </ul>
   </nav>
+</header>
+<!-- old --> 
+<header hidden>
+  <nav role="navigation">
+    <ul class="masthead grid" id="$id$" role="list">
+      <li class="border-top h4">
+	<a href="/">Xavier Valarino</a>
+      </li>
+      <li class="border-top $if(masthead.home)$font:bold"
+	  aria-current="page"$endif$>
+	<a href="/">Home</a>
+      </li>
+      <li class="border-top $if(masthead.work)$font:bold"
+	  aria-current="page"$endif$>
+	<a href="/">Work</a>
+      </li>
+      <li class="border-top $if(masthead.about)$font:bold"
+	  aria-current="page"$endif$>
+	<a href="/">About</a>
+      </li>
+    </ul>
+  </nav>
+  <script> 
+  </script>
 </header>
