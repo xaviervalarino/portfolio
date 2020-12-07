@@ -62,11 +62,18 @@
   --4pt: calc( var(--1pt) * 4 );
   --5pt: calc( var(--1pt) * 5 );
 
-  /* horizontal and vertical spacing basis */
-  --baseline: calc( var(--font-size) * var(--line-height) / 2);
-
-  /* Lists */
-  --list-indentation: 2em;
   --grid-gap: var(--size0);
+}
 
+/* Use a tighter scale on mobile */
+@media only screen and (max-width: 600px) {
+  :root {
+    --ratio:  1.3;
+    --grid-gap: var(--size-1);
+  }
+}
+@media only screen and (max-width: 400px) {
+  :root {
+    --font-size: 1rem;
+  }
 }
