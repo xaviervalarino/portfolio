@@ -50,7 +50,7 @@
 
   /* line height is the basis for vertical spacing */
   --line-height: calc(var(--ratio));
-  --line-height-small: calc(0.7 * var(--ratio));
+  --line-height-small: 1;
 
   /* max character width for text */
   --measure: 60ch;
