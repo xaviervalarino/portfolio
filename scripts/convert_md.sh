@@ -46,6 +46,7 @@ convert() {
 
   # convert the markdown to HTML
   pandoc "$1" \
+    --variable date="$(date +%m-%d-%Y%n)" \
     --template "$(get_template $1)" \
     --lua-filter $PWD/scripts/links-filter.lua \
     --strip-comments \
