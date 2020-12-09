@@ -14,11 +14,12 @@
 
 .grid,
 .subgrid,
+.subgrid > .subgrid,
 .subgrid > ul,
 .subgrid > ol {
   display: grid;
-  grid-gap: var(--grid-gap);
   grid-template-columns: repeat( var(--subgrid-tc, var(--grid-tc)), 1fr );
+  grid-column-gap: var(--grid-gap);
 }
 .grid {
   --grid-tc: 6;
@@ -30,8 +31,7 @@
   /* default grid cell behavior: span all columns */
   --grid-cs: 1;
   --grid-ce: 7;
-  grid-column-start: var(--grid-cs);
-  grid-column-end: var(--grid-ce);
+  grid-column-start: var(--grid-cs); grid-column-end: var(--grid-ce);
 }
 .subgrid * {
   --subgrid-ce: calc( var(--grid-tc) + 1 );
@@ -41,6 +41,12 @@
 .subgrid > ul,
 .subgrid > ol {
   --subgrid-tc: calc( var(--subgrid-ce) - var(--grid-cs) );
+}
+.subgrid > .subgrid *,
+.subgrid > ul *,
+.subgrid > ol * {
+  --subsubgrid-ce: calc( var(--subgrid-tc) + 1 );
+  grid-column-end: var(--subsubgrid-ce);
 }
 
 /*
