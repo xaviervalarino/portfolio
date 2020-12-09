@@ -14,7 +14,7 @@
     "build:fonts": "cp -rfv ./src/fonts ./dist",
     "build:favicon": "cp -rfv ./src/assets/favicon ./dist/assets/",
     "build:html": "./scripts/convert_md.sh",
-    "build:img": "npm run clean:img && imagemin \"./src/img/**\" --out-dir=\"./dist/img\"",
+    "build:img": "npm run clean:img && imagemin \"./src/assets/img/**/*\" --out-dir=\"./dist/assets/img\"",
     "build:js": "cat ./src/js/*.js > ./dist/bundle.js",
     "build:video": "./scripts/ffmpeg.sh",
     "clean": "rimraf \"./dist/*\"",
@@ -26,7 +26,7 @@
     "watch": "npm run watch:css & npm run watch:html & npm run watch:img & npm run watch:js & npm run watch:template & npm run watch:video",
     "watch:css": "chokidar \"./src/css/\" -c \"[ '{event}' = 'change' ] && stylelint {path} && npm run build:css\"",
     "watch:html": "chokidar \"./src/**/*.md\" -c \"[ '{event}' = 'change' ] && ./scripts/convert_md.sh {path}\"",
-    "watch:img": "chokidar \"./src/img/**/*\" -c \"[ '{event}' = 'change' ] && imagemin {path} --out-dir=./dist/img\"",
+    "watch:img": "chokidar \"./src/assets/img/**/*\" -c \"[ '{event}' = 'change' ] && imagemin {path} --out-dir=./dist/assets/img\"",
     "watch:js": "chokidar \"./src/js/*.js\" -c \"npm run build:js\"",
     "watch:template": "chokidar \"./src/templates/\" -c \"./scripts/convert_md.sh\"",
     "watch:video": "chokidar \"./src/assets/*\" -c \"npm run build:video\""

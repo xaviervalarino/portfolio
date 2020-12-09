@@ -2,7 +2,7 @@
 - [x] mockups
 - [x] update to grid
 - [x] class overhaul
-- [ ] move images to assets folder
+- [x] move images to assets folder
 - [x] add favicon
 - [ ] Refactor indenter class
 - [ ] clean up About page markup/markdown
