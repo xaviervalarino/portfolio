@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-${ partials/head() }
-</head>
-<body>
-  $for(include-before)$
+  <head>
+    ${ partials/head() }
+  </head>
+  <body>
+    $for(include-before)$
     $include-before$
-  $endfor$
-  ${ partials/masthead() }
-  <article class="r-grid columns:6 column-s:3 padding">
-    <h1 class="r-cell xlarge span:1-5">$title$</h1>
-    $body$
-  </article>
-$for(include-after)$
-  $include-after$
-$endfor$
+    $endfor$
+    ${ partials/masthead() }
+    <main tabindex="-1">
+      <article class="grid">
+	<h1 class="title">$title$</h1>
+	$body$
+      </article>
+    </main>
     ${ partials/footer() }
     ${ partials/scripts() }
   </body>

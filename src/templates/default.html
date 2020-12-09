@@ -1,19 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-${ partials/head() }
-</head>
-<body>
-  $for(include-before)$
-    $include-before$
-  $endfor$
-  ${ partials/masthead() }
-  <section class="r-grid columns:6 column-s:3">
-    $body$
-  </section>
-  $for(include-after)$
-    $include-after$
-  $endfor$
+  <head>
+    ${ partials/head() }
+  </head>
+  <body>
+    ${ partials/masthead() }
+    <main class="grid" tabindex="-1">
+      $body$
+    </main>
     ${ partials/footer() }
     ${ partials/scripts() }
   </body>

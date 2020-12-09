@@ -1,48 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  ${ partials/head() }
-</head>
-<body>
-  $for(include-before)$
+  <head>
+    ${ partials/head() }
+  </head>
+  <body>
+    $for(include-before)$
     $include-before$
-  $endfor$
-  ${ partials/masthead() }
-  <section class="r-grid columns:6 column-s:3 padding">
-    <div class="r-cell span:row justify:center">
-      <h1 class="font:light registration"
-	  data-echo="$landing.mission_statement$"
-	  title="$landing.description$">
-	$landing.mission_statement$
-      </h1>
-    </div>
-  </section>
-
-  <section class="r-grid columns:6 column-s3 padding margin-top">
-    <div class="r-cell span:1+2 cross4 justify-v:center">
-      <h2 id="$toc.id$" class="large align-r padding-bottom margin-left ">
-	$toc.title$
-      </h2>
-    </div>
-    <nav class="r-cell passthrough">
-      $for(toc.projects)$
-      <a href="$toc.projects.href$" class="r-cell span:4+3 padding-bottom:s">
-	<section>
-	  <p class="font:smallcaps outdent:1">↘&numsp;project</p>
-	  <div class="border-left padding-left">
-	    <h3>$toc.projects.title$</h3>
-	    <p>$toc.projects.subtitle$</p>
-	  </div>
-	</section>
-      </a>
-      $endfor$
-    </nav>
-</div>
-
-$for(include-after)$
-  $include-after$
-$endfor$
-
+    $endfor$
+    ${ partials/masthead() }
+    <main tabindex="-1">
+      <div class="cover cinch-up:10rem pointer-events:none">
+	<h1 class="principal padding-stack:size5 registration multiply" data-echo="$landing.mission_statement$">
+	  $landing.mission_statement$
+	</h1>
+      </div>
+      <div class="stack margin cover:half" >
+	<p class="h2 font:light principal">
+	  $landing.hook$
+	</p>
+	<p class="h3">
+	  <a href="$landing.link.href$">
+	    <span class="font:light border-bottom:white" aria-hidden="true">→ </span>
+	    $landing.link.text$
+	  </a>
+	</p>
+      </div>
+    </main>
     ${ partials/footer() }
     ${ partials/scripts() }
   </body>
