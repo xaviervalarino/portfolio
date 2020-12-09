@@ -3,7 +3,7 @@
 - [x] update to grid
 - [x] class overhaul
 - [ ] move images to assets folder
-- [ ] add favicon
+- [x] add favicon
 - [ ] Refactor indenter class
 - [ ] clean up About page markup/markdown
 - [ ] Update README
