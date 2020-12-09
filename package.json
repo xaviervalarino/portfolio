@@ -30,6 +30,16 @@
     "watch:video": "chokidar \"./src/assets/video/*\" -c \"npm run build:video\""
   },
   "stylelint": {
-    "extends": "stylelint-config-recommended"
+    "extends": "stylelint-config-recommended",
+    "rules": {
+      "no-descending-specificity": [
+        true,
+        {
+          "ignore": [
+            "selectors-within-list"
+          ]
+        }
+      ]
+    }
   }
 }
