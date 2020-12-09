@@ -3,8 +3,8 @@
 # work in progress
 # TODO: work this into the build scripts
 # Add an assets directory, convert and place in dist
-src="$PWD/src/assets"
-dist="$PWD/dist/assets"
+src="$PWD/src/assets/video"
+dist="$PWD/dist/assets/video"
 
 if ! which ffmpeg > /dev/null
 then
