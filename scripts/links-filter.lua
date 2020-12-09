@@ -16,3 +16,12 @@ function Image (element)
   element.src = make_local_absolute(element.src)
   return element
 end
+
+-- TODO: add function for raw blocks? (e.g., video)
+-- search for url or href, operate on string between quotes
+-- function RawBlock (element)
+  -- if element.format == 'html
+  -- if element.value contains src or url
+  -- if that src or url starts with ../
+  -- run make_local_absolute
+-- end
