@@ -1,5 +1,4 @@
 {
-  "dependencies": {},
   "devDependencies": {
     "chokidar-cli": "^2.1.0",
     "imagemin-cli": "^6.0.0",
