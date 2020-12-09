@@ -1,0 +1,58 @@
+ol,
+ul {
+  list-style: none;  
+  margin-top: var(--size0);
+  margin-bottom:var(--size1);
+}
+ul > li,
+.list > *,
+.list-between > * + * {
+  --border-width: 1px;
+  border-top: var(--border-width) solid var(--border-color);
+}
+.list-between > a + a {
+  border-top-style: dotted;
+}
+.no-list > *,
+.no-list > li,
+.no-list > *:first-child,
+.no-list > *:last-child {
+  border-top: initial;
+}
+
+.list-between > *:first-child {
+  border-top: unset;
+}
+
+li,
+.list > * {
+  padding-top: calc(var(--size-2) - var(--border-width, 0px) );
+  padding-bottom: var(--size-2) ;
+}
+ol > li {
+  counter-increment: numbered;
+}
+ol > li::before {
+  content: counter(numbered);
+  display: block;
+  font-family: var(--font-display);
+  font-size: var(--size2);
+  font-weight: 400;
+}
+
+/* strike a line, but only between */
+/* article ul li + li { */
+/*   border-top: 1px solid var(--black); */
+/* } */
+
+li > ul {
+  margin-top: var(--size1);
+}
+
+/* split lists */
+@media only screen and (min-width: 720px) {
+  .split-lists li { 
+    --grid-cs: span 2;
+    grid-column-end: auto;
+  }
+}

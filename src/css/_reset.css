@@ -1,30 +1,80 @@
+
 /*
- * RESET
+ * Reset
+ * * * *
+ * https://hankchizljaw.com/wrote/a-modern-css-reset/
  */
 
-* {
-  font: inherit;
-  line-height: inherit;
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
-a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote,
-body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt,
-em, embed, fieldset, figcaption, figure, footer, form, grid, h1, h2, h3, h4, h5,
-h6, header, hgroup, hr, html, i, iframe, img, ins, kbd, label, legend, li, main,
-mark, menu, nav, noscript, object, ol, output, p, pre, q, s, samp, section,
-small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th,
-thead, time, tr, tt, u, ul, var, video {
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul,
+ol {
+  list-style: none;
   margin: 0;
   padding: 0;
-  border: 0;
-  vertical-align: baseline;
 }
-blockquote, q { quotes: none; }
-blockquote:before, blockquote:after, q:before, q:after {
-  content: "";
-  content: none;
+
+/* Set core root defaults */
+html {
+  scroll-behavior: smooth;
 }
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
 }
-a, a:active, a:visited { color: inherit; }
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

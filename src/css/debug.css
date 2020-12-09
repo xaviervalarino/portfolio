@@ -1,0 +1,62 @@
+.baseline {
+  --base: calc(var(--line-height) * 1em);
+  background-image: repeating-linear-gradient(
+    to bottom,
+    /* ascender */
+    gainsboro 0px,
+    transparent 1px,
+    /* x-height */ 
+    transparent calc( 1em - 1ex - 1px ),
+    powderblue calc( 1em - 1ex ),
+    transparent calc( 1em - 1ex + 1px ),
+    /* baseline */ 
+    transparent calc( 1em - 1px ),
+    cadetblue 1em,
+    /* descender */
+    transparent calc( 1em + 1px ),
+    transparent var(--base),
+    gainsboro calc( var(--base) + 1px )
+  );
+  background-repeat: repeat-y;
+  /* background-size: 100% var(--base); */
+  background-position: 0 var(--base);
+}
+
+/* show grid column gutters */
+.grid-columns {
+  position: relative;
+}
+.grid-columns::before {
+  --width: calc( 100% - (2 * var(--padding)) );
+  /* 6 columns / 5 gaps */
+  --gaps: calc(  5 * var(--grid-gap) );
+  --fr: calc( ( 100% - var(--gaps) ) / 6 );
+
+  content: '';
+  position: absolute;
+  z-index: -1;
+  mix-blend-mode: multiply;
+  top: 0;
+  height: 100%;
+  width: var(--width);
+  background-image: repeating-linear-gradient(
+    to right,
+    transparent 0,
+    transparent var(--fr),
+    lavenderblush var(--fr),
+    lavenderblush calc(var(--fr) + 1rem )
+  );
+  /* background-size: calc( var(--fr) + 1em); */
+}
+
+.debug-border .grid > * {
+  box-shadow: inset 0 0 0 1px var(--cyan);
+}
+.debug-border .subgrid > * {
+  box-shadow: inset 0 0 0 1px var(--magenta);
+}
+.debug-border .subgrid > .subgrid > *,
+.debug-border .subgrid > ul > *,
+.debug-border .subgrid > ol > * {
+  outline: 1px solid var(--yellow);
+}

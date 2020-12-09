@@ -1,0 +1,32 @@
+[class*="border-top"] {
+  --border-width: 1px;
+  border-top: var(--border-width) solid var(--border-color);
+}
+.border-top\:2px {
+  --border-width: 2px;
+}
+.border-top\:3px {
+  --border-width: 3px;
+}
+
+[class*=border-accent] {
+   --gaps: calc( ( var(--grid-tc) - 1 ) * var(--grid-gap) );
+   --colorstop: calc( (100% - var(--gaps) ) / var(--grid-tc));
+   border-image: linear-gradient(
+      to right, 
+      var(--color) var(--colorstop),
+      currentColor var(--colorstop) )
+      1 / var(--border-width) 0 0 0
+   ;
+}
+.border-accent\:cyan    { --color: var(--cyan); }
+.border-accent\:magenta { --color: var(--magenta); }
+.border-accent\:yellow  { --color: var(--yellow); }
+
+.border-bottom\:white {
+  border-bottom: 1px solid white;
+}
+.no-border,
+.no-border * {
+  border: unset !important;
+}

@@ -1,22 +1,32 @@
 /*
- * BLOCKS
+ * Blocks
+ * ::::::
  */
 
-/* global navigation */
-nav ul {
-  list-style-type: none;
-  text-align: right;
+.cover,
+.cover\:half {
+  display: flex;
+  flex-direction: column;
+  min-height: 99vh;
+}
+.cover\:half {
+  min-height: 50vh;
+}
+.cover .principal,
+.cover\:half .principal {
+  margin-top:  auto;
+  margin-bottom: auto;
+}
+.cover .masthead {
+  margin-bottom: 0;
 }
 
-nav a {
-  text-decoration: none;
+article .title {
+  --grid-cs: 3;
+  margin-bottom: var(--size3);
 }
-
-nav li:not(:first-child)::after {
-  content: " ";
-  display: block;
-  width: calc(var(--baseline) * 2);
-  margin-left: auto;
-  margin-top: calc(var(--baseline) - 3px);
-  border-bottom: 3px solid var(--bkg-dark);
+@media only screen and (max-width: 720px) {
+  article .title {
+    --grid-cs: 1;
+  }
 }

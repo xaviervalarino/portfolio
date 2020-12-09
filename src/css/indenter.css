@@ -1,0 +1,70 @@
+
+/*
+ * Indenter
+ * ::::::::
+ *
+ * sets specified "tab-stops" along the grid
+ * (b/c everything is the grid)
+ */
+
+.indenter {
+  --tab1: 3;
+  --tab2: 5;
+  --tab3: 7; padding-top: calc( var(--size2) - var(--border-width, 0px) );
+  padding-bottom: var(--size4);
+}
+.indenter h2,
+.indenter .tab1 {
+  --grid-ce: var(--tab1);
+  --subgrid-ce: var(--tab1);
+  margin-top: calc( var(--size-5) * -1 );
+}
+.indenter h3,
+.indenter .tab2 {
+  --grid-cs: var(--tab1);
+  --subgrid-ce: var(--tab2);
+  margin-top: var(--size-5);
+}
+.indenter h2 ~ *:not(h2),
+.indenter .tab1 ~ *:not(h2):not(.tab1),
+.indenter .tab2 {
+  --grid-cs: var(--tab1);
+}
+.indenter h3 ~ *:not(h3):not(figure):not(video):not(hr),
+.indenter .tab2 ~ *:not(.tab3):not(hr),
+.intender .tab3 {
+  --grid-cs: var(--tab2);
+}
+
+.indenter hr {
+  --grid-cs: var(--tab2);
+}
+/* align the x-height of the first item after the tab */
+.indenter h2 + *,
+.indenter h3 + * {
+  margin-top: var(--size-6)
+}
+.indenter h2 + ol, 
+.indenter h2 + ul {
+  /* margin-top: var(--size-6) */
+  margin-top: calc( var(--size-2) * -1 );
+}
+.indenter h3 ~ img,
+.intender h3 ~ figure,
+.indenter h3 ~ video {
+  --grid-cs: var(--tab1) !important;
+}
+
+@media only screen and (max-width: 900px) {
+  .indenter { 
+    --tab1: 2;
+    --tab2: 2;
+  }
+  .indenter h2,
+  .indenter h3,
+  /* /1* .indenter\:first, *1/ */
+  .indenter .tab2 {
+    --grid-ce: var(--tab3);
+    --subgrid-ce: var(--tab3);
+  }
+}

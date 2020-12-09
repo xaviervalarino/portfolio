@@ -1,0 +1,37 @@
+/*
+ * Primitives
+ * ::::::
+ */
+
+.stack > * + * {
+  margin-top: var(--size0);
+  margin-bottom: var(--size0);
+}
+.stack\:small  > * + * {
+  margin-top: var(--size-1);
+  margin-bottom: var(--size-1);
+}
+.stack\:large > * + * {
+  margin-top: var(--size1);
+  margin-bottom: var(--size1);
+}
+
+.padding\:size3 {
+  padding: var(--size2);
+}
+.padding-stack {
+  padding-top: calc( var(--size0) - var(--border-width, 0px) );
+  padding-bottom: var(--size1);
+}
+.padding-stack\:size2 {
+  padding-top: calc( var(--size2) - var(--border-width, 0px) );
+  padding-bottom: var(--size2);
+}
+.padding-stack\:size5 {
+  padding-top: calc( var(--size5) - var(--border-width, 0px) );
+  padding-bottom: var(--size5);
+}
+
+.padding-top\:size-2 {
+  padding-top: calc( var(--size-2) - var(--border-width, 0px) );
+}

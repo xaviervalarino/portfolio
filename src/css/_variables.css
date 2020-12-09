@@ -11,7 +11,9 @@
   --magenta: #d60078;
   --yellow: #fedd00;
   --black:  #1b1e23; /*midnight black*/
-  --dark: #777;
+  --grey: #e8e8e8;
+  /* --border-color: #31363F; /1* --black + 10% lightness *1/ */
+  --border-color: #262A31; /* --black +5% lightness */
 
   --font-body: "Inter";
   --font-display: "Uxum Grotesque";
@@ -55,13 +57,6 @@
 
   /* max character width for text */
   --measure: 60ch;
-
-  /* Use a relative point size for border widths */
-  --1pt: calc( var(--font-size) / 12 );
-  --2pt: calc( var(--1pt) * 2 );
-  --3pt: calc( var(--1pt) * 3 );
-  --4pt: calc( var(--1pt) * 4 );
-  --5pt: calc( var(--1pt) * 5 );
 
   --grid-gap: var(--size0);
 }

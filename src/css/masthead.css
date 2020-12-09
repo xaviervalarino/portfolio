@@ -8,6 +8,7 @@
 }
 .masthead h2 {
   --grid-ce: 2;
+  margin-bottom: var(--size-3);
 }
 .masthead button {
   display: none;
@@ -15,30 +16,39 @@
 .masthead nav  {
   --grid-cs: 2;
 }
+.masthead ul { 
+  margin-top: 0;
+}
 .masthead li {
   --grid-cs: auto;
-  --subgrid-ce: auto;
+  --subsubgrid-ce: auto;
+}
+.masthead li:last-child {
+  /* unset standard list underline */
+  border-bottom: 0;
 }
 .masthead  li[aria-current] {
-  --subgrid-ce: span 3;
+  --subsubgrid-ce: span 3;
   font-weight: bold;
 }
 .masthead li a {
   display: block;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 720px) {
   .masthead h2 {
     --grid-ce: 4;
+    border-top: 0;
   }
   .masthead nav {
     --grid-cs: 1;
     --grid-gap: 0;
+    margin-top: var(--size-3);
   }
   .masthead li,
   .masthead li[aria-current=page] {
     --grid-cs: 1;
-    --subgrid-ce: 7;
+    --subsubgrid-ce: 7;
   }
   .with-js .masthead li[aria-current=page] {
     grid-row-end: 4;
@@ -54,21 +64,6 @@
   .with-js .masthead button {
     --grid-cs: 5;
     --grid-ce: 7;
-    display: inline-block;
-    border: none;
-    padding: 0;
-    margin: 0;
-    text-align: right;
-    text-decoration: none;
-    background: unset;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background 250ms ease-in-out, 
-                transform 150ms ease;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-  }
-  .masthead button:active {
-      transform: scale(0.99);
+    display: initial;
   }
 }

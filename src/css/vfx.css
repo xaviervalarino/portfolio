@@ -1,0 +1,123 @@
+
+/*
+ * Visual effects
+ * ::::::::::::::
+ */
+
+.multiply,
+.multiply::before,
+.multiply::after,
+svg.multiply * {
+  mix-blend-mode: multiply;
+}
+.bkg\:cyan {
+  background-color: var(--cyan);
+  fill: var(--cyan);
+}
+.bkg\:magenta {
+  background-color: var(--magenta);
+  fill: var(--magenta);
+}
+.bkg\:yellow {
+  background-color: var(--yellow);
+  fill: var(--yellow);
+}
+.bkg\:grey {
+  background-color: var(--grey);
+  fill: var(--grey);
+}
+
+.kodak {
+  margin-top: var(--size2);
+  height: var(--size-2);
+  /* width is the first column and the gap */
+  width: calc( 50% + ( var(--grid-gap) / 2 ) );
+}
+.kodak #tall {
+  display:none;
+}
+.kodak rect:first-child {
+  fill: var(--cyan);
+}
+.kodak rect:last-child {
+  fill: var(--yellow);
+}
+
+@media only screen and (max-width: 900px) {
+
+  /* cinch up element after the flip-top-kid */
+  .flip-top\:kid > *:nth-child(2) { margin-top: calc( (var(--size-3) * -1) - 1.4ex );
+  }
+  .flip-top\:kid > ol:nth-child(2) {
+    margin-top: calc( (var(--size3) + var(--size1)) * -1 );
+  }
+  .flip-top\:kid > *:first-child {
+    writing-mode: vertical-lr;
+    margin-top: unset;
+    margin-left: -0.5rem;
+    padding-bottom: unset;
+  }
+
+  .kodak {
+    width: var(--size-3);
+    height: 60%;
+    margin-top: unset;
+    margin-left: var(--size-2);
+  }
+  .kodak #tall {
+    display: initial;
+  }
+  .kodak #long {
+    display: none;
+  }
+}
+
+/* off-register effect */
+
+.registration {
+  position: relative;
+  color: var(--cyan);
+}
+.registration,
+.registration::before,
+.registration::after {
+  transition: transform 500ms ease-out;
+  /* clean up overshoot wierdness */
+  /* animation-iteration-count: 1; */
+  /* animation-fill-mode: both; */  
+}
+.registration::before,
+.registration::after {
+  content: attr(data-echo);
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: inherit;
+  transform: translateX(var(--position));
+}
+
+/* off-register seperates vertically */
+
+.registration::before {
+  --position: calc( var(--scroll) * 30px );
+  color: var(--yellow);
+}
+.registration::after {
+  --position: calc( var(--scroll) * 15px );
+  color: var(--magenta);
+}
+
+/* alternate version */
+/* off-register seperates diagonally */
+
+/* /1* .registration::before { *1/ */
+/* .registration::before { */
+/*   --position: calc( var(--scroll) * 10px ); */
+/*   color: var(--magenta); */
+/*   transform: translate(var(--position), var(--position)); */
+/* } */
+/* .registration::after { */
+/*   --position: calc( var(--scroll) * -10px ); */
+/*   color: var(--yellow); */
+/*   transform: translate(var(--position), var(--position)); */
+/* } */

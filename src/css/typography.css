@@ -1,50 +1,58 @@
+
 /*
- * TYPOGRAPHY
+ * Typography
+ * ::::::::::
  */
 
-/* set the base font */
+/* Set the base font */
 html {
-  font-family: var(--font-body),  "Helvetica Neue", "Arial";
+  font-family: var(--font-body), "Helvetica Neue", "Helvetica", "Arial";
   font-size: var(--font-size);
   line-height: var(--line-height);
   color: var(--black);
-  letter-spacing: -0.01em; 
+  letter-spacing: -0.015em; 
   text-size-adjust: 100%;
   font-variant-ligatures: contextual common-ligatures;
   font-feature-settings: 'kern' 1, 'liga' 1, 'calt' 1, 'cv10' 1; 
 }
 
-/* headings */
+/* Headings */
 h1, h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5 {
   font-family: var(--font-display);
   line-height: var(--line-height-small);
   max-width: 45rem;
-  font-weight: 600;
-  word-break: break-word;
+  overflow-wrap: break-word;
+  font-kerning: normal;
 }
 h1, .h1 {
   font-size: var(--size4);
-  letter-spacing: -0.01em;
+  font-weight: 300;
+  letter-spacing: -0.015em;
 }
 h2, .h2 {
   font-size: var(--size3);
-  letter-spacing: -0.03em;
+  font-weight: 400;
+  letter-spacing: -0.0175em;
 }
 h3, .h3 {
   font-size: var(--size2);
+  font-weight: 500;
   letter-spacing: -0.02em;
 }
 h4, .h4 {
   font-size: var(--size1);
+  font-weight: 600;
   letter-spacing: -0.012em;
 }
-/* h5, .h5 { */
-/*   font-size: var(--size1); */
-/*   letter-spacing: -0.015em; */
-/* } */
+h5, .h5 {
+  font-size: var(--size0);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: -0.015em;
+}
 
-/* text style modifiers */
+/* Text style modifiers */
 em,
 .font\:italic {
   font-style: italic;
@@ -53,8 +61,11 @@ em,
 .font\:uppercase {
   text-transform: uppercase;
 }
+.font\:capitalize {
+  text-transform: capitalize;
+}
 .font\:smallcaps {
-  font-variant: small-caps;
+  font-variant: all-small-caps;
 }
 
 .font\:light {
@@ -74,35 +85,19 @@ strong,
   font-weight: 900;
 }
 
-sup,
-.font\:super {
+sup, .font\:super {
   font-variant-position: super;
 }
-
-/* large text */
-/* .xlarge { */
-/*   font-size: 5.5rem; */
-/*   line-height: calc(var(--lineHeight) * 4); */
-/* } */
-/* .xxlarge { */
-/*   font-size: 7.5rem; */
-/*   line-height: calc(var(--lineHeight) * 5); */
-/* } */
-.xxxlarge {
-  font-size: var(--size5);
+sub, .font\:sub {
+  font-variant-position: sub;
 }
 
-/* small text */
-.font\:small,
-figcaption {
+/* Small text */
+figcaption,
+.font\:small {
   font-size: var(--size-1);
 }
-.xsmall {
-  font-size: 0.8em;
-}
-.xxsmall {
-  font-size: 0.65em;
-}
-.xxxsmall {
-  font-size: 0.5em;
+
+.font\:xsmall {
+  font-size: var(--size-2);
 }

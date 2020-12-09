@@ -1,8 +1,11 @@
+
 /*
- * ELEMENTS
+ * Elements
+ * :::::::::
  */
 
 /* measure */
+
 * {
   max-width: var(--measure);
 }
@@ -10,80 +13,126 @@
 html,
 body,
 div,
+figure,
 header,
+hr,
+ol,
+ul,
 nav,
 main,
 article,
 section,
-footer {
+svg,
+footer,
+.grid,
+.subgrid {
   max-width: none;
 }
 
-/* block */
-/* address, article, aside, blockquote, dd, dl, dt, fieldset, figure, form, */
-/* h1, h2, h3, h4, h5, h6, li, nav, ol, p, pre, table, tfoot, ul, video { */
-/*    margin-top: var(--blockSpacingTop); */
-/*   margin-bottom: var(--blockSpacingBottom); */
-/* } */
+/* document */
 
-/* first|last element has no top|bottom margin */
-/* :first-child { margin-top: unset; } */
-/* :last-child { margin-bottom: unset; } */
+body {
+  --padding: var(--size1);
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-y: none;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 100ch;
+  margin: auto;
+  padding: var(--padding);
+}
 
-/* /1* hr *1/ */
-/* hr:first-child { */
-/*   margin-top: calc(var(--hrThickness) / -2); */
-/*   margin-bottom: calc(var(--lineHeight) - calc(var(--hrThickness) / 2)); */
-/* } */
-/* hr:last-child { */
-/*   margin-top: calc(var(--lineHeight) - calc(var(--hrThickness) / 2)); */
-/*   margin-bottom: calc(var(--hrThickness) / -2); */
-/* } */
-hr, hr:only-child {
+@media only screen and (max-width: 450px) {
+  body {
+    --padding: var(--size-1);
+  }
+}
+
+main {
+  /* dont show tabIndex border */
+  outline: none;
+}
+
+/* interactive */
+
+a {
+  color: initial;
+  text-decoration: none;
+  border-bottom: 1px dotted;
+}
+nav a {
+  border-bottom: unset;
+}
+a:visited {
+  color: initial;
+}
+
+button.simple { 
   border: none;
-  background: var(--black);
-  height: var(--hrThickness);
-  margin-top: calc(var(--lineHeight) - calc(var(--hrThickness) / 2));
-  margin-bottom: calc(var(--lineHeight) - calc(var(--hrThickness) / 2));
+  padding: 0;
+  margin: 0;
+  text-align: right;
+  text-decoration: none;
+  background: unset;
+  border-bottom: 1px dotted;
+  font-size: inherit;
+  cursor: pointer;
+  transition: background 250ms ease-in-out, 
+              transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
-/* * + hr:last-child { */
-/*   /1* hr following block has hrThickness removed from its top spacing *1/ */
-/*   margin-top: calc(var(--hrThickness) / -2); */
-/* } */
-/* hr:not(:first-child) { */
-/*   /1* note: collapses with preceeding block bottom margin *1/ */
-/*   margin-top: var(--lineHeight); */
-/*   margin-bottom: calc(var(--lineHeight) - var(--hrThickness)); */
-/* } */
-.r-grid > hr { grid-column: 1 / -1 }
-/* .r-grid > hr, */
-/* .r-grid > hr:not(:first-child):not(:last-child) { */
-/*   margin-top: calc(var(--lineHeight) - var(--hrThickness)); /1* BOTTOM-bias *1/ */
-/*   margin-bottom: 0; */
-/* } */
-
-/* list */
-ul, ol {
-  list-style-position: outside;
+button.simple:active {
+  transform: scale(0.99);
 }
 
-ul {
-  padding-left: 1.3em;
+/* content */
+
+article h4 {
+  margin-top: var(--size2);
+  margin-bottom: var(--size0);
 }
 
-/* custom start number -- undo reset */
-ol[start] {
-  padding-inline-start: var(--list-indentation);
+hr {
+  width: 100%;
+  border: 0;
+  border-top: 1px solid var(--border-color);
+  margin-top: var(--size2);
+  margin-bottom: calc( var(--size1) - 1px);
 }
 
-li {
-  margin-left: .2em;
-  margin-bottom: var(--baseline);
+p + p {
+  margin-top: var(--size1);
 }
 
-li > p + ul,
-li > p + ol {
-  /* <ul>|<ol> inside <li> that directly follows a <p> */
-  /* shave off 1 baseline from space in between paragraph and list */
-  margin-top: calc(var(--baseline) * -1);
+/* media */
+
+img {
+  image-rendering: -webkit-optimize-contrast;
+}
+
+figure,
+video {
+  margin-top: var(--size2);
+  margin-bottom: var(--size2);
+}
+figure img {
+  border: 1px solid var(--border-color);
+}
+figcaption {
+  margin-top: var(--size-2);
+}
+svg.icon {
+  width: .75em;
+  height: .75em;
+  stroke: currentColor;
+  stroke-width: 4;
+  fill: none;
+}
+
+video {
+  max-width: 100%;
 }

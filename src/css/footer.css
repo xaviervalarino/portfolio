@@ -1,0 +1,70 @@
+
+/*
+ * Footer
+ * ::::::
+ */
+
+footer {
+  margin-top: var(--size5);
+  padding-top: var(--size1);
+}
+footer .version {
+  --grid-ce: 3;
+}
+footer .links  {
+  --grid-cs: 3;
+  --grid-ce: 4;
+}
+footer .debug-list {
+  --grid-cs: 4;
+  --grid-ce: 7;
+}
+footer .debug-list div {
+  --grid-cs: span 1;
+  --subgrid-ce: auto;
+}
+
+@media only screen and (max-width: 900px) {
+  footer .version {
+    --grid-cs: 1;
+    /* --grid-ce: 3; */
+    /* grid-row-start: 1; */
+    margin-bottom: var(--size1);
+  }
+  footer .links {
+    --grid-cs: 3;
+    --grid-ce: 7;
+    --border-width: 1px;
+  }
+  footer .debug-list {
+    --grid-cs: 3;
+    --grid-ce: 7;
+    grid-row-start: 1;
+  }
+  footer .subgrid div {
+    --grid-cs: span 2;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  footer .version {
+    --grid-ce: 7;
+  }
+  footer .version > p {
+    display: inline;
+  }
+  footer .version > p:first-child {
+    margin-right: 1ex;
+  }
+
+  footer .links {
+    --grid-cs: 4;
+  }
+  footer .debug-list {
+    --grid-cs: 1;
+    --grid-ce: 4;
+    --border-width: 1px;
+    grid-row-start: 2;
+  }
+}
+
