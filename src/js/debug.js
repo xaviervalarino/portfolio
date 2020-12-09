@@ -1,48 +1,47 @@
 // Debug
 (function(){
-  let fontSize = getFontSize()
 
-  function bodyWidth () {
-    return Math.round( document.body.clientWidth);
+  function getBodyWidth () {
+    return {
+      bodyWidth: document.body.clientWidth
+    };
   }
   function getFontSize () {
     var value = parseFloat(getComputedStyle(document.documentElement).fontSize);
-    return Math.round( value * 10)/ 10 // round to one decimal place
+    return {
+      fontSize: Math.round( value * 10)/ 10 // round to one decimal place
+    }
   }
-  // TODO: collapse these three into one function
-  function setWidthReadout (value) {
-    document.querySelector('#width-readout').textContent = value + "px";
+  function setPropertyReadouts (obj) {
+    document.querySelectorAll('[data-t="readout"]')
+      .forEach( el => {
+        if ( obj[el.dataset.i] ) {
+          el.textContent = obj[el.dataset.i];
+        };
+      })
+    ;
   }
-  function setFontSizeReadout (fontSize) {
-    document.querySelector('#fontsize-readout').textContent = fontSize + "px";
-  }
-  function toggleTextContent (span) {   
-    span.textContent = span.textContent === 'OFF' ? 'ON' : 'OFF';
-  }
-
-  // initial
-  setWidthReadout(bodyWidth());
-  setFontSizeReadout(fontSize)
+        
+  // initialize
+  setPropertyReadouts(getBodyWidth());
+  setPropertyReadouts(getFontSize())
 
   window.addEventListener("resize", () => {
-    fontSize = getFontSize();
-    setFontSizeReadout(fontSize)
-    setWidthReadout(bodyWidth())
+    setPropertyReadouts(getBodyWidth());
+    setPropertyReadouts(getFontSize())
   });
-
-  document.querySelector('#column-toggle')
-    .addEventListener('click', function () {
-      let span = this.querySelector('span');
-      toggleTextContent(span);
-      document.body.classList.toggle('grid-columns');
-    })
-  ;
-
-  document.querySelector('#baseline-toggle')
-    .addEventListener('click', function () {
-      let span = this.querySelector('span');
-      toggleTextContent(span);
-      document.body.classList.toggle('baseline');
+  document.querySelectorAll('footer button')
+    .forEach( button => {
+      button.addEventListener('click', function () {
+        const condition = {
+          true: 'on',
+          false: 'off'
+        };
+        let v = 
+        document.body.classList.toggle(this.dataset.i);
+        this.dataset.v = 'false' === this.dataset.v ? true : false;
+        this.textContent = condition[this.dataset.v]
+      });
     })
   ;
 }());
