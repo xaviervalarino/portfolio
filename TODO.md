@@ -1,0 +1,21 @@
+# TODO
+- [x] mockups
+- [x] update to grid
+- [x] class overhaul
+- [ ] move images to assets folder
+- [ ] add favicon
+- [ ] Refactor indenter class
+- [ ] clean up About page markup/markdown
+- [ ] Update README
+- [ ] Nav for non-top-level pages
+- [ ] Case study footer nav (back/index/next)
+- [ ] Images: double up on wide
+- [ ] write case studies:
+  - [ ] Omicia
+  - [ ] Botanic
+  - [ ] GEARS login prototype and Google Analytics
+- [ ] Image optimization & sizing
+- [ ] Image pop-out viewer
+- [ ] Site map generator
+- [ ] Robots.txt
+- [ ] Move build script logic out of package.json
