@@ -1,11 +1,10 @@
 ---
-
 title: Specifications for a flexible captive portal
 subtitle: Defining limits
 project: Netgear CWM
 template: case-study.html
 masthead:
-   work: true
+    work: true
 ---
 
 <section class="subgrid indenter flip-top:kid border-top:3px border-accent:cyan">
