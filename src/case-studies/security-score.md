@@ -3,61 +3,56 @@ title: Creating a variable design system
 subtitle: Identifying elements of an application
 project: Security Score
 template: case-study.html
+masthead:
+		work: true
 ---
 
-## Background {.r-cell .span:1-2 .border-top:4pt}
-:::{.r-cell .span:3.. .border-top:4pt}
+<section class="subgrid indenter flip-top:kid border-top:3px border-accent:cyan">
+## Background 
 OPSWAT wanted to provide third party vendors the freedom to rebrand our desktop application, SecurityScore, to suit their specific needs.
-:::
 
+---
 
-
-### Goal {.r-cell .span:3-3 .border-top:2pt}
-:::{.r-cell .span:4.. .border-top:2pt}
+### Goal 
 To produce a design systems document that would allow third-party vendors to easily rebrand our application for their specific markets.
-:::
 
-### My Role {.r-cell .span:3-3 .border-top:2pt}
-:::{.r-cell .span:4.. .border-top:2pt}
+---
+
+### My Role 
 Create guidelines on how external vendors could rebrand the application, identifying components and how the relate.
-:::
 
-:::{.r-cell .span:4..}
-![Security Score application](../img/security-score-security-check.jpg)
-:::
+</section>
 
-## Process {.r-cell .span:1-2 .border-top:4pt}
-:::{.r-cell .span:3.. .border-top:4pt}
+![Security Score application](../assets/img/security-score-security-check.jpg)
+
+<section class="subgrid split-lists indenter flip-top:kid border-top:3px border-accent:magenta">
+## Process 
 1. Met with stakeholders to understand the requirements and technical limitations
 1. Studied existing mockups and design assets
 1. Identified four main areas that the system should cover:
-  - Application states
-  - Application elements
-  - Colors and images
-  - Customization options
-:::
+    * Application states
+    * Application elements
+    * Colors and images
+    * Customization options
 
-:::{.r-cell .span:3..}
-![Documenting colors and assets used in the application](../img/security-score-UI-elements.png)
-:::
+![Documenting colors and assets used in the application](../assets/img/security-score-UI-elements.png)
 
-:::{.r-cell .span:1-3}
-![Outlining the user interface elements in the branding document](../img/security-score-start-screen-components.png){.shadow}
-:::
+![Outlining the user interface elements in the branding document](../assets/img/security-score-start-screen-components.png)
 
-:::{.r-cell .span:4-5 .justify-v:center .border-left:child .padding-left}
 After outlining the first three areas, I met with the marketing and engineering teams to finalize the customization options before working with the  technical writer to draft the guidelines.
-:::
 
-## Outcome {.r-cell .span:1-2 .border-top:4pt}
-:::{.r-cell .span:3.. .border-top:4pt}
+</section>
+
+<section class="subgrid indenter flip-top:kid border-top:3px border-accent:yellow">
+## Outcome
+
 Defined parts of the application that could be customized, defining a framework for how third party vendors could rebrand the application for their market.
 
 The guidelines defined a process for how third party vendors submit customization requests, making clear what could and could not be changed.  It also provided us with an internal methodology for for defining and documenting OPSWAT's digital products.
 
 It also provided us with an internal methodology for for defining and documenting OPSWAT's digital products.
-:::
 
-:::{.r-cell .span:3..}
-![A later version of the application, rebranded for Vivo Telefonica in Brazil.](../img/security-score-rebranded-telefonica.png){.shadow}
-:::
+![A later version of the application, rebranded for Vivo Telefonica in Brazil.](../assets/img/security-score-rebranded-telefonica.png)
+
+</section>
+

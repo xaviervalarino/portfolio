@@ -1,51 +1,91 @@
 ---
 title: About
+masthead:
+    about: true
 ---
 
-# About Me {.r-cell .large .span:1-2 .align-r }
-:::{.r-cell .span:3-5 .margin-left }
+<article class="grid">
+<div class="title subgrid">
+<h1>About</h1>
+<svg class="multiply margin-top:size2"
+   viewBox="0 0 100 100"
+   width="25%"
+   height="1ex"
+   preserveAspectRatio="none"
+   >
+   <rect x="0"  y="0" width="80" height="100" class="bkg:cyan"    fill="cyan"   />
+   <rect x="10" y="0" width="80" height="100" class="bkg:magenta" fill="magenta"/>
+   <rect x="20" y="0" width="80" height="100" class="bkg:yellow"  fill="yellow" />
+</svg>
+
+<div class="h3 font:light padding-stack:size2">
 I live in Oakland, CA.
+</div>
+</div>
 
-### I enjoy learning how complex systems work. { .padding-top:l}
+---
+
+<section class="indenter subgrid stack">
+## I enjoy learning how complex systems work. { .margin-bottom:size2 }
+<div>
 In learning a system, you come to understand what guided it's designers. Hopefully, you also find ways to explain that logic to others. The hardest part of interface design is knowing when to show the underlying system vs. simplifying the systems complexity so that it doesn't get in the way.
-:::
 
-### My Design Process {.r-cell .span:1-2 .align-r .padding-top:xl }
-:::{.r-cell .span:3-5 .margin-left  .padding-top:xl }
+I got my start in print. Bless the engineer at who put Javascript and GREP into InDesign---once I realized the potential, it was turtles all the way down.
+
+I've spent the last ten years diving into *Nix systems and web technologies. I try to take the concepts I learn from these explorations, ideas like---expected affordance, modularity, composability, simplicity, accessibilit---and apply them to my work.
+
+**I want to design systems that improve the human condition.**<br/>
+Because life is too short for crappy software.
+</div>
+
+</section>
+
+--- 
+
+<section class="indenter subgrid split-lists stack">
+## My Design Process { .margin-bottom:size2 }
+
 I generally move through five phases on a design project. Although their implementation is never really the same, they are can be defined as:
 
-1. **Researching** the problem, the client's domain, the user's needs, limitations.
+1. **Researching** the problem, the client's domain, the user's needs, the limitations.
 2. **Analyzing** how how to solve for _x_.
 3. **Designing** a prototype to solve the problem.
 4. **Testing** the prototype to figure out where the model succeeded and where  it fails.
 5. **Rinse and repeat**---tweak the design until it produces the desired outcome.
-:::
-<!--
-:::{.r-cell .span:2-4 .margin-top }
-### I want to make systems that improve the human conditions 
-The less time we have to spend in front of a screen, the better.
-:::
--->
+</div>
+</section>
 
-### Experience {.r-cell .span:1-2 .margin-top .padding-top:s .align-r }
-:::{.r-cell .span:3-5 .padding-left:xl .justify-v:flex-end .margin-top  }
-[&#8594; My linkedIn](https://www.linkedin.com/in/xavier-valarino-17b10061/)
-:::
+---
 
-<!--
-I try to take the concepts I learn from these explorations and apply them to my work—like the composability and ostensible simplicity of software like  [`coreutils`](https://www.gnu.org/software/coreutils/) or [NodeJS streams](https://nodejs.org/api/stream.html).
--->
-## About the Site {.r-grid .r-cell .span:1-2 .align-r .padding-top:l }
-:::{.r-cell .margin-top .padding-left:xl .span:3-5}
+<section class="indenter subgrid stack padding-top">
+## Experience { .margin-bottom:size2 }
+<div class="h4 font:light margin-top:size-2">
+**I've designed software for:**
+
+* Information Security
+* Networking
+* Natural Language Processing
+* Genomic Sequencing
+
+</div>
+I've been spent a fair amount of time as a freelancer, and have broad set of expertise.
+
+Feel free to inquire at <a href="mailto:xavier@valarino.com">xavier@valarino.com</a>.
+
+</section>
+
+<section class="indenter subgrid border-top">
+## Colophon
+
+<div>
+**About the site:**
+
 The display font is [Uxum Grotesque](https://uxum.mdn.market/) by [Bureau Nuits](https://www.bureaunuits.com/).
 
 The body font is [Inter](https://rsms.me/inter/) by Rasmus Andersson.
 
-I wrote the site in Markdown, HTML, CSS. There's also a little bit of Lua and Bash, too. I'm using Pandoc to convert the Markdown and Node to orchestrate building and testing it.
-
-See the source code on [Github](https://github.com/xaviervalarino/portfolio).
-:::
-
-<div class="r-cell span:row margin padding:xl">
-<!-- nice kludge ya got there. maybe just build a footer... -->
+Th site is hand-written in Markdown, HTML, and CSS. It's created with a homebrewed static site generator that orchestrates Bash, Pandoc and NPM. The source code is hosted on [Github](https://github.com/xaviervalarino/portfolio).
 </div>
+
+</section>
+</article>

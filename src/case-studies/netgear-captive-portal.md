@@ -1,78 +1,65 @@
 ---
+
 title: Specifications for a flexible captive portal
 subtitle: Defining limits
 project: Netgear CWM
 template: case-study.html
+masthead:
+   work: true
 ---
 
-## Background {.r-cell .span:1-2 .border-top:4pt}
-:::{.r-cell .span:3.. .border-top:4pt}
+<section class="subgrid indenter flip-top:kid border-top:3px border-accent:cyan">
+## Background 
 Alongside offering their own SaaS product, OPSWAT was contracted to build a wireless cloud management system for Netgear. I was lead designer for the project.
 The application included features for setting up a captive portal—a webpage that newly connected users would have to pass through before gaining access to the broader network. Corporate clients wanted to personalize these entry points.
-:::
 
-### Goal {.r-cell .span:3-3 .border-top:2pt}
-:::{.r-cell .span:4.. .border-top:2pt}
-Design a way for administrators to customize the captive portal (CP).
-:::
+--- 
 
-### My Role {.r-cell .span:3-3 .border-top:2pt}
-:::{.r-cell .span:4.. .border-top:2pt}
+### Goal 
+Design a way for administrators to customize the captive portal.
+
+---
+
+### My Role 
 Designed the setup wizard for the captive portal, exploring the UX impact of various configuration options to ensure that administrators could successfully create and customize their captive portals.
-:::
 
-## Process {.r-cell .span:1-2 .border-top:4pt}
-:::{.r-cell .span:3.. .border-top:4pt}
+</section>
+
+<section class="subgrid indenter flip-top:kid border-top:3px border-accent:magenta">
+## Process 
 I created mockups and prototypes to help me understand how the the template components should behave.
-:::
 
-### Mockups {.r-cell .span:3-3 .border-top:2pt}
-:::{.r-cell .span:4.. .border-top:2pt}
+---
+
+### Mockups 
 I created three templates, exploring how they rendered in different viewports.
-:::
 
-:::{.r-cell .span:3.. }
-![Page from specifications document showing three options to be offered](../img/netgear-captive-portal-template-variants.png){.shadow}
-:::
+![Page from specifications document showing three options to be offered](../assets/img/netgear-captive-portal-template-variants.png)
 
-### Prototypes {.r-cell .span:3-3 .border-top:2pt}
-:::{.r-cell .span:4.. .border-top:2pt}
+### Prototypes 
 I built functional prototypes of the templates to investigate the assumptions made in the mockups. CSS media queries were used to test for different devices (mobile phones, tablets, and laptop/desktops). A series of images with different aspect ratios were used to test for user-generated content.
-
 These prototypes gave immediate visual feedback of the limits I'd encounter while designing the templates.
-:::
 
 <!--*What is the goal of these points? what is the value of these endeavors? one more sentence to close the loop...*-->
 
-<div class="r-cell span:1-6 align-r"><video autoplay loop>
-	  <source src="/assets/netgear-captive-portal-prototype.mp4" type="video/mp4">
-	</video>
-</div>
+---
 
-### Specifications {.r-cell .span:3-3 .border-top:2pt}
-:::{.r-cell .span:4.. .border-top:2pt}
+### Specifications 
 Along with the prototypes, I drafted a specifications document to send to the engineering team in Vietnam. It outlined the three templates we would offer and explained the logic used in the prototypes.
-
 I then translated the specifications into discrete and actionable tickets.
-:::
 
-:::{.r-cell .span:2 .margin-right}
-![Cover of the specifications document](../img/netgear-captive-portal-specifications-document-cover.png){.shadow}
-:::
+![Cover of the specifications document](../assets/img/netgear-captive-portal-specifications-document-cover.png)
 
-:::{.r-cell .span:3.. }
-![Page from specifications document outlining components used in templates](../img/netgear-captive-portal-components.png){.shadow}
-:::
+![Page from specifications document outlining components used in templates](../assets/img/netgear-captive-portal-components.png)
 
-:::{.r-cell .span:row }
-![Page from specifications document explaining logic used for mobile prototypes](../img/netgear-captive-portal-template-logic-for-mobile.png)
-:::
+![Page from specifications document explaining logic used for mobile prototypes](../assets/img/netgear-captive-portal-template-logic-for-mobile.png)
 
-## Outcome {.r-cell .span:1-2 .border-top:4pt}
-:::{.r-cell .span:3.. .border-top:4pt}
+</section> 
+
+<section class="subgrid indenter flip-top:kid border-top:3px border-accent:yellow">
+## Outcome 
 The delivered document gave the engineering team blueprints for the templates, allowing them to plug them into the larger CP setup wizard.
-:::
 
-:::{.r-cell .span:3.. }
-![Image uploader used in the captive portal customizer](../img/netgear-captive-portal-image-uploader.jpg)
-:::
+![Image uploader used in the captive portal customizer](../assets/img/netgear-captive-portal-image-uploader.jpg)
+
+</section>
