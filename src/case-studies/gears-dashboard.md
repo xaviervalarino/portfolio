@@ -73,7 +73,7 @@ Configuration options were hidden behind an _Edit Dashboard_ button. This was do
  
 ![Mockup of dashboard in "Edit" state](../assets/img/GEARS-dashboard-move-chart-widget.png)
  
-![](.../assets/img/GEARS-dashboard-chart-reflow-on-grid-1.png)
+![](../assets/img/GEARS-dashboard-chart-reflow-on-grid-1.png)
  
 ![](../assets/img/GEARS-dashboard-chart-reflow-on-grid-2.png)
 
