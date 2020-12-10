@@ -70,6 +70,14 @@ I generally move through five phases on a design project. Although their impleme
 </div>
 I've spent a fair amount of time as a freelancer, and have broad set of expertise; alongside product design, I do contract illustration.
 
+<a href="/assets/xavier-valarino-illustration-work-samples.pdf"
+   class="position:relative">
+  <span class="border-bottom:white position:absolute left:-grid-gap"
+        aria-hidden="true">
+  ↓</span>
+  Illustration Work Samples - PDF
+</a>
+
 Feel free to inquire at <a href="mailto:xavier@valarino.com">xavier@valarino.com</a>.
 
 </section>

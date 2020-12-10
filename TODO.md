@@ -15,6 +15,7 @@
   - [ ] Botanic
   - [ ] GEARS login prototype and Google Analytics
 - [ ] Image optimization & sizing
+- [ ] Add build script for PDF assets
 - [ ] Image pop-out viewer
 - [ ] Site map generator
 - [ ] Robots.txt
