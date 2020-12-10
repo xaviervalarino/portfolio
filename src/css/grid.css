@@ -13,6 +13,7 @@
  */
 
 .grid,
+.grid > ol,
 .subgrid,
 .subgrid > .subgrid,
 .subgrid > ul,
@@ -33,13 +34,15 @@
   --grid-ce: 7;
   grid-column-start: var(--grid-cs); grid-column-end: var(--grid-ce);
 }
+.grid > ul,
+.grid > ol,
 .subgrid * {
   --subgrid-ce: calc( var(--grid-tc) + 1 );
   grid-column-end: var(--subgrid-ce);
 }
-.subgrid > .subgrid,
-.subgrid > ul,
-.subgrid > ol {
+.grid > ul,
+.grid > ol, 
+.grid > .subgrid {
   --subgrid-tc: calc( var(--subgrid-ce) - var(--grid-cs) );
 }
 .subgrid > .subgrid *,
