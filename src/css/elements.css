@@ -93,8 +93,8 @@ button.simple:active {
 /* content */
 
 article h4 {
-  margin-top: var(--size2);
-  margin-bottom: var(--size0);
+  margin-top: var(--size3);
+  margin-bottom: var(--size1);
 }
 
 hr {
