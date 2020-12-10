@@ -30,9 +30,9 @@ I live in Oakland, CA.
 <div>
 In learning a system, you come to understand what guided it's designers. Hopefully, you also find ways to explain that logic to others. The hardest part of interface design is knowing when to show the underlying system vs. simplifying the systems complexity so that it doesn't get in the way.
 
-I got my start in print. Bless the engineer at who put Javascript and GREP into InDesign---once I realized the potential, it was turtles all the way down.
+I got my start in print. Bless the engineer at Adobe who put Javascript and GREP into InDesign---once I realized the potential, it was turtles all the way down.
 
-I've spent the last ten years diving into *Nix systems and web technologies. I try to take the concepts I learn from these explorations, ideas like---expected affordance, modularity, composability, simplicity, accessibilit---and apply them to my work.
+I've spent the last ten years diving into Unix-like systems and web technologies. I try to take the concepts I learn from these explorations, ideas like---affordance, modularity, scalability, composability, simplicity, accessibility---and apply them to my work.
 
 **I want to design systems that improve the human condition.**<br/>
 Because life is too short for crappy software.
@@ -45,12 +45,12 @@ Because life is too short for crappy software.
 <section class="indenter subgrid split-lists stack">
 ## My Design Process { .margin-bottom:size2 }
 
-I generally move through five phases on a design project. Although their implementation is never really the same, they are can be defined as:
+I generally move through five phases on a design project. Although their implementation is never really the same, I'd describe them as:
 
-1. **Researching** the problem, the client's domain, the user's needs, the limitations.
-2. **Analyzing** how how to solve for _x_.
-3. **Designing** a prototype to solve the problem.
-4. **Testing** the prototype to figure out where the model succeeded and where  it fails.
+1. **Research** the problem, the client's domain, the user's needs, the limitations.
+2. **Analyze** how how to solve for _x_.
+3. **Design** a prototype to solve the problem.
+4. **Test** the prototype to figure out where the model succeeded and where  it fails.
 5. **Rinse and repeat**---tweak the design until it produces the desired outcome.
 </div>
 </section>
@@ -68,7 +68,7 @@ I generally move through five phases on a design project. Although their impleme
 * Genomic Sequencing
 
 </div>
-I've been spent a fair amount of time as a freelancer, and have broad set of expertise.
+I've spent a fair amount of time as a freelancer, and have broad set of expertise; alongside product design, I do contract illustration.
 
 Feel free to inquire at <a href="mailto:xavier@valarino.com">xavier@valarino.com</a>.
 
