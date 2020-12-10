@@ -20,3 +20,7 @@
 - [ ] Site map generator
 - [ ] Robots.txt
 - [ ] Move build script logic out of package.json
+- [ ] License: dual license
+  - [ ] Retain exclusive rights for content
+  - [ ] Permissive for source code
+  - [ ] License for raster.grid (for posterity)
