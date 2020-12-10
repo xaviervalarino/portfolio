@@ -16,6 +16,9 @@
   margin-bottom: var(--size1);
 }
 
+.padding {
+  padding: var(--size1);
+}
 .padding\:size3 {
   padding: var(--size2);
 }
