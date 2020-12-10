@@ -14,6 +14,7 @@ html,
 body,
 div,
 figure,
+figcaption,
 header,
 hr,
 ol,
@@ -111,16 +112,18 @@ p + p {
 /* media */
 
 img {
+  /* width: auto; */
+  object-fit: contain;
   image-rendering: -webkit-optimize-contrast;
 }
-
+figure img,
+video {
+  max-height: 85vh;
+}
 figure,
 video {
   margin-top: var(--size2);
   margin-bottom: var(--size2);
-}
-figure img {
-  border: 1px solid var(--border-color);
 }
 figcaption {
   margin-top: var(--size-2);

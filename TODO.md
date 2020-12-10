@@ -5,6 +5,7 @@
 - [x] move images to assets folder
 - [x] add favicon
 - [ ] Refactor indenter class
+- [x] figure out whats going on with figure > images 
 - [ ] clean up About page markup/markdown
 - [ ] Update README
 - [ ] Nav for non-top-level pages
