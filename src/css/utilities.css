@@ -13,11 +13,20 @@
   pointer-events: none;
 }
 
+.align-self\:end {
+  align-self: end;
+}
 .margin\:none {
   margin: unset;
 }
 .margin-top\:size2 {
   margin-top: var(--size2);
+}
+.margin-top\:size3 {
+  margin-top: var(--size3);
+}
+.margin-top\:-20\% {
+  margin-top: -20%;
 }
 .margin-bottom\:size2 {
   margin-bottom: var(--size2);
@@ -38,11 +47,13 @@
   max-width: unset; 
 }
 .display\:inline-block {
-  display: block;
-  max-width: unset; 
+  display: inline-block;
 }
 
 /* text related */
+.text-align\:center {
+  text-align: center;
+}
 
 @media only screen and (max-width: 720px) {
   .indent\:grid-gap\@\<720px {
