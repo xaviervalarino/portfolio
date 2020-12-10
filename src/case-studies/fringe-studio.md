@@ -80,9 +80,8 @@ Assigning multiple colors was done through two separate properties: one through 
 Each piece of furniture and it's relative position were stored as JSON object. When a client would go to print the cut sheet, the data object would be iterated through, generating a list of parts that the studio could itemize for the fabricator.
 
 <video class="bkg:grey padding:size3" autoplay loop>
-  <source src="/assets/mixi-modular-configurator-demo.mp4" type="video/mp4">
-  </video>
-</div>
+  <source src="/assets/video/mixi-modular-configurator-demo.mp4" type="video/mp4">
+</video>
 
 </section>
 <section class="subgrid indenter flip-top:kid border-top:3px border-accent:yellow">
