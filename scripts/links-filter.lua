@@ -3,7 +3,7 @@ local function md_to_html (path)
 end
 
 local function make_local_absolute (path)
-  return string.gsub(path, "^%.-/-img/", "/img/")
+  return string.gsub(path, "^%.-/-assets/img/", "/assets/img/")
 end 
 
 function Link (element)
