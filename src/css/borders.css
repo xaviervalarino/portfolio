@@ -1,12 +1,21 @@
-[class*="border-top"] {
+[class*="border"] {
   --border-width: 1px;
+}
+
+[class*="border-top"] {
   border-top: var(--border-width) solid var(--border-color);
+}
+.border {
+  border: var(--border-width) solid var(--border-color);
 }
 .border-top\:2px {
   --border-width: 2px;
 }
 .border-top\:3px {
   --border-width: 3px;
+}
+.border\:img img {
+  border: var(--border-width) solid var(--border-color);
 }
 
 [class*=border-accent] {
