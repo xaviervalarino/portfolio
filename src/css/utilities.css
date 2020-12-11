@@ -19,16 +19,27 @@
 .margin\:none {
   margin: unset;
 }
+.margin-top {
+  margin-top: var(--size1);
+}
 .margin-top\:size2 {
   margin-top: var(--size2);
 }
 .margin-top\:size3 {
   margin-top: var(--size3);
 }
-.margin-top\:-20\% {
-  margin-top: -20%;
-}
 .margin-bottom\:size2 {
+  margin-bottom: var(--size2);
+}
+.margin-bottom\:size3 {
+  margin-bottom: var(--size3);
+}
+.margin-stack\:large {
+  margin-top: var(--size3);
+  margin-bottom: var(--size4);
+}
+.margin-stack {
+  margin-top: var(--size1);
   margin-bottom: var(--size2);
 }
 

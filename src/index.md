@@ -9,5 +9,4 @@ landing:
     link: 
         text: Work/Case Studies
         href: /work.html
-    
 ---

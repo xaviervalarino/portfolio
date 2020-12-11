@@ -7,9 +7,10 @@ masthead:
 <article class="grid">
 <div class="title subgrid">
 <h1>About</h1>
+<div span="/1">
 <svg class="multiply margin-top:size2"
    viewBox="0 0 100 100"
-   width="25%"
+   width="100%"
    height="1ex"
    preserveAspectRatio="none"
    >
@@ -17,17 +18,17 @@ masthead:
    <rect x="10" y="0" width="80" height="100" class="bkg:magenta" fill="magenta"/>
    <rect x="20" y="0" width="80" height="100" class="bkg:yellow"  fill="yellow" />
 </svg>
+</div>
 
 <div class="h3 font:light padding-stack:size2">
 I live in Oakland, CA.
 </div>
 </div>
 
----
-
-<section class="indenter subgrid stack">
+<section class="grid indenter:3/5 stack border-top">
 ## I enjoy learning how complex systems work. { .margin-bottom:size2 }
-<div>
+
+<div class="margin:none">
 In learning a system, you come to understand what guided it's designers. Hopefully, you also find ways to explain that logic to others. The hardest part of interface design is knowing when to show the underlying system vs. simplifying the systems complexity so that it doesn't get in the way.
 
 I got my start in print. Bless the engineer at Adobe who put Javascript and GREP into InDesign---once I realized the potential, it was turtles all the way down.
@@ -40,10 +41,8 @@ Because life is too short for crappy software.
 
 </section>
 
---- 
-
-<section class="indenter subgrid split-lists stack">
-## My Design Process { .margin-bottom:size2 }
+<section class="grid indenter:3/5 split-lists stack border-top">
+## My Design Process
 
 I generally move through five phases on a design project. Although their implementation is never really the same, I'd describe them as:
 
@@ -55,20 +54,19 @@ I generally move through five phases on a design project. Although their impleme
 </div>
 </section>
 
----
-
-<section class="indenter subgrid stack padding-top">
-## Experience { .margin-bottom:size2 }
-<div class="h4 font:light margin-top:size-2">
+<section class="grid indenter:3/5 stack border-top">
+## Experience
+<div class="h4 font:light">
 **I've designed software for:**
 
 * Information Security
 * Networking
 * Natural Language Processing
 * Genomic Sequencing
-
 </div>
-I've spent a fair amount of time as a freelancer, and have broad set of expertise; alongside product design, I do contract illustration.
+
+I've spent a fair amount of time as a freelancer and have broad set of expertise.
+Alongside product design, I do contract illustration:
 
 <a href="/assets/xavier-valarino-illustration-work-samples.pdf"
    class="position:relative">
@@ -82,7 +80,7 @@ Feel free to inquire at <a href="mailto:xavier@valarino.com">xavier@valarino.com
 
 </section>
 
-<section class="indenter subgrid border-top">
+<section class="grid indenter:3/5 stack border-top">
 ## Colophon
 
 <div>

@@ -4,9 +4,9 @@
 - [x] class overhaul
 - [x] move images to assets folder
 - [x] add favicon
-- [ ] Refactor indenter class
+- [x] Refactor indenter class
 - [x] figure out whats going on with figure > images 
-- [ ] clean up About page markup/markdown
+- [x] clean up About page markup/markdown
 - [ ] Update README
 - [ ] Nav for non-top-level pages
 - [ ] Case study footer nav (back/index/next)
@@ -16,6 +16,7 @@
   - [ ] Botanic
   - [ ] GEARS login prototype and Google Analytics
 - [ ] Image optimization & sizing
+- [ ] Add styles for counter continuation list
 - [ ] Add build script for PDF assets
 - [ ] Image pop-out viewer
 - [ ] Site map generator
@@ -25,3 +26,4 @@
   - [ ] Retain exclusive rights for content
   - [ ] Permissive for source code
   - [ ] License for raster.grid (for posterity)
+- [ ] `watch:video` supress watcher when ffmpeg is encoding

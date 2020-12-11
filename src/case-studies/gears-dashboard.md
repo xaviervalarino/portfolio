@@ -7,7 +7,7 @@ masthead:
    work: true
 ---
 
-<section class="subgrid indenter flip-top:kid border-top:3px border-accent:cyan">
+<section class="grid indenter:3/5 flip-top:kid border-top:3px border-accent:cyan">
 ## Background  
 GEARS was a SaaS application for monitoring devices on corporate networks.
 
@@ -25,7 +25,7 @@ Designed the interaction pattern and user interface for dashboard customization.
 
 </section>
 
-<section class="subgrid split-lists indenter flip-top:kid border-top:3px border-accent:magenta">
+<section class="grid indenter:3/2/4 split-lists flip-top:kid border-top:3px border-accent:magenta">
 ## Process 
  
 1. Mapped application data to meaningful visual representations
@@ -49,40 +49,51 @@ How could I align user goals with the database schema to create something useful
 - Number of issues
 - Issue Severity
     
+<div class="subgrid side-by-side">
 ![Tree diagram showing relationship between recorded data and chart types](../assets/img/GEARS-dashboard-device-tree-diagram.png)
  
 I created tree diagrams to map how application data could be represented visually.
 I then used the tree diagrams as a rubric for the controls in the modal editor.
+</div>
  
+<div class="subgrid side-by-side">
 ![Modal editor configuring a list of 'lost devices'](../assets/img/GEARS-dashboard-edit-chart-lost-devices.png)
  
-![Modal editor configuring a  bar chart of devices with 'unwanted applications'](../assets/img/GEARS-dashboard-edit-chart-potentially-unwanted-applications.png)
+![Modal editor configuring a bar chart of devices with 'unwanted applications'](../assets/img/GEARS-dashboard-edit-chart-potentially-unwanted-applications.png)
+</div>
  
 #### Frequency of use
 An important design consideration was how frequently administrators would configure the charts on their dashboard. The dashboard was like a springboard, giving administrators a birds eye view of the network while providing a clear route to devices that needed review. 
 
+<div class="left-third cinch-up">
+![Sketching out how user goals would relate to their networks](../assets/img/GEARS-dashboard-lifecycle.jpeg)
+</div>
+
 The primary use of the dashboard was at to, all at once, give a birds eye view of the network while giving the administrator a way to effortlessly drill down into problematic devices.
 I wanted to make sure that these actions remained prominent, while giving enough visual affordance to the chart configuration features. 
  
-![Sketching out how user goals would relate to their networks](../assets/img/GEARS-dashboard-lifecycle.jpeg)
  
-![Mockup of the default dashboard](../assets/img/GEARS-default-dashboard.png)
  
 #### Modal editing
 Configuration options were hidden behind an _Edit Dashboard_ button. This was done as a safeguard against users accidentally moving the chart widgets when trying to click on chart elements. The colors would dim to queue the user of the state change.
  
-![Mockup of dashboard in "Edit" state](../assets/img/GEARS-dashboard-move-chart-widget.png)
- 
-![](../assets/img/GEARS-dashboard-chart-reflow-on-grid-1.png)
- 
-![](../assets/img/GEARS-dashboard-chart-reflow-on-grid-2.png)
+<div class='subgrid side-by-side border:img margin-top'>
+![Mockup of the default dashboard](../assets/img/GEARS-default-dashboard.png)
 
+![Mockup of dashboard in "Edit" state](../assets/img/GEARS-dashboard-move-chart-widget.png)
+</div>
+ 
 #### Customizing the layout
 Chart widgets were design to reflow based on a grid system, spanning either two or three columns. Their width were predetermined and based on which chart visualization had been chosen.
 
+<div class='subgrid side-by-side border:img margin-top'>
+![](../assets/img/GEARS-dashboard-chart-reflow-on-grid-1.png)
+ 
+![](../assets/img/GEARS-dashboard-chart-reflow-on-grid-2.png)
+</div>
 </section>
 
-<section class="subgrid split-lists indenter flip-top:kid border-top:3px border-accent:yellow">
+<section class="grid split-lists indenter:3/2/4 flip-top:kid border-top:3px border-accent:yellow">
 ## Outcome 
  
 My final design broke the dashboard into three modes:
@@ -96,8 +107,10 @@ The result was a highly configurable dashboard with an interface that was clean 
 
 ![Modal chart editor with a live preview](../assets/img/GEARS-dashboard-edit-modal-with-preview.png)
 
-![The final design with a blue sidebar](../assets/img/GEARS-dashboard-blue-sidebar.png)
- 
 Once all stakeholders had signed off on the user interaction, I cleaned up the visual style. In order to reduce visual clutter, I switched out the chart borders for a light gray background, and distinguished the left navigation by making it all one color.
+
+<div class="bkg:grey pano shadow:img">
+![The final design with a blue sidebar](../assets/img/GEARS-dashboard-blue-sidebar.png)
+</div>
 
 </section>

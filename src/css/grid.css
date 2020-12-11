@@ -42,7 +42,9 @@
 }
 .grid > ul,
 .grid > ol, 
-.grid > .subgrid {
+.grid > .subgrid,
+.subgrid > ul,
+.subgrid > ol {
   --subgrid-tc: calc( var(--subgrid-ce) - var(--grid-cs) );
 }
 .subgrid > .subgrid *,

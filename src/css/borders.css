@@ -15,7 +15,7 @@
   --border-width: 3px;
 }
 .border\:img img {
-  border: var(--border-width) solid var(--border-color);
+  border: var(--border-width) solid var(--dark-grey);
 }
 
 [class*=border-accent] {

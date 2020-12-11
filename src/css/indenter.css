@@ -6,65 +6,225 @@
  * sets specified "tab-stops" along the grid
  * (b/c everything is the grid)
  */
-
-.indenter {
-  --tab1: 3;
-  --tab2: 5;
-  --tab3: 7; padding-top: calc( var(--size2) - var(--border-width, 0px) );
-  padding-bottom: var(--size4);
+[class*="indenter"] {
+  --tab1: 2;
+  --tab2: 3;
+  margin-top: var(--size2);
+  margin-bottom: var(--size4);
+  padding-top: calc( var(--size1) + var(--size2) );
 }
-.indenter h2,
-.indenter .tab1 {
+
+/* tabbed siblings */
+
+[class*="indenter"] > h2 ~ *,
+[class*="indenter"] > .tab1 ~ * {
+  --grid-cs: var(--tab1);
+}
+[class*="indenter"] > h3 ~ *,
+[class*="indenter"] > .tab2 ~ * {
+  --grid-cs: var(--tab3, var(--tab2));
+}
+[class*="indenter"] > hr {
+  --grid-cs: var(--tab1);
+}
+
+/* tab markers */
+
+[class*="indenter"] > h2,
+[class*="indenter"] > .tab1 {
   --grid-ce: var(--tab1);
-  --subgrid-ce: var(--tab1);
+  /* cinch-up to the x-height of the following paragraph */
+  margin-top: calc( var(--size-5) * -1);
+}
+[class*="indenter"] > h3,
+[class*="indenter"] > .tab2 {
+  --grid-cs: var(--tab1);
+  --grid-ce: var(--tab3, var(--tab2));
+}
+
+/* fix spacing */
+
+[class*="indenter"] > h2 + p {
+  margin-top: 0;
+}
+[class*="indenter"] > h2 + ol,
+[class*="indenter"] > .tab1 + ol {
   margin-top: calc( var(--size-5) * -1 );
 }
-.indenter h3,
-.indenter .tab2 {
-  --grid-cs: var(--tab1);
-  --subgrid-ce: var(--tab2);
-  margin-top: var(--size-5);
-}
-.indenter h2 ~ *:not(h2),
-.indenter .tab1 ~ *:not(h2):not(.tab1),
-.indenter .tab2 {
-  --grid-cs: var(--tab1);
-}
-.indenter h3 ~ *:not(h3):not(figure):not(video):not(hr),
-.indenter .tab2 ~ *:not(.tab3):not(hr),
-.intender .tab3 {
-  --grid-cs: var(--tab2);
-}
 
-.indenter hr {
+.indenter\:3\/5 {
+  --tab1: 3;
+  --tab2: 5;
+}
+/* | 1  | 2  | 3  | 4  | 5  | 6  |  column
+ * 1    2    3    4    5    6    7  line ID
+ * +----+----+----+----+----+----+
+ * | h2      | h2 ~ *            | 
+ * +----+----+----+----+----+----+
+ *           | h3      | h3 ~ *  |
+ *           +----+----+----+----+
+ *           | hr                |
+ *           +----+----+----+----+
+ *           | h3      | h3 ~ *  |
+ *           +----+----+----+----+
+ */
+
+.indenter\:3\/2\/4 {
+  --tab1: 3;
+  --tab2: 2;
+  --tab3: 4;
+}
+.indenter\:3\/2\/4 > h3,
+.indenter\:3\/2\/4 > .tab2 {
   --grid-cs: var(--tab2);
 }
-/* align the x-height of the first item after the tab */
-.indenter h2 + *,
-.indenter h3 + * {
-  margin-top: var(--size-6)
+.indenter\:3\/2\/4 > hr {
+  --grid-cs: var(--tab2);
 }
-.indenter h2 + ol, 
-.indenter h2 + ul {
-  /* margin-top: var(--size-6) */
-  margin-top: calc( var(--size-2) * -1 );
+/* 
+ * Useful when h2 text is a long word
+ *
+ * | 1  | 2  | 3  | 4  | 5  | 6  |  column
+ * 1    2    3    4    5    6    7  line ID
+ * +----+----+----+----+----+----+
+ * | h2      | h2 ~ *            | 
+ * +----+----+----+----+----+----+
+ *           | h2 ~ *            | 
+ *      +----+----+----+----+----+
+ *      | h3      | h3 ~ *       |
+ *      +----+----+----+----+----+
+ *      | hr                     |
+ *      +----+----+----+----+----+
+ *      | h3      | h3 ~ *       |
+ *      +----+----+----+----+----+
+ */
+
+/* granular control */
+[data-tab="0"] {
+  --grid-cs: 1 !important;
 }
-.indenter h3 ~ img,
-.intender h3 ~ figure,
-.indenter h3 ~ video {
+[data-tab="1"] {
   --grid-cs: var(--tab1) !important;
 }
+[data-tab="2"] {
+  --grid-cs: var(--tab2) !important;
+}
+[data-tab="3"] {
+  --grid-cs: var(--tab3) !important;
+}
 
-@media only screen and (max-width: 900px) {
-  .indenter { 
+/* image and content alignment */
+
+[class*="indenter"] .one-third {
+  --grid-ce: span 2;
+}
+[class*="indenter"] .left-third {
+  --grid-cs: 2;
+  --grid-ce: 4;
+  --subgrid-ce: 4;
+}
+[class*="indenter"] .half {
+  --grid-ce: span 3;
+}
+[class*="indenter"] .two-thirds {
+  --grid-ce: span 4;
+}
+[class*="indenter"] . {
+  --grid-cs: span 6;
+}
+.subgrid.side-by-side {
+  --grid-cs: 1;
+  margin-bottom: 2rem;
+}
+.side-by-side {
+  padding: 1rem;
+}
+
+.side-by-side > * {
+  --grid-cs: span 3;
+  --subgrid-ce: auto;
+}
+.side-by-side figure {
+  margin-top: 0;
+}
+
+
+
+.pano {
+  --margin: calc( (100vw - 100%) / 2 );
+  width: 100vw;
+  text-align: right;
+  margin-left: calc( var(--margin) * -1); 
+  margin-top: var(--size3);
+  margin-bottom: var(--size3);
+  padding: var(--size4)
+           var(--margin)
+           var(--size5);
+}
+.pano figure {
+  text-align: center;
+}
+[class*="indenter"] .pano {
+  --grid-cs: 1;
+  --grid-ce: 7;
+}
+.shadow\:img img {
+  box-shadow: 1px 1px 10px #d1d1d1;
+}
+
+.cinch-up {
+  margin-top: -20%;
+}
+/* stylelint-disable no-descending-specificity */
+
+/* fix no space between a 'visual' p + p */
+.cinch-up + p  {
+  margin-top: var(--size1);
+}
+/* stylelint-enable no-descending-specificity */
+
+/* fixup
+ * remove margin when inside the box
+ */
+[class*="indenter"] div figure,
+[class*="indenter"] div video {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* breakpoint */
+@media only screen and ( max-width: 960px ) {
+  .indenter\:3\/5 {
     --tab1: 2;
     --tab2: 2;
   }
-  .indenter h2,
-  .indenter h3,
-  /* /1* .indenter\:first, *1/ */
-  .indenter .tab2 {
-    --grid-ce: var(--tab3);
-    --subgrid-ce: var(--tab3);
+  .indenter\:3\/2\/4 {
+    --tab1: 2;
+    --tab2: 2;
+    --tab3: 2;
+  }
+  /* note: .tab1 and .tab2 do not go full-width like headings */
+  [class*="indenter"] > h2, 
+  [class*="indenter"] > h3 {
+    --grid-ce: 7;
+    margin-bottom: var(--size1)
+  }
+  .cinch-up {
+    margin-top: var(--size2);
+  }
+  [class*="indenter"] .one-third,
+  [class*="indenter"] .left-third,
+  [class*="indenter"] .half,
+  [class*="indenter"] .two-thirds,
+  .side-by-side > * {
+    --grid-cs: var(--tab1);
+    --grid-ce: 7;
+  }
+  [class*="indenter"] .side-by-side > * {
+    --subgrid-ce: 7;
+    margin-top: var(--size1);
+  }
+  .side-by-side {
+    padding: 0;
   }
 }

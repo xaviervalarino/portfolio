@@ -91,7 +91,9 @@ button.simple:active {
 }
 
 /* content */
-
+article h3 {
+  margin-bottom: var(--size1);
+}
 article h4 {
   margin-top: var(--size3);
   margin-bottom: var(--size1);
@@ -105,7 +107,8 @@ hr {
   margin-bottom: calc( var(--size1) - 1px);
 }
 
-p + p {
+p + p,
+p + ol {
   margin-top: var(--size1);
 }
 
@@ -119,6 +122,7 @@ img {
 figure img,
 video {
   max-height: 85vh;
+  margin: 0 auto;
 }
 figure,
 video {

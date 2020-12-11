@@ -7,7 +7,7 @@ masthead:
     work: true
 ---
 
-<section class="subgrid indenter flip-top:kid border-top:3px border-accent:cyan">
+<section class="grid indenter:3/5 flip-top:kid border-top:3px border-accent:cyan">
 ## Background 
 Alongside offering their own SaaS product, OPSWAT was contracted to build a wireless cloud management system for Netgear. I was lead designer for the project.
 The application included features for setting up a captive portal—a webpage that newly connected users would have to pass through before gaining access to the broader network. Corporate clients wanted to personalize these entry points.
@@ -24,16 +24,21 @@ Designed the setup wizard for the captive portal, exploring the UX impact of var
 
 </section>
 
-<section class="subgrid indenter flip-top:kid border-top:3px border-accent:magenta">
+<section class="grid indenter:3/2/4 flip-top:kid border-top:3px border-accent:magenta">
 ## Process 
 I created mockups and prototypes to help me understand how the the template components should behave.
+
+<div class="half border:img margin-stack:large" data-tab="1">
+
+![Page from specifications document showing three options to be offered](../assets/img/netgear-captive-portal-template-variants.png)
+</div>
 
 ---
 
 ### Mockups 
 I created three templates, exploring how they rendered in different viewports.
 
-![Page from specifications document showing three options to be offered](../assets/img/netgear-captive-portal-template-variants.png)
+---
 
 ### Prototypes 
 I built functional prototypes of the templates to investigate the assumptions made in the mockups. CSS media queries were used to test for different devices (mobile phones, tablets, and laptop/desktops). A series of images with different aspect ratios were used to test for user-generated content.
@@ -51,15 +56,21 @@ These prototypes gave immediate visual feedback of the limits I'd encounter whil
 Along with the prototypes, I drafted a specifications document to send to the engineering team in Vietnam. It outlined the three templates we would offer and explained the logic used in the prototypes.
 I then translated the specifications into discrete and actionable tickets.
 
+<div class="left-third border:img">
 ![Cover of the specifications document](../assets/img/netgear-captive-portal-specifications-document-cover.png)
+</div>
 
+<div class="margin-top:size3 border:img" data-tab="2">
 ![Page from specifications document outlining components used in templates](../assets/img/netgear-captive-portal-components.png)
+</div>
 
+<div class="margin-top:size3 border:img" data-tab="2">
 ![Page from specifications document explaining logic used for mobile prototypes](../assets/img/netgear-captive-portal-template-logic-for-mobile.png)
+</div>
 
 </section> 
 
-<section class="subgrid indenter flip-top:kid border-top:3px border-accent:yellow">
+<section class="grid indenter:3/5 flip-top:kid border-top:3px border-accent:yellow">
 ## Outcome 
 The delivered document gave the engineering team blueprints for the templates, allowing them to plug them into the larger CP setup wizard.
 

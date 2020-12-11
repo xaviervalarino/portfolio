@@ -4,6 +4,12 @@
  * ::::::::::::::
  */
 
+.shadow,
+.shadow\:img img {
+  box-shadow: 1px 1px 10px #d1d1d1;
+  box-shadow: 1px 1px 10px var(--dark-grey);
+}
+
 .multiply,
 .multiply::before,
 .multiply::after,
@@ -43,24 +49,26 @@ svg.multiply * {
   fill: var(--yellow);
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 960px) {
 
-  /* cinch up element after the flip-top-kid */
-  .flip-top\:kid > *:nth-child(2) { margin-top: calc( (var(--size-3) * -1) - 1.4ex );
-  }
-  .flip-top\:kid > ol:nth-child(2) {
-    margin-top: calc( (var(--size3) + var(--size1)) * -1 );
-  }
   .flip-top\:kid > *:first-child {
     writing-mode: vertical-lr;
     margin-top: unset;
+    margin-bottom: unset; /* dont collide with indenter h2 */
     margin-left: -0.5rem;
     padding-bottom: unset;
+  }
+  /* cinch up element after the flip-top-kid */
+  .flip-top\:kid > *:first-child + p {
+    margin-top: calc( (var(--size-3) * -1) - 1.4ex );
+  }
+  .flip-top\:kid >  *:first-child + ol {
+    margin-top: calc( (var(--size3) + var(--size1)) * -1 );
   }
 
   .kodak {
     width: var(--size-3);
-    height: 60%;
+    height: 100%;
     margin-top: unset;
     margin-left: var(--size-2);
   }
