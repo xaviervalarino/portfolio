@@ -43,12 +43,6 @@ svg.multiply * {
 .kodak #tall {
   display:none;
 }
-.kodak rect:first-child {
-  fill: var(--cyan);
-}
-.kodak rect:last-child {
-  fill: var(--yellow);
-}
 
 @media only screen and (max-width: 960px) {
 
