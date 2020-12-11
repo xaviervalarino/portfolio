@@ -41,7 +41,7 @@ End-to-end design and development, which entailed:
 1. Made recommendations on how we could work around project constraints
 1. Designed mockups exploring how clients would create furniture orders.
 1. Interviewed interior designers to understand:
-    - How they thought putting together a furniture configuration
+    - How they thought about putting together a furniture configuration
     - What the average configuration might look like
     - What their expectations were around ordering
 
@@ -68,7 +68,7 @@ Since the application was client-side, all the assets were bundled into a blob a
  
 
 #### Project Scaffolding
-Gulp was used for preprocessing and bundling, including preparing images assets.
+Gulp was used for preprocessing and bundling, including preparing image assets.
 
 SVG format was used for the images, which could be easily inlined as text into the distribution code. Another benefit of SVG was that the application could programmatically change the colors and background patterns through CSS styles.
 
@@ -88,7 +88,7 @@ Assigning multiple colors was done through two separate properties: one through 
 </div>
  
 #### Recording data 
-Each piece of furniture and it's relative position were stored as JSON object. When a client would go to print the cut sheet, the data object would be iterated through, generating a list of parts that the studio could itemize for the fabricator.
+Each piece of furniture and its relative position were stored as a JSON object. When a client would go to print the cut sheet, the data object would be iterated through, generating a list of parts that the studio could itemize for the fabricator.
 
 <div class="bkg:grey pano" data-tab='0'>
 <video autoplay playsinline loop>

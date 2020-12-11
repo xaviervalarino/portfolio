@@ -19,7 +19,7 @@ To produce a design systems document that would allow third-party vendors to eas
 ---
 
 ### My Role 
-Create guidelines on how external vendors could rebrand the application, identifying components and how the relate.
+Create guidelines on how external vendors could rebrand the application, identifying components and how they relate.
 
 ![Security Score application](../assets/img/security-score-security-check.jpg)
 
@@ -51,12 +51,7 @@ After outlining the first three areas, I met with the marketing and engineering 
 
 <section class="grid indenter:3/5 flip-top:kid border-top:3px border-accent:yellow">
 ## Outcome
-
-Defined parts of the application that could be customized, defining a framework for how third party vendors could rebrand the application for their market.
-
-The guidelines defined a process for how third party vendors submit customization requests, making clear what could and could not be changed.  It also provided us with an internal methodology for for defining and documenting OPSWAT's digital products.
-
-It also provided us with an internal methodology for for defining and documenting OPSWAT's digital products.
+The guidelines codified how third party vendors would submit customization requests, making clear what could and could not be changed. It also provided us with an internal methodology for defining and documenting OPSWAT's digital products.
 
 <div class="pano bkg:grey shadow:img">
 ![A later version of the application, rebranded for Vivo Telefonica in Brazil.](../assets/img/security-score-rebranded-telefonica.png)

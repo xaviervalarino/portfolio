@@ -69,7 +69,7 @@ An important design consideration was how frequently administrators would config
 ![Sketching out how user goals would relate to their networks](../assets/img/GEARS-dashboard-lifecycle.jpeg)
 </div>
 
-The primary use of the dashboard was at to, all at once, give a birds eye view of the network while giving the administrator a way to effortlessly drill down into problematic devices.
+The primary use of the dashboard was to, all at once, give a bird's eye view of the network while giving the administrator a way to effortlessly drill down into problematic devices.
 I wanted to make sure that these actions remained prominent, while giving enough visual affordance to the chart configuration features. 
  
  
@@ -84,12 +84,12 @@ Configuration options were hidden behind an _Edit Dashboard_ button. This was do
 </div>
  
 #### Customizing the layout
-Chart widgets were design to reflow based on a grid system, spanning either two or three columns. Their width were predetermined and based on which chart visualization had been chosen.
+Chart widgets were designed to reflow based on a grid system, spanning either two or three columns. Their widths were predetermined and based on which chart visualization had been chosen.
 
 <div class='subgrid side-by-side border:img margin-top'>
-![](../assets/img/GEARS-dashboard-chart-reflow-on-grid-1.png)
+![Mockup of chart widget being dragged from 3 column space](../assets/img/GEARS-dashboard-chart-reflow-on-grid-1.png)
  
-![](../assets/img/GEARS-dashboard-chart-reflow-on-grid-2.png)
+![Mockup of chart widget being dropped into 4 column space](../assets/img/GEARS-dashboard-chart-reflow-on-grid-2.png)
 </div>
 </section>
 

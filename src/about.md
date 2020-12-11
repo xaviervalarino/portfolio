@@ -29,7 +29,7 @@ I live in Oakland, CA.
 ## I enjoy learning how complex systems work. { .margin-bottom:size2 }
 
 <div class="margin:none">
-In learning a system, you come to understand what guided it's designers. Hopefully, you also find ways to explain that logic to others. The hardest part of interface design is knowing when to show the underlying system vs. simplifying the systems complexity so that it doesn't get in the way.
+In learning a system, you come to understand what guided its designers. Hopefully, you also find ways to explain that logic to others. The hardest part of interface design is knowing when to show the underlying system vs. simplifying the system's complexity so that it doesn't get in the way.
 
 I got my start in print. Bless the engineer at Adobe who put Javascript and GREP into InDesign---once I realized the potential, it was turtles all the way down.
 
@@ -47,7 +47,7 @@ Because life is too short for crappy software.
 I generally move through five phases on a design project. Although their implementation is never really the same, I'd describe them as:
 
 1. **Research** the problem, the client's domain, the user's needs, the limitations.
-2. **Analyze** how how to solve for _x_.
+2. **Analyze** how to solve for _x_.
 3. **Design** a prototype to solve the problem.
 4. **Test** the prototype to figure out where the model succeeded and where  it fails.
 5. **Rinse and repeat**---tweak the design until it produces the desired outcome.
