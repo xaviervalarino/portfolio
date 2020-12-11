@@ -23,10 +23,10 @@ NPM scripts are used build the site.
 npm run build            Run all build scripts
 npm run build:css        Concatenate all stylesheet files
 npm run build:fonts      Copy fonts directory to distribution dir
-build:favicon            Copy /assets/favicon/ to distribution dir
-build:html               Run Pandoc on all content files
-build:img                Optimize all images in /assets/img
-npm run build:html       Convert Markdown files into HTML npm run build:img        Optimize images
+npm run build:favicon    Copy /assets/favicon/ to distribution dir
+npm run build:html       Run Pandoc on all content files
+npm run build:img        Optimize all images in /assets/img
+npm run build:html       Convert Markdown files into HTML npm run build:img
 npm run build:js         Copy JS files to distribution dir
 npm run build:video      Convert and compress videos in '/assets' directory 
 npm run clean            Run all clean scripts
