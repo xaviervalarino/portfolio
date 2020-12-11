@@ -90,7 +90,7 @@ The display font is [Uxum Grotesque](https://uxum.mdn.market/) by [Bureau Nuits]
 
 The body font is [Inter](https://rsms.me/inter/) by Rasmus Andersson.
 
-Th site is hand-written in Markdown, HTML, and CSS. It's created with a homebrewed static site generator that orchestrates Bash, Pandoc and NPM. The source code is hosted on [Github](https://github.com/xaviervalarino/portfolio).
+The site is hand-written in Markdown, HTML, and CSS. It's created with a homebrewed static site generator that orchestrates Bash, Pandoc and NPM. The source code is hosted on [Github](https://github.com/xaviervalarino/portfolio).
 </div>
 
 </section>
