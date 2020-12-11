@@ -19,7 +19,7 @@ Tools used for building the site:
 ## Commands
 NPM scripts are used build the site. 
 
-Note: these probably wont work on a Windows machine unless run on a Unix subsystem due to the use of coreutils and `&` for process parrallelization.
+_Note_: these scripts might not work on Windows unless run on a Unix subsystem. This is due to the use `&` for process parrallelization.
 ```
 npm run build            Run all build scripts
 npm run build:css        Concatenate all stylesheet files
