@@ -11,38 +11,37 @@
 
     <main id="$id$" class="grid indenter:3/5" tabindex="-1">
       <div class="flip-top:kid tab1 flex:col-to-row<900px">
-	<h1 class="margin-top:size0">$title$</h1>
-	<svg class="multiply flip-top kodak"
-	     viewBox="0 0 100 100"
-	     width="100%"
-	     height="1ex"
-	     preserveAspectRatio="none"
-	     >
-	     <g id="long">
-	     <rect x="0"  y="0" width="80" height="100" class="bkg:cyan"    fill="cyan"   />
-	     <rect x="10" y="0" width="80" height="100" class="bkg:magenta" fill="magenta"/>
-	     <rect x="20" y="0" width="80" height="100" class="bkg:yellow"  fill="yellow" />
-	     </g>
-	  <g id="tall">
-	  <rect y="0"  x="0" width="100" height="80" class="bkg:cyan"    fill="cyan"   />
-	  <rect y="10" x="0" width="100" height="80" class="bkg:magenta" fill="magenta"/>
-	  <rect y="20" x="0" width="100" height="80" class="bkg:yellow"  fill="yellow" />
-	  </g>
-	</svg>
+        <h1 class="margin-top:size0">$title$</h1>
+        <svg class="multiply flip-top kodak"
+             viewBox="0 0 100 100"
+             width="100%"
+             height="1ex"
+             preserveAspectRatio="none">
+          <g id="long">
+            <rect x="0"  y="0" width="80" height="100" class="bkg:cyan"    fill="cyan"   />
+            <rect x="10" y="0" width="80" height="100" class="bkg:magenta" fill="magenta"/>
+            <rect x="20" y="0" width="80" height="100" class="bkg:yellow"  fill="yellow" />
+          </g>
+          <g id="tall">
+            <rect y="0"  x="0" width="100" height="80" class="bkg:cyan"    fill="cyan"   />
+            <rect y="10" x="0" width="100" height="80" class="bkg:magenta" fill="magenta"/>
+            <rect y="20" x="0" width="100" height="80" class="bkg:yellow"  fill="yellow" />
+          </g>
+        </svg>
       </div>
       <nav class="list-between fixup@<720px" role="list">
-	$for(projects)$
-	<a class="display:block padding-stack" role="listitem" href="$projects.href$">
-	  <section>
-	    <p class="font:smallcaps position:relative">
-	      <span class="position:absolute left:-grid-gap" aria-hidden="true">↘</span>
-	       project
-	    </p>
-	    <h3>$projects.title$</h3>
-	    <p>$projects.subtitle$</p>
-	  </section>
-	</a>
-	$endfor$
+        $for(projects)$
+        <a class="display:block padding-stack" role="listitem" href="$projects.href$">
+          <section>
+            <p class="font:smallcaps position:relative">
+              <span class="position:absolute left:-grid-gap" aria-hidden="true">↘</span>
+              project
+            </p>
+            <h3>$projects.title$</h3>
+            <p>$projects.subtitle$</p>
+          </section>
+        </a>
+        $endfor$
       </nav>
     </main>
     ${ partials/footer() }
