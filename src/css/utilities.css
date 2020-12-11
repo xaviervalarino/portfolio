@@ -19,6 +19,9 @@
 .margin\:none {
   margin: unset;
 }
+.margin-top\:size0 {
+  margin-top: var(--size0);
+}
 .margin-top {
   margin-top: var(--size1);
 }
@@ -64,12 +67,6 @@
 /* text related */
 .text-align\:center {
   text-align: center;
-}
-
-@media only screen and (max-width: 720px) {
-  .indent\:grid-gap\@\<720px {
-    transform: translateX( var(--grid-gap) );
-  }
 }
 
 /* viewport  dependent */

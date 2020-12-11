@@ -23,6 +23,7 @@ ul > li,
 
 .list-between > *:first-child {
   border-top: unset;
+  padding-top: unset;
 }
 
 li,
