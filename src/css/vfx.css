@@ -38,6 +38,7 @@ svg.multiply * {
   height: var(--size-2);
   /* width is the first column and the gap */
   width: calc( 50% + ( var(--grid-gap) / 2 ) );
+  overflow: visible;
 }
 .kodak #tall {
   display:none;
