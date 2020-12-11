@@ -15,6 +15,7 @@
   - [ ] Omicia
   - [ ] Botanic
   - [ ] GEARS login prototype and Google Analytics
+- [ ] Write script to automate Work Index creating: traverse projects to grab titles/subtitles
 - [ ] Image optimization & sizing
 - [ ] Add styles for counter continuation list
 - [ ] Add build script for PDF assets

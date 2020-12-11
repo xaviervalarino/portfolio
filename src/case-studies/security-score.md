@@ -1,5 +1,5 @@
 ---
-title: Creating a variable design system
+title: Defining a variable design system
 subtitle: Identifying elements of an application
 project: Security Score
 template: case-study.html
