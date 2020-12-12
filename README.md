@@ -11,6 +11,7 @@ Tools used for building the site:
 | **`pandoc`**     | 2.11    | converting Markdown to HTML                                                    |
 | **`ffmpeg`**     | 4.3.1   | converting and compressing videos                                              |
 | **`git-lfs`**    | 2.13    | storing binary files ( source files for mockups )                              |
+| **`rsync`**      | 2.6.9   | deploying site to production and testing VPS                                   |
 
 ## Directory structure
 - **`src`:**  "Source" folder contains all the working files.
@@ -34,6 +35,8 @@ npm run clean            Run all clean scripts
 npm run clean:favicon    Delete favicon dir
 npm run clean:html       Delete HTML files in distribution dir
 npm run clean:img        Delete all image files in distribution dir
+npm run deploy:prod      Copy distribution dir to production site
+npm run deploy:test      Copy distribution dir to testing site
 npm run dev              Start server and watch files
 npm run serve            Serve distribution dir from localhost
 npm run watch            Run all watch scripts

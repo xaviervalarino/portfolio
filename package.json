@@ -19,6 +19,8 @@
     "clean:favicon": "rm -rv \"./dist/assets/favicon\"",
     "clean:html": "rm -rv \"./dist/**/*.html\"",
     "clean:img": "rm -rv \"./dist/assets/img/*\"",
+    "deploy:prod": "rsync -azvhP dist/ $production",
+    "deploy:test": "rsync -azvhP dist/ $testing",
     "dev": "npm run build:html && npm run watch & npm run serve",
     "serve": "live-server \"./dist\"",
     "watch": "npm run watch:css & npm run watch:html & npm run watch:img & npm run watch:js & npm run watch:template & npm run watch:video",
