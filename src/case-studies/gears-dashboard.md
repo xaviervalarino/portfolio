@@ -63,19 +63,20 @@ I then used the tree diagrams as a rubric for the controls in the modal editor.
 </div>
  
 #### Frequency of use
-An important design consideration was how frequently administrators would configure the charts on their dashboard. The dashboard was like a springboard, giving administrators a birds eye view of the network while providing a clear route to devices that needed review. 
+An important design consideration was how frequently administrators would configure the charts on their dashboard.
+
+The primary use of the dashboard was to, all at once, give a bird's eye view of the network while giving the administrator a way to effortlessly drill down into problematic devices.
+
 
 <div class="left-third cinch-up">
 ![Sketching out how user goals would relate to their networks](../assets/img/GEARS-dashboard-lifecycle.jpeg)
 </div>
 
-The primary use of the dashboard was to, all at once, give a bird's eye view of the network while giving the administrator a way to effortlessly drill down into problematic devices.
 I wanted to make sure that these actions remained prominent, while giving enough visual affordance to the chart configuration features. 
  
  
- 
 #### Modal editing
-Configuration options were hidden behind an _Edit Dashboard_ button. This was done as a safeguard against users accidentally moving the chart widgets when trying to click on chart elements. The colors would dim to queue the user of the state change.
+Configuration options were hidden behind an _Edit Dashboard_ button; modality was created to safeguard against users accidentally moving the chart widgets when trying to click on chart elements. The colors would dim to cue the user of the state change.
  
 <div class='subgrid side-by-side border:img margin-top'>
 ![Mockup of the default dashboard](../assets/img/GEARS-default-dashboard.png)
@@ -84,7 +85,7 @@ Configuration options were hidden behind an _Edit Dashboard_ button. This was do
 </div>
  
 #### Customizing the layout
-Chart widgets were designed to reflow based on a grid system, spanning either two or three columns. Their widths were predetermined and based on which chart visualization had been chosen.
+Chart widgets were designed to reflow based on a grid system, spanning either two, three, or four columns. 
 
 <div class='subgrid side-by-side border:img margin-top'>
 ![Mockup of chart widget being dragged from 3 column space](../assets/img/GEARS-dashboard-chart-reflow-on-grid-1.png)
