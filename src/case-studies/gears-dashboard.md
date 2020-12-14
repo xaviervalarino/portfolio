@@ -88,9 +88,9 @@ Configuration options were hidden behind an _Edit Dashboard_ button; modality wa
 Chart widgets were designed to reflow based on a grid system, spanning either two, three, or four columns. 
 
 <div class='subgrid side-by-side border:img margin-top'>
-![Mockup of chart widget being dragged from 3 column space](../assets/img/GEARS-dashboard-chart-reflow-on-grid-1.png)
- 
-![Mockup of chart widget being dropped into 4 column space](../assets/img/GEARS-dashboard-chart-reflow-on-grid-2.png)
+![Mockup of chart widget being dragged from 4 column space](../assets/img/GEARS-dashboard-chart-reflow-on-grid-2.png)
+
+![Mockup of chart widget being dropped into 3 column space](../assets/img/GEARS-dashboard-chart-reflow-on-grid-1.png)
 </div>
 </section>
 
@@ -102,7 +102,7 @@ My final design broke the dashboard into three modes:
 1. **Daily Use**---using the dashboard as a springboard into devices that needed further investigation 
 
 2. **Arrangement**---moving the widgets around and resizing them. 
-3. **Configuration**---Editing chart widgets through a modal window
+3. **Configuration**---Editing chart widgets inputs through a modal window
 
 The result was a highly configurable dashboard with an interface that was clean and goal-oriented.
 
