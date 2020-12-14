@@ -16,7 +16,7 @@
     document.querySelectorAll('[data-t="readout"]')
       .forEach( el => {
         if ( obj[el.dataset.i] ) {
-          el.textContent = obj[el.dataset.i];
+          el.textContent = obj[el.dataset.i] + 'px';
         };
       })
     ;
