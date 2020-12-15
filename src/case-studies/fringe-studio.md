@@ -88,7 +88,7 @@ Assigning multiple colors was done through two separate properties: one through 
 </div>
  
 #### Recording data 
-Each piece of furniture and its relative position were stored as a JSON object. When a client would go to print the cut sheet, the data object would be iterated through, generating a list of parts that the studio could itemize for the fabricator.
+Each piece of furniture and its relative position were stored in a JSON object. When a client would go to print the cut sheet, the data object would be iterated through, generating a list of parts that the studio could itemize for the fabricator.
 
 <div class="bkg:grey pano" data-tab='0'>
 <video autoplay playsinline loop>
