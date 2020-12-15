@@ -1,4 +1,8 @@
-/* table */
+/*
+ * Tables
+ * ::::::
+ */
+
 table {
   border: var(--size-4) solid var(--dark);
 }
