@@ -14,6 +14,31 @@
 	$body$
       </article>
     </main>
+    <nav class="grid bottom-nav" role="list">
+        <a class="display:block padding-stack border-top-dotted"
+	   role="listitem"
+	   href="/work.html#case-studies">
+            <p class="font:smallcaps position:relative">
+              <span class="position:absolute left:-grid-gap"
+		    aria-hidden="true">↖</span>
+              Back
+            </p>
+            <h3>Case Studies</h3>
+	</a>
+        <a class="display:block padding-stack border-top-dotted"
+	  role="listitem"
+	  href="$nextProject.href$">
+          <section>
+            <p class="font:smallcaps position:relative">
+              <span class="position:absolute left:-grid-gap"
+		    aria-hidden="true">→</span>
+              next project
+            </p>
+            <h3>$nextProject.title$</h3>
+            <p>$nextProject.subtitle$</p>
+          </section>
+        </a>
+    </nav>
     ${ partials/footer() }
     ${ partials/scripts() }
   </body>

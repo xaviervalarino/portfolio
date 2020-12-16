@@ -8,6 +8,9 @@
 .border {
   border: var(--border-width) solid var(--border-color);
 }
+.border-top-dotted {
+  border-top-style: dotted;
+}
 .border-top\:2px {
   --border-width: 2px;
 }

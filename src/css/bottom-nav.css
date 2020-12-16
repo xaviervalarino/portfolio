@@ -1,0 +1,21 @@
+
+/*
+ * Bottom Nav
+ * ::::::::::
+ * This should probably be folded into the `indenter` sub-classes
+ */
+
+.grid.bottom-nav > *:first-child {
+  --grid-ce: span 2
+}
+.grid.bottom-nav > *:last-child {
+  --grid-cs: 3;
+}
+
+@media only screen and ( max-width: 800px ) {
+  .grid.bottom-nav > *:first-child,
+  .grid.bottom-nav > *:last-child {
+    --grid-cs: 1;
+    --grid-ce: 7 ;
+  }
+}

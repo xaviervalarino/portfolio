@@ -22,7 +22,7 @@
   align-self: end;
 }
 .margin\:none {
-  margin: unset;
+  margin: unset !important;
 }
 .margin-top\:size0 {
   margin-top: var(--size0);

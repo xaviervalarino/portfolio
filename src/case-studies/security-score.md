@@ -5,6 +5,10 @@ project: Security Score
 template: case-study.html
 masthead:
     work: true
+nextProject:
+    title:     Specifications for a flexible captive portal
+    subtitle:  Setting limits 
+    href:      /case-studies/netgear-captive-portal.html
 ---
 
 <section class="grid indenter:3/5 flip-top:kid border-top:3px border-accent:cyan">

@@ -5,6 +5,10 @@ project: Omicia
 template: case-study.html
 masthead:
     work: true
+nextProject:
+    title:     Defining a variable design system
+    subtitle:  Identifying elements of an application
+    href:      /case-studies/security-score.html
 ---
 
 <section class="grid indenter:3/5 flip-top:kid border-top:3px border-accent:cyan">

@@ -10,7 +10,7 @@
 - [x] Fix SSL certs
 - [x] Update README
 - [ ] Nav for non-top-level pages
-- [ ] Case study footer nav (back/index/next)
+- [x] Case study footer nav (back/index/next)
 - [ ] Images: double up on wide
 - [ ] write case studies:
   - [x] Omicia
