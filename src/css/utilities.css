@@ -8,6 +8,11 @@
   /* kinda kludgy, but oh well */
   margin-top: -10rem;
 }
+
+.img-height\:unset img {
+  max-height: unset !important;
+}
+
 .pointer-events\:none {
   /* don't get in the way of other elements */
   pointer-events: none;
