@@ -1,6 +1,6 @@
 ---
 title: Improving genetic reporting
-subtitle: Making an interface more goal-oriented
+subtitle: Making an interface more user friendly
 project: Omicia
 template: case-study.html
 masthead:

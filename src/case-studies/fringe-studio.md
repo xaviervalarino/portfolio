@@ -7,7 +7,7 @@ masthead:
     work: true
 nextProject:
     title:     Improving genetic reporting
-    subtitle:  Making an interface more goal-oriented
+    subtitle:  Making an interface more user friendly
     href:      /case-studies/omicia.html
 ---
 
