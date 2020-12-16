@@ -13,7 +13,7 @@
 - [ ] Case study footer nav (back/index/next)
 - [ ] Images: double up on wide
 - [ ] write case studies:
-  - [ ] Omicia
+  - [x] Omicia
   - [ ] Botanic
   - [ ] GEARS login prototype and Google Analytics
 - [ ] Write script to automate Work Index creating: traverse projects to grab titles/subtitles

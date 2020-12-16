@@ -21,4 +21,8 @@ projects:
     - title:     Programming an interactive furniture tool
       subtitle:  Making it all work together
       href:      /case-studies/fringe-studio.html
+
+    - title:     Improving genetic reporting
+      subtitle:  Making an interface more goal-oriented
+      href:      /case-studies/omicia.html
 ---
