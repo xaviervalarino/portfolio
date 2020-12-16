@@ -62,7 +62,7 @@ I then used the tree diagrams as a rubric for the controls in the modal editor.
 ![Modal editor configuring a bar chart of devices with 'unwanted applications'](../assets/img/GEARS-dashboard-edit-chart-potentially-unwanted-applications.png)
 </div>
  
-#### Frequency of use
+#### Frequency of Use
 An important design consideration was how frequently administrators would configure the charts on their dashboard.
 
 The primary use of the dashboard was to, all at once, give a bird's eye view of the network while giving the administrator a way to effortlessly drill down into problematic devices.
@@ -75,7 +75,7 @@ The primary use of the dashboard was to, all at once, give a bird's eye view of 
 I wanted to make sure that these actions remained prominent, while giving enough visual affordance to the chart configuration features. 
  
  
-#### Modal editing
+#### Modal Editing
 Configuration options were hidden behind an _Edit Dashboard_ button; modality was created to safeguard against users accidentally moving the chart widgets when trying to click on chart elements. The colors would dim to cue the user of the state change.
  
 <div class='subgrid side-by-side border:img margin-top'>
@@ -84,7 +84,7 @@ Configuration options were hidden behind an _Edit Dashboard_ button; modality wa
 ![Mockup of dashboard in "Edit" state](../assets/img/GEARS-dashboard-move-chart-widget.png)
 </div>
  
-#### Customizing the layout
+#### Customizing the Layout
 Chart widgets were designed to reflow based on a grid system, spanning either two, three, or four columns. 
 
 <div class='subgrid side-by-side border:img margin-top'>

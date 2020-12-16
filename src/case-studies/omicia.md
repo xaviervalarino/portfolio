@@ -36,7 +36,7 @@ Interaction design, hired specifically for a series of sprints that incorporated
 
 ---
 
-### Drawbacks of the existing user interface
+### Drawbacks of the Existing User Interface
 
 <div class="shadow:img five-sixths padding-stack">
 ![Screenshot of the previous table](../assets/img/omicia-previous-data-table.png)
@@ -49,10 +49,10 @@ On top of that, selecting which genetic variants would go into the report was cu
 
 --- 
 
-### Improving the interface
+### Improving the Interface
 
-#### Removing unnecessary information
-I recommended limiting the colors to yellow and red, which were the only two that provided actionable information. I also suggested removing links in table cells, and instead making the whole table row a link target for opening a variant modal. Links to other information would be placed inside that view.
+#### Removing Unnecessary Information
+I recommended limiting the colors to yellow and red, which were the only two that provided actionable information. I also suggested removing links in table cells, and instead making the whole table row a link target that would open the variant modal. Links to other information would be placed inside that view.
 
 <div class="border:img padding-stack">
 ![Detail of previous data table](../assets/img/omicia-previous-table-color-detail.png)
@@ -61,35 +61,35 @@ I recommended limiting the colors to yellow and red, which were the only two tha
 #### Legibility
 One of the fields recorded in the table was the gene's zygosity---whether the gene had the same alleles or a dominant and recessive one. 
 
-At small scale (or out of focus), the two words look almost identical.
+At small scale (or for those with poor vision), the two words look almost identical.
 
-I designed an icon that was easy enough to associate with the genotype and would quickly convey zygosity, while not eating into horizontal screen real-estate. 
+I designed an icon that was easy enough to associate with the genotype and would quickly convey zygosity. The icon had the added bonus of taking up less horizontal screen real estate. 
 
-![Sometimes icons are more recognizable](../assets/img/omicia-zygosity-legibility.png)
+![Sometimes icons are more legible](../assets/img/omicia-zygosity-legibility.png)
 
 
-#### Moving buttons to one location
-All buttons where moved to one cluster location at the top of the table.
+#### Moving Buttons to One Location
+All controls that didn't affect individual variant entries were moved to a button cluster above the table.
 
 <div class="pano bkg:grey shadow:img">
 ![My design for the table view](../assets/img/omicia-updated-data-table.png)
 </div>
 
-#### Giving clinicians control over what appears in the report
-An optional design was included: a feature to toggle which fields are added to final report _per selected gene variant_. The fields would appear as button clusters that could be toggled on or off.
+#### Editing Reported Fields
+An optional design was included: a feature to toggle which fields were added to final report _per individual gene variant_. The fields would appear as button clusters that could be toggled on or off.
 
 
 <div class="pano bkg:grey shadow:img img-height:unset">
 ![Wireframes for the variant detail view](../assets/img/omicia-updated-variant-modal.png)
 </div>
 
-### The configuration modal
-To complement the optional reporting feature, and because there were more fields available than would fit in the table, I designed a new configuration modal. Toggling fields on or off was  done by dragging and dropping them into one of three rows:
+### Field Configuration Modal
+To complement the Reported Fields feature, and because there were more fields available than would fit in the table, I designed a new configuration modal. Toggling fields on or off was done by dragging and dropping them into one of three rows:
 
 <div class="subgrid half">
-1. **Table row**: the field would appear on both the table and individual variant views.
-1. **Variant detail row**: the field would appear on only individual variant views. Essentially, the information was important enough that the clinician wanted to see it when they were examining a selected gene variant, but not enough to clutter the main table.
-1. **Off row**: The field would not appear in either view.
+1. **Table**: the field would appear on both the table and individual variant views
+1. **Variant Detail**: the field would appear on only individual variant views. Essentially, the information was important enough that the clinician wanted to see it when they were examining a selected gene variant, but not enough to clutter the main table.
+1. **Off**: The field would not appear in either view.
 </div>
 
 <div class="pano bkg:grey shadow:img img-height:unset">
@@ -101,6 +101,6 @@ To complement the optional reporting feature, and because there were more fields
 <section class="grid indenter:3/5 flip-top:kid border-top:3px border-accent:yellow">
 
 ## Outcome 
-The final design put the clinician's job first, giving them control over how they sift through data and simplifying how they built their reports.
+The final design put the clinician's job first, giving them control over how they sift through data and simplifying how they build their reports.
 
 </section>
