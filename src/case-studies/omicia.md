@@ -41,7 +41,7 @@ Interaction design, hired specifically for a series of sprints that incorporated
 <div class="shadow:img five-sixths padding-stack">
 ![Screenshot of the previous table](../assets/img/omicia-previous-data-table.png)
 </div>
-The data-heavy tables offered an overwhelming amount of information, but no way to pivot the data.
+The data-heavy table offered an overwhelming amount of information, but no way to pivot the data.
 
 On top of that, selecting which genetic variants would go into the report was cumbersome---clinicians would have to tick checkboxes, use dropdowns, and save them to an intermediate list before generating the report. 
 
