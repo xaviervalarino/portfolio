@@ -101,6 +101,6 @@ To complement the optional reporting feature, and because there were more fields
 <section class="grid indenter:3/5 flip-top:kid border-top:3px border-accent:yellow">
 
 ## Outcome 
-The final design put the clinician's job first, giving them control of how they sifted through data and simplifying their workflow.
+The final design put the clinician's job first, giving them control over how they sift through data and simplifying how they built their reports.
 
 </section>
