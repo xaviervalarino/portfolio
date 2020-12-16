@@ -129,7 +129,7 @@
 [class*="indenter"] .two-thirds {
   --grid-ce: span 4;
 }
-[class*="indenter"] . {
+[class*="indenter"] .span-all {
   --grid-cs: span 6;
 }
 .subgrid.side-by-side {
