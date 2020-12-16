@@ -10,7 +10,7 @@ masthead:
 <section class="grid indenter:3/5 flip-top:kid border-top:3px border-accent:cyan">
 
 ## Background
-Omicia (now Fabric Genomics) sequences genetic samples. Their application helps clinical lab find and report genetic variants that may cause disease, helping primary care physician diagnose current or future illness.
+Omicia (now Fabric Genomics) sequences genetic samples. Their application helps clinical labs find and report genetic variants that may cause disease, helping primary care physician diagnose current or future illness.
 
 ---
 
@@ -59,7 +59,7 @@ I recommended limiting the colors to yellow and red, which were the only two tha
 </div>
  
 #### Legibility
-One of the fields recorded in the table was the gene's zygosity---whether the gene had the same allele or a dominant and recessive one. 
+One of the fields recorded in the table was the gene's zygosity---whether the gene had the same alleles or a dominant and recessive one. 
 
 At small scale (or out of focus), the two words look almost identical.
 
