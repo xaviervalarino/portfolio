@@ -129,6 +129,10 @@
 [class*="indenter"] .two-thirds {
   --grid-ce: span 4;
 }
+[class*="indenter"] .five-sixths {
+  --grid-cs: 2;
+  --grid-ce: span 5;
+}
 [class*="indenter"] .span-all {
   --grid-cs: span 6;
 }
