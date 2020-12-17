@@ -45,9 +45,11 @@ Interaction design, hired specifically for a series of sprints that incorporated
 <div class="shadow:img five-sixths padding-stack">
 ![Screenshot of the previous table](../assets/img/omicia-previous-data-table.png)
 </div>
-The data-heavy table offered an overwhelming amount of information, but no way to pivot the data.
+During interviews, clinicians expressed frustation with three areas:
 
-On top of that, selecting which genetic variants would go into the report was cumbersome---clinicians would have to tick checkboxes, use dropdowns, and save them to an intermediate list before generating the report. 
+1. Not being able to pivot data on the table columns.
+1. Depending on the Genome sample, not all data fields were useful
+1. Selecting genetic variants for the report was cumbersome, requiring ticking a checkbox, using dropdowns, and then saving them to an intermediate list.
 
 ![Screenshot of the previous variant details modal window](../assets/img/omicia-previous-variant-modal.png)
 
