@@ -59,7 +59,7 @@ End-to-end design and development, which entailed:
  
 Order fulfillment was complicated, to say the least—standardizing shipping for the custom builds was near impossible with the custom orders and the studio's CMS gave little in the way of configurability and database access.
 
-After considering spinning up a separate VPS or droplet, we decided the best way forward was to build a client-side only Javascript application.
+We considering spinning up a separate virtual private server. After running into Cross-origin resource sharing issues, and assessing our timeline and budget, we decided the best way forward was to build a client-side only application.
 
 The workflow would allow clients to visualize their custom build, generate a PDF, and then submit it to the studio for pricing. 
 
