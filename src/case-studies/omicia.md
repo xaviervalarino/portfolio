@@ -33,7 +33,7 @@ Interaction design, hired specifically for a series of sprints that incorporated
 
 1. Interviewed the product team to understand the software and new features being added.
 1. Interviewed clinicians to understand their workflow.
-1. Designed wireframes for:
+. Designed wireframes for:
     - Main table view
     - Table configuration
     - Report creation
@@ -47,13 +47,26 @@ Interaction design, hired specifically for a series of sprints that incorporated
 </div>
 During interviews, clinicians expressed frustation with three areas:
 
+1. Depending on the type of report, the table's data fields weren't always useful.
 1. Not being able to pivot data on the table columns.
-1. Depending on the Genome sample, not all data fields were useful
 1. Selecting genetic variants for the report was cumbersome, requiring ticking a checkbox, using dropdowns, and then saving them to an intermediate list.
 
 ![Screenshot of the previous variant details modal window](../assets/img/omicia-previous-variant-modal.png)
 
 --- 
+
+### Field Configuration Modal
+I designed a new configuration modal which would toggle which fields were visible. The config could be saved as the application default or for the report being worked on. Toggling fields on or off was done by dragging and dropping them into one of three rows:
+
+<div class="subgrid half">
+1. **Table**: the field would appear on both the table and individual variant views
+1. **Variant Detail**: the field would appear on only individual variant views. Essentially, the information was important enough that the clinician wanted to see it when they were examining a selected gene variant, but not enough to clutter the main table.
+1. **Off**: The field would not appear in either view.
+</div>
+
+<div class="pano bkg:grey shadow:img img-height:unset">
+![Wireframe for the configuration modal](../assets/img/omicia-configuring-table-fields.png)
+</div>
 
 ### Improving the Interface
 
@@ -87,19 +100,6 @@ An optional design was included: a feature to toggle which fields were added to 
 
 <div class="pano bkg:grey shadow:img img-height:unset">
 ![Wireframes for the variant detail view](../assets/img/omicia-updated-variant-modal.png)
-</div>
-
-### Field Configuration Modal
-To complement the Reported Fields feature, and because there were more fields available than would fit in the table, I designed a new configuration modal. Toggling fields on or off was done by dragging and dropping them into one of three rows:
-
-<div class="subgrid half">
-1. **Table**: the field would appear on both the table and individual variant views
-1. **Variant Detail**: the field would appear on only individual variant views. Essentially, the information was important enough that the clinician wanted to see it when they were examining a selected gene variant, but not enough to clutter the main table.
-1. **Off**: The field would not appear in either view.
-</div>
-
-<div class="pano bkg:grey shadow:img img-height:unset">
-![Wireframe for the configuration modal](../assets/img/omicia-configuring-table-fields.png)
 </div>
 
 
