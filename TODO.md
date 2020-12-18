@@ -11,7 +11,9 @@
 - [x] Update README
 - [ ] Nav for non-top-level pages
 - [x] Case study footer nav (back/index/next)
-- [ ] Images: double up on wide
+- [ ] Add `scripts/create-projects-list.js` to NPM build scripts
+  - [ ] How should it be triggered on `watch`, or should it be manual?
+- [x] Images: double up on wide
 - [ ] write case studies:
   - [x] Omicia
   - [ ] Botanic
