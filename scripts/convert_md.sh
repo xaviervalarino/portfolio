@@ -44,11 +44,14 @@ convert() {
   # create the subdirectory in `dist` if it doesn't exist
   [[ ! -d "$outdir" ]] && mkdir -pv $outdir
 
+  # TODO: add filter for only `case-study/*.md files?
   # convert the markdown to HTML
   pandoc "$1" \
     --variable date="$(date +%m-%d-%Y%n)" \
+    --metadata-file=$PWD/src/case-studies/.project-list.yml \
     --template "$(get_template $1)" \
     --lua-filter $PWD/scripts/links-filter.lua \
+    --lua-filter $PWD/scripts/get-next-project.lua \
     --strip-comments \
     --output "$outdir$base.html"
 

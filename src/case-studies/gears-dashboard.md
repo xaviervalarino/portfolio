@@ -6,10 +6,6 @@ project: GEARS Dashboard v2.0
 template: case-study.html
 masthead:
    work: true
-nextProject:
-   title:     Programming an interactive furniture tool
-   subtitle:  Making it all work together
-   href:      /case-studies/fringe-studio.html
 ---
 
 <section class="grid indenter:3/5 flip-top:kid border-top:3px border-accent:cyan">

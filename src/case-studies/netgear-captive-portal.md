@@ -6,10 +6,6 @@ project: Netgear CWM
 template: case-study.html
 masthead:
     work: true
-nextProject:
-    title:     Designing a customizable dashboard
-    subtitle:  Understanding how parts make up the whole
-    href:      /case-studies/gears-dashboard.html
 ---
 
 <section class="grid indenter:3/5 flip-top:kid border-top:3px border-accent:cyan">
