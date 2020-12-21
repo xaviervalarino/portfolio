@@ -9,8 +9,9 @@ masthead:
 ---
 
 <section class="grid indenter:3/5 flip-top:kid border-top:3px border-accent:cyan">
+
 ## Background
-Fringe studio offers a kit of modular furniture for interior designers to design custom furniture builds. The studio needed to define a process for handling complex custom orders.
+Fringe studio offers a kit of modular furniture for interior designers to design custom furniture builds. The studio needed to define a process for handling custom orders.
 
 ---
 
@@ -23,12 +24,10 @@ Improve how Fringe studio's clientele submit orders for custom furniture builds.
  
 End-to-end design and development, which entailed:
 
-<div class='subgrid split-lists' data-tab='1'>
-1. Understanding the problem
-2. Examining project constraints
-3. Designing a solution, and
-4. Programming a working application.
-</div>
+* Understanding the problem
+* Examining project constraints
+* Designing a solution, and
+* Programming a working application.
 
 <div class="subgrid" data-tab="0">
 ![](../assets/img/mixi-modular-sample-furniture.jpg)
@@ -54,9 +53,9 @@ End-to-end design and development, which entailed:
 
 ### Constraints 
  
-Order fulfillment was complicated, to say the least—standardizing shipping for the custom builds was near impossible with the custom orders and the studio's CMS gave little in the way of configurability and database access.
+Order fulfillment was complicated, to say the least. Standardizing shipping for the custom builds was near impossible, since each order usually needed to be palletized. To add insult to injury, the studio's CMS gave little in the way of configurability and database access.
 
-We considering spinning up a separate virtual private server. After running into Cross-origin resource sharing issues, and assessing our timeline and budget, we decided the best way forward was to build a client-side only application.
+We considering spinning up a separate virtual private server. After running into [_Cross-Origin Resource Sharing_](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) Issues, we were forced to reassess our timeline and budget. We decided the best way forward was to build a client-side only application.
 
 The workflow would allow clients to visualize their custom build, generate a PDF, and then submit it to the studio for pricing. 
 
@@ -64,12 +63,12 @@ The workflow would allow clients to visualize their custom build, generate a PDF
 
 ### Development 
  
-Since the application was client-side, all the assets were bundled into a blob and dropped into a custom HTML element on one of the studio's webpages.
+Due to the limitations, deploying the application required manually updating the page. To make this easier, all the assets were bundled into a blob and dropped into a custom HTML element on one of the studio's webpages.
 
  
 
 #### Project Scaffolding
-Gulp was used for preprocessing and bundling, including preparing image assets.
+[Gulp](https://gulpjs.com/) was used for preprocessing and bundling, including preparing image assets.
 
 SVG format was used for the images, which could be easily inlined as text into the distribution code. Another benefit of SVG was that the application could programmatically change the colors and background patterns through CSS styles.
 

@@ -6,23 +6,19 @@ masthead:
 
 <article class="grid">
 <div class="title subgrid">
-<h1>About</h1>
-<div span="/1">
-<svg class="multiply margin-top:size2"
-   viewBox="0 0 100 100"
-   width="100%"
-   height="1ex"
-   preserveAspectRatio="none"
-   >
-   <rect x="0"  y="0" width="80" height="100" class="bkg:cyan"    fill="cyan"   />
-   <rect x="10" y="0" width="80" height="100" class="bkg:magenta" fill="magenta"/>
-   <rect x="20" y="0" width="80" height="100" class="bkg:yellow"  fill="yellow" />
-</svg>
-</div>
-
-<div class="h3 font:light padding-stack:size2">
-I live in Oakland, CA.
-</div>
+  <h1>About</h1>
+  <div span="/1">
+  <svg class="multiply margin-top:size2"
+     viewBox="0 0 100 100"
+     width="100%"
+     height="1ex"
+     preserveAspectRatio="none"
+     >
+     <rect x="0"  y="0" width="80" height="100" class="bkg:cyan"    fill="cyan"   />
+     <rect x="10" y="0" width="80" height="100" class="bkg:magenta" fill="magenta"/>
+     <rect x="20" y="0" width="80" height="100" class="bkg:yellow"  fill="yellow" />
+  </svg>
+  </div>
 </div>
 
 <section class="grid indenter:3/5 stack border-top">
@@ -33,7 +29,7 @@ In learning a system, you come to understand what guided its designers. Hopefull
 
 I got my start in print. Bless the engineer at Adobe who put Javascript and GREP into InDesign---once I realized the potential, it was turtles all the way down.
 
-I've spent the last ten years diving into Unix-like systems and web technologies. I try to take the concepts I learn from these explorations, ideas like---affordance, modularity, scalability, composability, simplicity, accessibility---and apply them to my work.
+I've spent the last ten years diving into Unix-like systems and web technologies. I try to take the concepts I learn from these explorations, ideas like---accessibility, affordance, composability, modality, modularity, scalability, simplicity---and apply them to my work.
 
 **I want to design systems that improve the human condition.**<br/>
 Because life is too short for crappy software.
@@ -76,7 +72,7 @@ Alongside product design, I do contract illustration:
   Illustration Work Samples - PDF
 </a>
 
-Feel free to inquire at <a href="mailto:xavier@valarino.com">xavier@valarino.com</a>.
+Feel free to reach out at <a href="mailto:xavier@valarino.com">xavier@valarino.com</a>.
 
 </section>
 
@@ -90,7 +86,7 @@ The display font is [Uxum Grotesque](https://uxum.mdn.market/) by [Bureau Nuits]
 
 The body font is [Inter](https://rsms.me/inter/) by Rasmus Andersson.
 
-The site is hand-written in Markdown, HTML, and CSS. It's created with a homebrewed static site generator that orchestrates Bash, Pandoc and NPM. The source code is hosted on [Github](https://github.com/xaviervalarino/portfolio).
+The site is hand-written in Markdown, HTML, and CSS. It's created with a homebrewed static site generator that orchestrates Bash, Pandoc and NodeJS. The source code is hosted on [Github](https://github.com/xaviervalarino/portfolio).
 </div>
 
 </section>

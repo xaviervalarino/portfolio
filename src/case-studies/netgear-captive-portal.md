@@ -10,7 +10,7 @@ masthead:
 
 <section class="grid indenter:3/5 flip-top:kid border-top:3px border-accent:cyan">
 ## Background 
-Alongside offering their own SaaS product, OPSWAT was contracted to build a wireless cloud management system for Netgear. I was lead designer for the project.
+Alongside offering their own SaaS product, OPSWAT was contracted to build a wireless cloud management system for Netgear. I led design on many of the later sprints.
 The application included features for setting up a captive portal—a webpage that newly connected users would have to pass through before gaining access to the broader network. Corporate clients wanted to personalize these entry points.
 
 --- 
@@ -27,11 +27,11 @@ Designed the setup wizard for the captive portal, exploring the UX impact of var
 
 <section class="grid indenter:3/2/4 flip-top:kid border-top:3px border-accent:magenta">
 ## Process 
-I created mockups and prototypes to help me understand how the the template components should behave.
+I created mockups and prototypes to help me understand how the template components should behave.
 
 <div class="half border:img margin-stack:large" data-tab="1">
 
-![Page from specifications document showing three options to be offered](../assets/img/netgear-captive-portal-template-variants.png)
+![Page from specifications document showing three templates](../assets/img/netgear-captive-portal-template-variants.png)
 </div>
 
 ---
