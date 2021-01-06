@@ -48,7 +48,7 @@ convert() {
   # convert the markdown to HTML
   pandoc "$1" \
     --variable date="$(date +%m-%d-%Y%n)" \
-    --metadata-file=$PWD/src/case-studies/.project-list.yml \
+    --metadata-file=$PWD/src/case-studies/project-roster.yml \
     --template "$(get_template $1)" \
     --lua-filter $PWD/scripts/links-filter.lua \
     --lua-filter $PWD/scripts/get-next-project.lua \

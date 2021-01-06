@@ -1,19 +1,18 @@
 ---
-projects:
+roster:
     - title: Programming an interactive furniture builder
       subtitle: Working within constraints
-      position: 1
       href: /case-studies/fringe-studio.html
-    - title: Specifications for a flexible captive portal
-      subtitle: Setting limits
-      position: 2
-      href: /case-studies/netgear-captive-portal.html
+
     - title: Designing a customizable dashboard
       subtitle: Understanding how parts make up the whole
-      position: 3
       href: /case-studies/gears-dashboard.html
+
+    - title: Specifications for a flexible captive portal
+      subtitle: Setting limits
+      href: /case-studies/netgear-captive-portal.html
+
     - title: Improving genetic reporting
       subtitle: Making an interface more user friendly
-      position: 4
       href: /case-studies/omicia.html
 ...

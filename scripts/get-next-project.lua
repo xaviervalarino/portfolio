@@ -18,13 +18,11 @@ end
 ---
 
 -- +1, or back to the start if it's the last one
-function getNextPosition (table, position)
+function getNextPosition (position, max)
     local nextPosition
     local position = tonumber(position)
-    local length = tablelength(table)
-
-    if position == length then
-      nextPosition = length + 1 - position
+    if position == max then
+      nextPosition = max + 1 - position
     else
       nextPosition = position + 1
     end
@@ -35,18 +33,17 @@ end
 -- Tack on nextProject metadata to be used by the template
 function Meta(m) 
   local nextPosition
-  if m.template and pandoc.utils.stringify(m.template) == 'case-study.html' then
-    nextPosition = getNextPosition( m.projects, pandoc.utils.stringify(m.position) )
-    forEach(m.projects, function (_, project) 
-      local position = tonumber( pandoc.utils.stringify(project.position) )
-      if position == nextPosition then
-        m.nextProject = {
-          title = project.title,
-          subtitle = project.subtitle,
-          href = project.href
-        }
-      end
-    end)
-  end
+  local stringify = pandoc.utils.stringify
+  local rosterlength = tablelength(m.roster)
+  forEach(m.roster, function (id, project) 
+    if stringify(m.title) == stringify(project.title) then
+      nextPosition = getNextPosition(id, rosterlength)
+    end
+  end)
+  m.nextProject = {
+    title = m.roster[nextPosition].title,
+    subtitle = m.roster[nextPosition].subtitle,
+    href = m.roster[nextPosition].href
+  }
   return m
 end

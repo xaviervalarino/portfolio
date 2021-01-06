@@ -1,7 +1,6 @@
 ---
 title: Programming an interactive furniture builder
 subtitle: Working within constraints
-position: 1
 project: Mixi Configurator
 template: case-study.html
 masthead:

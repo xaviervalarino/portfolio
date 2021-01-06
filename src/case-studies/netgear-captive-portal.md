@@ -1,7 +1,6 @@
 ---
 title: Specifications for a flexible captive portal
 subtitle: Setting limits
-position: 2
 project: Netgear CWM
 template: case-study.html
 masthead:

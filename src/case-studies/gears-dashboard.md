@@ -1,7 +1,6 @@
 ---
 title: Designing a customizable dashboard
 subtitle: Understanding how parts make up the whole
-position: 3
 project: GEARS Dashboard v2.0
 template: case-study.html
 masthead:
