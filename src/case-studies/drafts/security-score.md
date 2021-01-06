@@ -1,9 +1,8 @@
 ---
 title: Defining a variable design system
 subtitle: Identifying elements of an application
-position: 
 project: Security Score
-template: case-study.html
+template: src/templates/case-study.html
 masthead:
     work: true
 ---
