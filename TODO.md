@@ -11,7 +11,7 @@
 - [x] Update README
 - [ ] Nav for non-top-level pages
 - [x] Case study footer nav (back/index/next)
-- [ ] Add `scripts/create-projects-list.js` to NPM build scripts
+- [ ] Finish overhauling `scripts/create-projects-list.js`
   - [ ] How should it be triggered on `watch`, or should it be manual?
 - [x] Images: double up on wide
 - [ ] write case studies:
@@ -25,9 +25,8 @@
 - [ ] Image pop-out viewer
 - [ ] Site map generator
 - [ ] Robots.txt
-- [ ] Move build script logic out of package.json
+- [x] Move build script logic out of package.json
 - [ ] License: dual license
   - [ ] Retain exclusive rights for content
   - [ ] Permissive for source code
   - [ ] License for raster.grid (for posterity)
-- [ ] `watch:video` supress watcher when ffmpeg is encoding

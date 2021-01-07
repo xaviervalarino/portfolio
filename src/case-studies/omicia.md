@@ -2,9 +2,11 @@
 title: Improving genetic reporting
 subtitle: Making an interface more user friendly
 project: Omicia
-template: case-study.html
+template: src/templates/case-study.html
 masthead:
     work: true
+metadata: src/case-studies/project-roster.yml
+filter: scripts/filters/get-next-project.lua
 ---
 
 <section class="grid indenter:3/5 flip-top:kid border-top:3px border-accent:cyan">

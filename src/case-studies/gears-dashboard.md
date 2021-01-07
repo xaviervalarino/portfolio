@@ -2,9 +2,11 @@
 title: Designing a customizable dashboard
 subtitle: Understanding how parts make up the whole
 project: GEARS Dashboard v2.0
-template: case-study.html
+template: src/templates/case-study.html
 masthead:
-   work: true
+    work: true
+metadata: src/case-studies/project-roster.yml
+filter: scripts/filters/get-next-project.lua
 ---
 
 <section class="grid indenter:3/5 flip-top:kid border-top:3px border-accent:cyan">

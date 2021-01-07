@@ -30,15 +30,15 @@
         </svg>
       </div>
       <nav class="list-between fixup@<720px" role="list">
-        $for(projects)$
-        <a class="display:block padding-stack" role="listitem" href="$projects.href$">
+        $for(roster)$
+        <a class="display:block padding-stack" role="listitem" href="$roster.href$">
           <section>
             <p class="font:smallcaps position:relative">
               <span class="position:absolute left:-grid-gap" aria-hidden="true">↘</span>
               project
             </p>
-            <h3>$projects.title$</h3>
-            <p>$projects.subtitle$</p>
+            <h3>$roster.title$</h3>
+            <p>$roster.subtitle$</p>
           </section>
         </a>
         $endfor$

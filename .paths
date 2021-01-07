@@ -1,0 +1,9 @@
+src_dir="src"
+dist_dir="dist"
+
+css_dir="src/css"
+favicon_dir="src/assets/favicon"
+fonts_dir="src/assets/fonts"
+img_dir="src/assets/img"
+js_dir="src/js"
+video_dir="src/assets/video"

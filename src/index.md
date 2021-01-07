@@ -1,6 +1,6 @@
 ---
 title: Product Design
-template: index.html
+template: src/templates/index.html
 masthead: 
     home: true
 landing:
