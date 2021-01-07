@@ -7,6 +7,7 @@
     "stylelint-config-recommended": "^3.0.0"
   },
   "scripts": {
+    "prebuild": "node node_modules/optipng-bin/lib/install.js; node node_modules/jpegtran-bin/lib/install.js",
     "build": "npm run clean && npm run build:img & npm run build:html",
     "build:css": "cat ./src/css/*.css > ./dist/stylesheet.css",
     "build:fonts": "cp -rfv ./src/fonts ./dist",
