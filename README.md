@@ -39,6 +39,9 @@ These scripts might not work on Windows unless run on a Linux subsystem. This is
            build  Run all build commands  
                   runs: ./scripts/build.sh all
 
+            lean  Run frequently used build commands  
+                  runs: ./scripts/build.sh lean
+
            clean  Delete "./dist/" directory 
                   runs: ./scripts/build.sh --clean
 
@@ -46,10 +49,10 @@ These scripts might not work on Windows unless run on a Linux subsystem. This is
                   runs: live-server ./dist,
 
              dev  Start up development environment 
-                  runs: npm run watch & npm run serve
+                  runs: npm run serve & npm run watch
 
           watch   Watch and build files when there are changes
-                  runs: (npm run pre-watch) ./scripts/build lean
+                  runs: (npm run prewatch) npm run build:lean
                         ./scripts/watch.js ./src
 
           deploy  Deploy to production server

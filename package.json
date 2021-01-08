@@ -9,11 +9,12 @@
   "scripts": {
     "prebuild": "node node_modules/optipng-bin/lib/install.js; node node_modules/jpegtran-bin/lib/install.js",
     "build": "./scripts/build.sh all",
+    "build:lean": "./scripts/build.sh lean",
     "clean": "./scripts/build.sh --clean",
     "serve": "live-server ./dist",
-    "dev": "npm run watch & npm run serve",
-    "pre-watch": "npm run build lean",
-    "watch": "./scripts/watch.js ./src",
+    "dev": "npm run serve & npm run watch",
+    "prewatch": "npm run build:lean",
+    "watch": "source .paths; ./scripts/watch.js $src_dir",
     "deploy": "source .env; source .paths; echo rsync -azvhP --exclude=.htaccess $dist_dir $production",
     "deploy:testing": "source .env; source .paths; rsync -azvhP --exclude=.htaccess $dist_dir/ $testing"
   },
