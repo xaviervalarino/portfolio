@@ -17,7 +17,7 @@
       .forEach( el => {
         if ( obj[el.dataset.i] ) {
           el.textContent = obj[el.dataset.i] + 'px';
-        };
+        }
       })
     ;
   }
@@ -37,7 +37,6 @@
           true: 'on',
           false: 'off'
         };
-        let v = 
         document.body.classList.toggle(this.dataset.i);
         this.dataset.v = 'false' === this.dataset.v ? true : false;
         this.textContent = condition[this.dataset.v]
