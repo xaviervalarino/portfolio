@@ -137,12 +137,12 @@ Templates are written in [Pandoc's HTML template language](https://pandoc.org/MA
 Content files are written in Markdown with YAML front-matter
 
 ##### Front-Matter
-Along with template filename, front-matter can include paths to an additional YAML metadata file and Pandoc Lua filter
+Along with template filename, front-matter can include paths to an additional YAML metadata file and Pandoc Lua filter. Filenames must be full paths from project root.
 
 ```yaml
 title: Page title
 subtitle: Page subtitle
-template: path/to/tempalte
+template: path/to/template.html
 masthead:
   home: true
 metadata: path/to/metadata.yml
@@ -159,7 +159,7 @@ Convert image and anchor link into absolute paths.  This is done so that images 
 
 This filter is run on all content files.
 
-#### `get-next-project.lua`
+##### `get-next-project.lua`
 Adds the next project `title`,`subtitle`, and `href` to the case-studies template
 Uses `src/case-studies/project-list.yml` to get the current files position in relation to the others.
 
