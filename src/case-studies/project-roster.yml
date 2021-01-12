@@ -15,4 +15,8 @@ roster:
     - title: Improving genetic reporting
       subtitle: Making an interface more user friendly
       href: /case-studies/omicia.html
+
+    - title: Using research to model a conversational UI
+      subtitle: Basing interaction patterns on real-world examples
+      href: /case-studies/botanic.html
 ...
