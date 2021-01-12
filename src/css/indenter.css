@@ -179,6 +179,9 @@
 .cinch-up {
   margin-top: -20%;
 }
+.cinch-up\:70\% {
+  margin-top: -70%;
+}
 /* stylelint-disable no-descending-specificity */
 
 /* fix no space between a 'visual' p + p */
