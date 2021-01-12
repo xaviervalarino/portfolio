@@ -20,7 +20,7 @@ ul > li,
   border-top-style: dotted;
 }
 .no-list > *,
-.no-list > li,
+.no-list li,
 .no-list > *:first-child,
 .no-list > *:last-child {
   border-top: initial;
