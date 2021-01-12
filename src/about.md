@@ -52,13 +52,14 @@ I generally move through five phases on a design project. Although their impleme
 
 <section class="grid indenter:3/5 stack border-top">
 ## Experience
-<div class="h4 font:light">
+<div class="h4 font:light no-list">
 **I've designed software for:**
 
-* Information Security
-* Networking
-* Natural Language Processing
-* Genomic Sequencing
+* [Information Security](https://www.xavier.valarino.com/case-studies/gears-dashboard)
+* [Networking](https://www.xavier.valarino.com/case-studies/netgear-captive-portal)
+* [Natural Language Processing](https://www.xavier.valarino.com/case-studies/botanic)
+* [Genomic Sequencing](https://www.xavier.valarino.com/case-studies/omicia)
+* 
 </div>
 
 I've spent a fair amount of time as a freelancer and have broad set of expertise.
