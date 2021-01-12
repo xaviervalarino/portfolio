@@ -160,10 +160,10 @@ Convert image and anchor link into absolute paths.  This is done so that images 
 This filter is run on all content files.
 
 ##### `get-next-project.lua`
-Adds the next project `title`,`subtitle`, and `href` to the case-studies template
-Uses `src/case-studies/project-list.yml` to get the current files position in relation to the others.
+Adds the next project `title`,`subtitle`, and `href` to the case-studies template.
+Uses `src/case-studies/project-list.yml` to get the current file's position in relation to the others.
 
-Must be specified as a `filter` in front-matter. 
+Must be specified as a `filter` in content front-matter. 
 
 <!--
 ### Collections
