@@ -126,10 +126,10 @@ _convert_md() {
   template_file=$(_metavalue "$1" "template")
   template_file="${template_file:-$src_dir/templates/default.html}"
 
-  ## Check if file specifies another metadata file
+  ## Check if file specifies metadata file
   metafile=$(_metavalue "$1" "metadata")
 
-  ## Check if file specifies another Lua filter 
+  ## Check if file specifies Lua filter 
   lua_filter=$(_metavalue "$1" "filter")
 
   outfile=$(output "$1" "html")
@@ -145,7 +145,6 @@ _convert_md() {
   params+=("--output" "$outfile")
 
   printf "\n%-15s %s\n" "Processing:" "$1"
-  # shellcheck disable=SC2086 # Intended splitting of OPTIONS
   pandoc "${params[@]}" &&\
   printf "%-15s %s\n" "Created:" "$outfile"
 }
@@ -203,10 +202,10 @@ video() {
 
 # Match approriate command based on location or filetype
 ## Note: some of these commands pass the file as an argument
-##       so that it can they can be tranformed individually
-##       (ex. md, video).
-##       Others are batched, or simply run the function
-##       as if it had been called as a command
+##       so that they can be can be tranformed individually
+##       (ex. img, md, video).
+##       Others simply run the function as if it had
+##       been called as a command
 get_cmd () {
   local dir ext
   dir="$(dirname -- "$1")"
