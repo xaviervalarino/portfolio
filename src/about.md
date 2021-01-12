@@ -29,7 +29,7 @@ In learning a system, you come to understand what guided its designers. Hopefull
 
 I got my start in print. Bless the engineer at Adobe who put Javascript and GREP into InDesign---once I realized the potential, it was turtles all the way down.
 
-I've spent the last ten years diving into Unix-like systems and web technologies. I try to take the concepts I learn from these explorations, ideas like---accessibility, affordance, composability, modality, modularity, scalability, simplicity---and apply them to my work.
+I've spent the last ten years diving into Unix-like systems and web technologies. I try to take the concepts I learn from these explorations, ideas like---accessibility, affordance, composability, modality, simplicity---and apply them to my work.
 
 **I want to design systems that improve the human condition.**<br/>
 Because life is too short for crappy software.
@@ -62,7 +62,7 @@ I generally move through five phases on a design project. Although their impleme
 </div>
 
 I've spent a fair amount of time as a freelancer and have broad set of expertise.
-Alongside product design, I do contract illustration:
+In between product design projects, I do contract illustration:
 
 <a href="/assets/xavier-valarino-illustration-work-samples.pdf"
    class="position:relative">
@@ -86,7 +86,7 @@ The display font is [Uxum Grotesque](https://uxum.mdn.market/) by [Bureau Nuits]
 
 The body font is [Inter](https://rsms.me/inter/) by Rasmus Andersson.
 
-The site is hand-written in Markdown, HTML, and CSS. It's created with a homebrewed static site generator that orchestrates Bash, Pandoc and NodeJS. The source code is hosted on [Github](https://github.com/xaviervalarino/portfolio).
+The site is hand-written in Markdown, HTML, Markdown and CSS. It's built with a Bash script that orchestrates [Pandoc](https://pandoc.org/) and [NodeJS](https://nodejs.org/en/about/). The source code is hosted on [Github](https://github.com/xaviervalarino/portfolio).
 </div>
 
 </section>
