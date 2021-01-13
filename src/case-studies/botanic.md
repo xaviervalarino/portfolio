@@ -118,7 +118,7 @@ This information was used to draft conversational guidelines for the copywriters
 
 
 ### Interaction design
-The interaction flow was designed to lead users towards course material and pre-canned exercises. After completing the course the user would then fill out a worksheet as part of the `TestPost` module, which would be referenced against the affect data recorded by the system and converted into a baseline number. This data was then graphed in the "Progress" view so that user's could visualize their improvement.
+The interaction flow was designed to lead users towards course material and pre-canned exercises. After completing the course the user would fill out a worksheet as part of the `TestPost` module, which would be compared against the affect data recorded by the system and converted into a baseline number. This data was then graphed in the "Progress" view so that user's could visualize their improvement.
 
 <div class="bkg:grey pano img-height:unset">
 ![](../assets/img/botanic-high-level-user-flow.png)
