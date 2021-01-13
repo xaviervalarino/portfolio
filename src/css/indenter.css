@@ -216,8 +216,8 @@
     --grid-ce: 7;
     margin-bottom: var(--size1)
   }
-  .cinch-up {
-    margin-top: var(--size2);
+  [class*="cinch-up"] {
+    margin-top: var(--size2) !important;
   }
   [class*="indenter"] .one-third,
   [class*="indenter"] .left-third,
