@@ -75,7 +75,7 @@ SVG format was used for the images, which could be easily inlined as text into t
 
  
 <div class='left-third'>
-![Before and after SVGs were processed](../assets/img/mixi-modular-color-interpolation-grey.png)
+![Before and after SVGs were processed](../assets/img/mixi-modular-color-interpolation.png)
 </div>
 
 <div class='left-third align-self:end'>
