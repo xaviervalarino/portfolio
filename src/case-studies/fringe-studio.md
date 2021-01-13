@@ -105,7 +105,7 @@ Each piece of furniture and its relative position were stored in a JSON object. 
 Whereas before clients would scan or fax hand drawn sketches of their custom builds, the tool created a standard document that was easy for the studio to understand visually. After review, the studio would submit the list of parts to the fabricator without worrying that something might have been lost in translation.
 
 <div>
-<p class="h4 font:regular border padding:size3 margin-top:size3 display:inline-block text-align:center">
+<p class="h4 font:regular border padding:size2 margin-top:size3 display:inline-block text-align:center">
   <a href="https://xavier.valarino.com/fringe-studio/" >
     <span class="border-bottom:white"
 	  aria-hidden="true">

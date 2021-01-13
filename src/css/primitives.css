@@ -20,7 +20,7 @@
 .padding {
   padding: var(--size1);
 }
-.padding\:size3 {
+.padding\:size2 {
   padding: var(--size2);
 }
 .padding-stack {
