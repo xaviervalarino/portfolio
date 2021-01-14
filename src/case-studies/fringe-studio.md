@@ -74,7 +74,7 @@ My initial concept for selecting furniture components was to have users modify f
 ![Early sketches of the panel interface](../assets/img/mixi-modular-sketching-ui-controls.png)
 </div>
 
-1. If everything fit neatly within the selection panel, I wouldn't have worry about a panel scrollbar causing issues with discoverability.
+1. If everything fit neatly within the selection panel, I wouldn't have to worry about a panel scrollbar causing issues with discoverability.
 
 2. It aligned well with how I was starting to conceptualize the problem technically; from an _object oriented_ perspective, the furniture components could be described as one of three classes of object with variable parameters.    
 
