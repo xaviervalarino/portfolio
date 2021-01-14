@@ -115,7 +115,7 @@ An optional design was included: a feature to toggle which fields were added to 
 </section>
 <section class="grid indenter:3/5 flip-top:kid border-top:3px border-accent:yellow">
 
-## End Result 
+## End result 
 The submitted wireframes introduced a purpose-built workflow for lab clinicians and outlined a clear set of new features for the product and engineering teams.
 
 </section>
