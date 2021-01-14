@@ -12,15 +12,16 @@
 - [ ] Nav for non-top-level pages
 - [x] Case study footer nav (back/index/next)
 - [ ] Finish overhauling `scripts/create-projects-list.js`
+  - [ ] update if list already exists (buffer readStream before opening writeStream)
+  - [ ] sort the list
   - [ ] How should it be triggered on `watch`, or should it be manual?
 - [x] Images: double up on wide
 - [ ] write case studies:
   - [x] Omicia
-  - [ ] Botanic
-  - [ ] GEARS login prototype and Google Analytics
-- [ ] Write script to automate Work Index creating: traverse projects to grab titles/subtitles
+  - [x] Botanic
+  - [ ] Login prototype / Google Analytics 
+- [x] Write script to automate Work Index creating: traverse projects to grab titles/subtitles
 - [ ] Image optimization & sizing
-- [ ] Add styles for counter continuation list
 - [ ] Add build script for PDF assets
 - [ ] Image pop-out viewer
 - [ ] Site map generator
