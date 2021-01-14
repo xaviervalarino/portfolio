@@ -135,4 +135,4 @@ The interaction flow was designed to lead users towards course material and pre-
 ## End result
 Modeling the application off of techniques employed by real-world helpers allowed us to create an application that was novel in implementation but still familiar in its structure.
 
-Without user research we would have overlooked the time-tested worksheet as a means for data collection. This realization simplified our roadmap for the MVP: we could quickly build the worksheet forms and lower the priority for implementing more complex versions of affect analysis.
+Without user research we would have overlooked the worksheets as a means for data collection. This realization simplified our roadmap for the MVP: we could quickly build the worksheet forms and lower the priority for implementing more complex versions of affect analysis.
