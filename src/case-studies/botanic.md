@@ -70,7 +70,7 @@ Including a psychiatrist, psychologist, counselor, a life coach and a buddhist m
 - **10 end-users**\
 People who had previously sought or were seeking help
 
-Participants were recruited through various therapy groups, mailing lists and personal contacts. A survey form helped narrow the pool of participants. After each interview, participant was given a gift card as compensation.
+Participants were recruited through various therapy groups, mailing lists and personal contacts. A survey form helped narrow the pool of participants. After each interview, participants was given a gift card as compensation.
 
 ---
 

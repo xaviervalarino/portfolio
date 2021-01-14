@@ -44,7 +44,7 @@ Administrators were able to personalize their dashboard metrics and layout, maki
 ---
 
 ### Known problems
-Past user interviews had shown us that the dashboard wasn't providing much utility for a large segment of our users. It had only been designed for one use case: a single network in an office building or on a small campus. Making the dashboard configurable would allow users to filter for user-generated compliance policies, groups, and locations.  
+Interviews had shown us that the dashboard wasn't providing much utility for a large segment of our users. It had only been designed for one use case: a single network in an office building or on a small campus. Making the dashboard configurable would allow users to filter for user-generated compliance policies, groups, and locations.  
 
 <div class="shadow:img margin-stack">
 ![Screenshot of the previous dashboard](../assets/img/gears-old-dashboard.png)

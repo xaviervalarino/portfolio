@@ -80,7 +80,7 @@ My initial concept for selecting furniture components was to have users modify f
 
 
 #### Testing how users selected furniture
-A simple prototype was created to test the concept. It performed poorly. The interface just didn't click for majority of participants. Half didn't know that the furniture module was draggable, and <sup>2</sup>&frasl;<sub>5</sub> hated selecting dimensions through the slide control.
+A simple prototype was created to test the concept---it performed poorly. The interface just didn't click for majority of participants. Half didn't know that the furniture module was draggable, and 40% hated selecting dimensions through the slide control.
 
 ![](../assets/img/mixi-modular-early-version-control-panel-at-the-top.png)
 
@@ -92,11 +92,11 @@ A simple prototype was created to test the concept. It performed poorly. The int
 <!-- keep these elements in the same grid row -->
 <div class="null">
 #### Updating the selection panel's design
-After reviewing my interview notes, it was apparent that I had overlooked a key part of how interior designers were approaching the problem. My initial design had assumed they knew what dimensions they wanted for each piece, while in actuality, that constraint was only true for the overall dimension.
+After reviewing interview notes, it was apparent that I had overlooked a key part of how interior designers were approaching the problem. My initial design had assumed they had maximum dimensions for each piece, while in actuality, that constraint was only true for the overall dimension.
 
-The tool needed to allow for a certain level of play: interior designers wanted to be able to see all the pieces laid out; they wanted to compare them side by side. They were thinking about things spatially, not categorically.
+The tool needed to allow for a certain level of play: interior designers wanted to be able to see all the pieces laid out and compare them side-by-side. They were thinking about things spatially, not categorically.
 
-I updated the design for the panel, moving it to the left hand side and listing out each permutation as it's own item. Although there were some issues with users overlooking the dropdown controls, the second round of testing was much more reassuring. One thing that surprised me: every participant managed scroll to bottom of the panel; the scrollbars ended up being a nonissue.
+I updated the design for the panel, moving it to the left hand side and listing out each permutation as it's own item. Although there were some issues with users overlooking the dropdown controls, the second round of testing was much more reassuring. One thing that surprised me: every participant managed scroll to bottom of the panel; the scrollbar ended up being a nonissue.
 </div>
 
 ---
@@ -104,7 +104,7 @@ I updated the design for the panel, moving it to the left hand side and listing 
 ### Development 
 The distribution code for the application was essentially a concatenated blob of HTML, SVG symbols, and JS. The HTML was a simple set of frames that the JS would attach event handlers to. JS modules were bundled by [Browserify](http://browserify.org/).
 
-I used jQuery [Draggable](https://jqueryui.com/draggable/) and [Droppable](https://jqueryui.com/droppable/)to remove the overhead of implementing drag-and-drop functionality.
+I used jQuery [Draggable](https://jqueryui.com/draggable/) and [Droppable](https://jqueryui.com/droppable/) to remove the overhead of implementing drag-and-drop functionality.
 
 SVG format was used because it could be easily inlined as text into the distribution bundle. The format made changing image colors and background patterns easy since their color properties could be controlled through CSS styles.
 
@@ -113,7 +113,7 @@ SVG format was used because it could be easily inlined as text into the distribu
 </div>
 
 <div class='left-third align-self:end'>
-A [Gulp](https://gulpjs.com/) pipeline was built to prepare the images. It would stream the SVGs as raw text through a helper function (`addClass`) which would locate the target red, green, and blue colors, replacing them with a CSS class. The application JS to change the classes on the furniture in synchrony with a selection in the dropdown menu.
+A [Gulp](https://gulpjs.com/) pipeline was built to prepare the images. It would stream the SVGs as raw text through a helper function (`addClass`) which would locate the target red, green, and blue colors, replacing them with a CSS class. All the application JS had to do was change the class name to change the color.
 
 Assigning multiple colors was done through two separate properties: one through the CSS `background-color` property and the other through the SVG `fill` property.
 </div>
@@ -122,20 +122,25 @@ Assigning multiple colors was done through two separate properties: one through 
 ![The Gulp `addClass` function used to process the SVGs](../assets/img/mixi-modular-interpolation-workflow.png)
 </div>
  
-#### Recording data 
-Each piece of furniture and its relative position were stored in a JSON object. When a client would go to print the cut sheet, the data object would be iterated through, generating the printable list of parts.
-
 <div class="bkg:grey pano" data-tab='0'>
 <video autoplay playsinline loop>
   <source src="/assets/video/mixi-modular-configurator-demo.mp4" type="video/mp4">
 </video>
 </div>
 
+<div class="border:img half margin-top:size3 cinch-up" data-tab="0" >
+![Printable build sheet generated by the application](../assets/img/mixi-modular-build-sheet.png)
+</div>
+<div class="null">
+#### Recording data 
+Each piece of furniture and its relative position were stored in a JSON object. When a client would go to print the cut sheet, the data object would be iterated through, generating the printable list of parts.
+</div>
+
 </section>
 
 <section class="grid indenter:3/5 flip-top:kid border-top:3px border-accent:yellow">
 ## End result	 
-The application created an interactive way for interior decorators to explore _Mixi Modular_ furniture line offerings and generated a single source of record that reduced confusion between the client, studio and fabricator when an order was placed.
+The application gave interior designers an interactive way to explore the _Mixi Modular_ furniture line and generated a single source of record that reduced confusion between the client, studio and fabricator.
 
 <div>
 <p class="h4 font:regular border padding:size2 margin-top:size3 display:inline-block text-align:center">
@@ -151,10 +156,6 @@ The application created an interactive way for interior decorators to explore _M
 
 <div class="padding-stack">
 ![](../assets/img/mixi-modular-sample-furniture-skewed.jpg)
-</div>
-
-<div class="border:img half margin-top:size3 cinch-up" data-tab="0" >
-![Printable build sheet generated by the application](../assets/img/mixi-modular-build-sheet.png)
 </div>
 
 </section>
