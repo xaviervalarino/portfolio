@@ -101,20 +101,60 @@ examples:
 
 ## Implementation
 ### CSS
+#### Inspiration
 Inspiration for the stylesheet came from [Raster Simple Grid Stystem](https://rsms.me/raster/) and [Every-Layout.dev](https://every-layout.dev/).
 
 I'm using an algorithmic approach and tried to make the styles as composable as possible.
 
-<!--
-TODO: record subgrid work-around?
+#### Subgrid work-around and accessibility 
+[`subgrid`](https://caniuse.com/?search=subgrid) is currently not supported by most browsers and [`display: contents`](https://hiddedevries.nl/en/blog/2018-04-21-more-accessible-markup-with-display-contents) has a major implementation bug where ordered and unordered lists do not properly display their role to the accessibility tree.
 
-#### Subgrid workaround
+In the spirit of keeping things accessible, I've created a work-around `.subgrid` class that uses CSS custom properties and the `calc()` function to create subgrid layout behavior. 
 
+To demonstrate the concept, here is a simplified example:
 ```css
+/*
+ * --grid-tc is grid-template-columns
+ * --grid-cs is grid-column-start
+ * --grid-ce is grid-column-end
+ * 
+ * Descending specificity is ignored here for the sake of explanation
+ */ 
+
+/* Specify a default number of template columns */
+:root {
+  --grid-tc: 6;
+}
+
+/* set the position of grid items with a variable */
+.grid > * {
+  grid-column-start: var(--grid-cs);
+  grid-column-end: var(--grid-ce);
+}
+
+/* set the number of columns in a grid / subgrid */
+.grid,
 .subgrid {
+  display: grid;
+  /* Give priority to the subgrid template columns
+     if it's not specified, fall back to grid template columns */
+  grid-template-columns: repeat( var(--subgrid-tc, var(--grid-tc)), 1fr );
+}
+
+
+/* Calculate the number of columns in a subgrid by subtracting where
+   it starts from where it ends */
+.subgrid {
+  --grid-tc: calc( var(--grid-ce) - var(--grid-cs) );
+}
+
+/* Set a subgrid item's ending position based on
+   the number of columns in a subgrid */
+.subgrid > * {
+  --subgrid-ce: calc( var(--grid-tc) + 1 );
+  grid-column-end: var(--subgrid-ce);
 }
 ```
--->
 
 
 ### Javascript
