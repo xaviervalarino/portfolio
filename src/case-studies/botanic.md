@@ -9,7 +9,7 @@ metadata: src/case-studies/project-roster.yml
 filter: scripts/filters/get-next-project.lua
 ---
 
-<section class="grid indenter:3/5 flip-top:kid border-top:3px border-accent:cyan">
+<section class="grid split-lists indenter:3/5 flip-top:kid border-top:3px border-accent:cyan">
 ## Background
 Botanic is a start-up that builds conversational interfaces. I was hired as part of a small cross-functional team assembled to build a wellness mobile application. The application would be offered through health insurers as a supplement to therapy, providing users with self-help content, guided exercises and baseline measurements.
 
