@@ -11,32 +11,48 @@ filter: scripts/filters/get-next-project.lua
 
 <section class="grid indenter:3/5 flip-top:kid border-top:3px border-accent:cyan">
 ## Background  
-GEARS was a SaaS application for monitoring devices on corporate networks.
+GEARS Cloud was an enterprise web application for monitoring devices on corporate networks.
 
-Administrators would define security policies for networked devices, and the application would report back any issues. We had recently added new metrics for triaging devices and needed to update the dashboard to reflect this change. This gave us the opportunity to make the dashboard more useful to customers with atypical network topologies.
+Administrators would define security policies for networked devices, and the application would report back any issues. We had recently added new metrics for triaging devices and needed to update the dashboard to reflect this change.
 
 ---
 
 ### Goal 
-Provide administrators with configuration options for personalizing their account dashboard.
+Make the dashboard more useful for a broader set of administrators, especially those with atypical network topologies. 
 
 ---
 
-### My Role 
+### Role 
 Designed the interaction pattern and user interface for dashboard customization.
+
+---
+
+### Outcome
+Administrators were able to personalize their dashboard metrics and layout, making it more actionable for their specific networks.
 
 </section>
 
 <section class="grid indenter:3/2/4 split-lists flip-top:kid border-top:3px border-accent:magenta">
+
 ## Process 
  
-1. Mapped application data to meaningful visual representations
-2. Designed a modal window for configuring the visualizations
-3. Incorporated the configuration feature into the dashboard
+1. Reviewed known issues with the previous dashboard
+2. Mapped application data to meaningful visual representations
+3. Designed a modal window for configuring the visualizations
+4. Incorporated the configuration feature into the dashboard
 
 ---
 
-### Problem  
+### Known problems
+Past user interviews had shown us that the dashboard wasn't providing much utility for a large segment of our users. It had only been designed for one use case: a single network in an office building or on a small campus. Making the dashboard configurable would allow users to filter for user-generated compliance policies, groups, and locations.  
+
+<div class="shadow:img margin-stack">
+![Screenshot of the previous dashboard](../assets/img/gears-old-dashboard.png)
+</div>
+
+---
+
+### Visualizing a solution
 
 How could I align user goals with the database schema to create something useful?
 
@@ -64,7 +80,7 @@ I then used the tree diagrams as a rubric for the controls in the modal editor.
 ![Modal editor configuring a bar chart of devices with 'unwanted applications'](../assets/img/GEARS-dashboard-edit-chart-potentially-unwanted-applications.png)
 </div>
  
-#### Frequency of Use
+#### Frequency of use
 An important design consideration was how frequently administrators would configure the charts on their dashboard.
 
 The primary use of the dashboard was to, all at once, give a bird's eye view of the network while giving the administrator a way to effortlessly drill down into problematic devices.
@@ -77,8 +93,8 @@ The primary use of the dashboard was to, all at once, give a bird's eye view of 
 I wanted to make sure that these actions remained prominent, while giving enough visual affordance to the chart configuration features. 
  
  
-#### Modal Editing
-Configuration options were hidden behind an _Edit Dashboard_ button; modality was created to safeguard against users accidentally moving the chart widgets when trying to click on chart elements. The colors would dim to cue the user of the state change.
+#### Modal editing
+Configuration options were hidden behind an _Edit Dashboard_ button. Designing this modality would safeguard against users accidentally moving the chart widgets when trying to click on chart elements. The colors would dim to cue users of the state change.
  
 <div class='subgrid side-by-side border:img margin-top'>
 ![Mockup of the default dashboard](../assets/img/GEARS-default-dashboard.png)
@@ -86,7 +102,7 @@ Configuration options were hidden behind an _Edit Dashboard_ button; modality wa
 ![Mockup of dashboard in "Edit" state](../assets/img/GEARS-dashboard-move-chart-widget.png)
 </div>
  
-#### Customizing the Layout
+#### Customizing the layout
 Chart widgets were designed to reflow based on a grid system, spanning either two, three, or four columns. 
 
 <div class='subgrid side-by-side border:img margin-top'>
@@ -97,7 +113,7 @@ Chart widgets were designed to reflow based on a grid system, spanning either tw
 </section>
 
 <section class="grid split-lists indenter:3/2/4 flip-top:kid border-top:3px border-accent:yellow">
-## Outcome 
+## End result 
  
 My final design broke the dashboard into three modes:
 

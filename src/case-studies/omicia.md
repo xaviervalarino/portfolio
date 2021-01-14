@@ -1,6 +1,6 @@
 ---
-title: Improving genetic reporting
-subtitle: Making an interface more user friendly
+title: Improving genetic reporting for clinicians
+subtitle: Making an interface more goal oriented
 project: Omicia
 template: src/templates/case-study.html
 masthead:
@@ -12,7 +12,11 @@ filter: scripts/filters/get-next-project.lua
 <section class="grid indenter:3/5 flip-top:kid border-top:3px border-accent:cyan">
 
 ## Background
-Omicia (now Fabric Genomics) sequences genetic samples. Their application helps clinical labs find and report genetic variants that may cause disease, helping primary care physician diagnose current or future illness.
+Omicia (now Fabric Genomics) sequences genetic samples. Their enterprise web application is used to find and  report genetic variants that may cause disease, helping doctors diagnose current or future illness.
+
+The application had originally been deigned as a research tool. As their customer base became more diverse, so did the application's use cases.
+
+This misalignment was manifested itself in clinical laboratories: clinicians were making mistakes in their variant reports.
 
 ---
 
@@ -21,17 +25,24 @@ Improve how clinicians create and submit their findings.
 
 ---
 
-### My Role 
-Interaction design, hired specifically for a series of sprints that incorporated new features.
+### Role 
+One of two interaction designers hired specifically for a series of sprints meant to improve clinical workflows.
+
+My role was to audit and overhaul the existing reporting feature.
+
+---
+
+### Outcome
+The updated user interface put the clinician's job first, giving them control over how they sifted through data and simplified report creation.
 
 </section>
 <section class="grid indenter:3/2/4 split-lists flip-top:kid border-top:3px border-accent:magenta">
 
 ## Process
 
-1. Interviewed the product team to understand the software and new features being added.
+1. Interviewed the product team to understand the software and use cases.
 1. Interviewed clinicians to understand their workflow.
-. Designed wireframes for:
+1. Designed wireframes for:
     - Main table view
     - Table configuration
     - Report creation
@@ -43,7 +54,7 @@ Interaction design, hired specifically for a series of sprints that incorporated
 <div class="shadow:img five-sixths padding-stack">
 ![Screenshot of the previous table](../assets/img/omicia-previous-data-table.png)
 </div>
-During interviews, clinicians expressed frustation with three areas:
+During interviews, clinicians expressed frustration with three areas:
 
 1. Depending on the type of report, the table's data fields weren't always useful.
 1. Not being able to pivot data on the table columns.
@@ -54,7 +65,7 @@ During interviews, clinicians expressed frustation with three areas:
 --- 
 
 ### Field Configuration Modal
-I designed a new configuration modal which would toggle which fields were visible. The config could be saved as the application default or for the report being worked on. Toggling fields on or off was done by dragging and dropping them into one of three rows:
+I designed a new configuration modal which would toggle which fields were visible. The configuration could be saved as the application default or for the report being worked on. Toggling fields on or off was done by dragging and dropping them into one of three rows:
 
 <div class="subgrid half">
 1. **Table**: the field would appear on both the table and individual variant views
@@ -75,7 +86,7 @@ I recommended limiting the colors to yellow and red, which were the only two tha
 ![Detail of previous data table](../assets/img/omicia-previous-table-color-detail.png)
 </div>
  
-#### Legibility
+#### Improving Legibility
 One of the fields recorded in the table was the gene's zygosity---whether the gene had the same alleles or a dominant and recessive one. 
 
 At small scale (or for those with poor vision), the two words look almost identical.
@@ -104,7 +115,7 @@ An optional design was included: a feature to toggle which fields were added to 
 </section>
 <section class="grid indenter:3/5 flip-top:kid border-top:3px border-accent:yellow">
 
-## Outcome 
-The final design put the clinician's job first, giving them control over how they sift through data and simplifying how they build their reports.
+## End Result 
+The submitted wireframes introduced a purpose-built workflow for lab clinicians and outlined a clear set of new features for the product and engineering teams.
 
 </section>
