@@ -32,7 +32,8 @@
   /* default grid cell behavior: span all columns */
   --grid-cs: 1;
   --grid-ce: 7;
-  grid-column-start: var(--grid-cs); grid-column-end: var(--grid-ce);
+  grid-column-start: var(--grid-cs);
+  grid-column-end: var(--grid-ce);
 }
 .grid > ul,
 .grid > ol,
