@@ -16,7 +16,7 @@ Omicia (now Fabric Genomics) sequences genetic samples. Their enterprise web app
 
 The application had originally been deigned as a research tool. As their customer base became more diverse, so did the application's use cases.
 
-This misalignment was manifested itself in clinical laboratories: clinicians were making mistakes in their variant reports.
+The misalignment between the application and user was most apparent in clinical laboratories: clinicians were making mistakes in their reports.
 
 ---
 
