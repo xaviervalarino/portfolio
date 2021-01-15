@@ -98,7 +98,7 @@ After reviewing interview notes, it was apparent that I had overlooked a key par
 
 The tool needed to allow for a certain level of play: interior designers wanted to be able to see all the pieces laid out and compare them side-by-side. They were thinking about things spatially, not categorically.
 
-I updated the design for the panel, moving it to the left hand side and listing out each permutation as it's own item. Although there were some issues with users overlooking the dropdown controls, the second round of testing was much more reassuring. One thing that surprised me: every participant managed scroll to bottom of the panel; the scrollbar ended up being a nonissue.
+I updated the design for the panel, moving it to the left hand side and listing out each permutation as it's own item. Although there were some issues with users overlooking the dropdown controls, the second round of testing was much more reassuring. One thing that surprised me: every participant managed scroll to bottom of the panel; the scrollbar (in a column format) ended up being a nonissue.
 </div>
 
 ---
