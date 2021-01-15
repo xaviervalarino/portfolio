@@ -80,7 +80,8 @@ Participants were recruited through various therapy groups, mailing lists and pe
 - Empowered them to solve their own problems 
 - Had a  set curriculum or system for the things that were being taught
 - Assigned Homework and worksheets\
-_"... helped me think things through on my own"_
+\
+_"They helped me think things through on my own"_
 - There was a strong bias towards female helpers, who were perceived as less judgmental / prescriptive
 
 
