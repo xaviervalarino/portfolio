@@ -62,6 +62,10 @@ I generally move through five phases on a design project. Although their impleme
 * 
 </div>
 
+**I'm currently looking for an in-house role or long-term contract.**
+
+See my work experience on [LinkedIn](https://www.linkedin.com/in/xavier-valarino-17b10061/)
+
 I've spent a fair amount of time as a freelancer and have broad set of expertise.
 In between product design projects, I do contract illustration:
 
@@ -87,7 +91,7 @@ The display font is [Uxum Grotesque](https://uxum.mdn.market/) by [Bureau Nuits]
 
 The body font is [Inter](https://rsms.me/inter/) by Rasmus Andersson.
 
-The site is hand-written in Markdown, HTML, Markdown and CSS. It's built with a Bash script that orchestrates [Pandoc](https://pandoc.org/) and [NodeJS](https://nodejs.org/en/about/). The source code is hosted on [Github](https://github.com/xaviervalarino/portfolio).
+The site is hand-written in Markdown, HTML, and CSS. It's built with a Bash script that orchestrates [Pandoc](https://pandoc.org/) and [NodeJS](https://nodejs.org/en/about/). The source code is hosted on [Github](https://github.com/xaviervalarino/portfolio).
 </div>
 
 </section>
