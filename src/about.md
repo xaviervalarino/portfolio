@@ -29,7 +29,7 @@ In learning a system, you come to understand what guided its designers. Hopefull
 
 I got my start in print. Bless the engineer at Adobe who put Javascript and GREP into InDesign---once I realized the potential, it was turtles all the way down.
 
-I've spent the last ten years diving into Unix-like systems and web technologies. I try to take the concepts I learn from these explorations, ideas like---accessibility, affordance, composability, modality, simplicity---and apply them to my work.
+I've spent the last ten years diving into Unix-like systems and web technologies. I try to take the concepts I learn from these explorations---ideas like accessibility, affordance, composability, modality, simplicity---and apply them to my work.
 
 **I want to design systems that improve the human condition.**<br/>
 Because life is too short for crappy software.
