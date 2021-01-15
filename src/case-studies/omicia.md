@@ -14,7 +14,7 @@ filter: scripts/filters/get-next-project.lua
 ## Background
 Omicia (now Fabric Genomics) sequences genetic samples. Their enterprise web application is used to find and  report genetic variants that may cause disease, helping doctors diagnose current or future illness.
 
-The application had originally been deigned as a research tool. As their customer base became more diverse, so did the application's use cases.
+The application had originally been designed as a research tool. As their customer base became more diverse, so did the application's use cases.
 
 The misalignment between the application and user was most apparent in clinical laboratories: clinicians were making mistakes in their reports.
 
