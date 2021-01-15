@@ -49,7 +49,7 @@ The updated user interface put the clinician's job first, giving them control ov
 
 ---
 
-### Drawbacks of the Existing User Interface
+### Drawbacks of the existing user interface
 
 <div class="shadow:img five-sixths padding-stack">
 ![Screenshot of the previous table](../assets/img/omicia-previous-data-table.png)
@@ -64,7 +64,7 @@ During interviews, clinicians expressed frustration with three areas:
 
 --- 
 
-### Field Configuration Modal
+### Field configuration modal
 I designed a new configuration modal which would toggle which fields were visible. The configuration could be saved as the application default or for the report being worked on. Toggling fields on or off was done by dragging and dropping them into one of three rows:
 
 <div class="subgrid half">
@@ -77,16 +77,16 @@ I designed a new configuration modal which would toggle which fields were visibl
 ![Wireframe for the configuration modal](../assets/img/omicia-configuring-table-fields.png)
 </div>
 
-### Improving the Interface
+### Improving the interface
 
-#### Removing Unnecessary Information
+#### Removing unnecessary information
 I recommended limiting the colors to yellow and red, which were the only two that provided actionable information. I also suggested removing links in table cells, and instead making the whole table row a link target that would open the variant modal. Links to other information would be placed inside that view.
 
 <div class="border:img padding-stack">
 ![Detail of previous data table](../assets/img/omicia-previous-table-color-detail.png)
 </div>
  
-#### Improving Legibility
+#### Improving legibility
 One of the fields recorded in the table was the gene's zygosity---whether the gene had the same alleles or a dominant and recessive one. 
 
 At small scale (or for those with poor vision), the two words look almost identical.
@@ -96,14 +96,14 @@ I designed an icon that was easy enough to associate with the genotype and would
 ![Sometimes icons are more legible](../assets/img/omicia-zygosity-legibility.png)
 
 
-#### Moving Buttons to One Location
+#### Moving buttons to one location
 All controls that didn't affect individual variant entries were moved to a button cluster above the table.
 
 <div class="pano bkg:grey shadow:img">
 ![My design for the table view](../assets/img/omicia-updated-data-table.png)
 </div>
 
-#### Editing Reported Fields
+#### Editing reported fields
 An optional design was included: a feature to toggle which fields were added to final report _per individual gene variant_. The fields would appear as button clusters that could be toggled on or off.
 
 
