@@ -38,7 +38,7 @@ Because life is too short for crappy software.
 </section>
 
 <section class="grid indenter:3/5 split-lists stack border-top">
-## My Design Process
+## My design process
 
 I generally move through five phases on a design project. Although their implementation is never really the same, I'd describe them as:
 
