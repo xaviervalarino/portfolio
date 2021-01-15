@@ -68,6 +68,8 @@ The proposed workflow would allow clients to visualize their custom build, gener
 ---
 
 ### Designing the interface
+Interviews with interior designers made choosing a drag-and-drop interaction a no-brainer. It fit well with how they worked: usually laying out and rearranging swatches & samples while [hunkering](https://articles.uie.com/hunkering/).
+
 My initial concept for selecting furniture components was to have users modify furniture parameters before dragging and dropping them onto a canvas. I saw two benefits to this approach:
 
 <div class="left-third" >
@@ -134,6 +136,8 @@ Assigning multiple colors was done through two separate properties: one through 
 <div class="null">
 #### Recording data 
 Each piece of furniture and its relative position were stored in a JSON object. When a client would go to print the cut sheet, the data object would be iterated through, generating the printable list of parts.
+
+The process wasn't as seamless as I had wanted. PDF libraries like [jsPDF](https://github.com/MrRio/jsPDF) didn't offer enough functionality to automatically create the PDF. Luckily, the application was used by cohort of users who knew the workflow beforehand, so the friction of having to save a PDF from a browser print window was an annoyance instead of a deal breaker. 
 </div>
 
 </section>
