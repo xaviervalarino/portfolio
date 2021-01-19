@@ -48,9 +48,9 @@ watcher
 function build (file) {
   const cmd = spawn(`./scripts/build.sh`, [file] );
   cmd.stdout.on('data', (data) => {
-    process.stdout.write(`${data}`);
+    process.stdout.write(data);
   });
   cmd.stderr.on('data', (data) => {
-    process.stderr.write(`${data}`);
+    process.stderr.write(data);
   });
 }
