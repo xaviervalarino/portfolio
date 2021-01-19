@@ -22,7 +22,7 @@ if (!process.argv[2]) {
 }
 if (process.argv[3] === '-v' ||  process.argv[3] === '--verbose') {
   console.log('Verbose turned on')
-  verbose=true;
+  verbose = true;
 }
 ;
 console.log(`Watching files in "${process.argv[2]}/"`);
