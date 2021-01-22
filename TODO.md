@@ -11,10 +11,9 @@
 - [x] Update README
 - [ ] Nav for non-top-level pages
 - [x] Case study footer nav (back/index/next)
-- [ ] Finish overhauling `scripts/create-projects-list.js`
-  - [ ] update if list already exists (buffer readStream before opening writeStream)
-  - [ ] sort the list
-  - [ ] How should it be triggered on `watch`, or should it be manual?
+- [x] Finish overhauling script for file collections
+  - [x] update if list already exists (buffer readStream before opening writeStream)
+  - [x] sort the list
 - [x] Images: double up on wide
 - [ ] write case studies:
   - [x] Omicia
