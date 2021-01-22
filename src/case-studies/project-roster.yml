@@ -1,18 +1,18 @@
 ---
 roster:
-    - title: Designing a customizable dashboard
-      subtitle: Understanding how parts make up the whole
-      href: /case-studies/gears-dashboard.html
+  - title: Designing a customizable dashboard
+    subtitle: Understanding how parts make up the whole
+    href: /case-studies/gears-dashboard.html
 
-    - title: Programming an interactive furniture builder
-      subtitle: Working within constraints
-      href: /case-studies/fringe-studio.html
+  - title: Programming an interactive furniture builder
+    subtitle: Working within constraints
+    href: /case-studies/fringe-studio.html
 
-    - title: Improving genetic reporting for clinicians
-      subtitle: Making an interface more goal oriented
-      href: /case-studies/omicia.html
+  - title: Improving genetic reporting for clinicians
+    subtitle: Making an interface more goal oriented
+    href: /case-studies/omicia.html
 
-    - title: Using research to model a conversational UI
-      subtitle: Basing interaction patterns on real-world examples
-      href: /case-studies/botanic.html
+  - title: Using research to model a conversational UI
+    subtitle: Basing interaction patterns on real-world examples
+    href: /case-studies/botanic.html
 ...

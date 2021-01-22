@@ -72,20 +72,21 @@ usage:
   ./scripts/build.sh [commands...|files...] [--opts]
 
 commands:
-        all  Run all commands
-       lean  Only run css, html, js and roster commands 
-             (exlude long-running and less frequently used commands)
-        css  Concatenate all CSS files to single file in output directory
-        img  Optimize image files
-       html  Convert markdown and templates files into HTML
-     roster  Build project "roster" -- an ordered list of project files
-             See `./create-roster.js` for more information
-      video  Process video file(s), convert them to MP4,
-             ouput them to assets folder in output directory 
-    favicon  Copy favicon files to output directory
-      fonts  Copy font files to output directory
-         js  Contcatenate all javascript files into a single file
-    
+          all  Run all commands
+         lean  Only run css, html, js
+               (exlude long-running and less frequently used commands)
+          css  Concatenate all CSS files to single file in output directory
+          img  Optimize image files
+         html  Convert markdown and templates files into HTML
+  collections  Build project "collections" -- ordered lists of project files
+               Used as metadata for Pandoc Lua filters
+               See `./scripts/collections.js` for implementation
+        video  Process video file(s), convert them to MP4,
+               ouput them to assets folder in output directory 
+      favicon  Copy favicon files to output directory
+        fonts  Copy font files to output directory
+           js  Contcatenate all javascript files into a single file
+
 options:
  --help, -h  Show this message
     --clean  Delete output dir before building 

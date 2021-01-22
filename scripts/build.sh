@@ -23,19 +23,20 @@ usage:
   $0 [commands...|files...] [--opts]
 
 commands:
-        all  Run all commands
-       lean  Only run css, html, js and roster commands 
-             (exlude long-running and less frequently used commands)
-        css  Concatenate all CSS files to single file in output directory
-        img  Optimize image files
-       html  Convert markdown and templates files into HTML
-     roster  Build project "roster" -- an ordered list of project files
-             See \`./create-roster.js\` for more information
-      video  Process video file(s), convert them to MP4,
-             ouput them to assets folder in output directory 
-    favicon  Copy favicon files to output directory
-      fonts  Copy font files to output directory
-         js  Contcatenate all javascript files into a single file
+          all  Run all commands
+         lean  Only run css, html, js
+               (exlude long-running and less frequently used commands)
+          css  Concatenate all CSS files to single file in output directory
+          img  Optimize image files
+         html  Convert markdown and templates files into HTML
+  collections  Build project "collections" -- ordered lists of project files
+               Used as metadata for Pandoc Lua filters
+               See \`./scripts/collections.js\` for implementation
+        video  Process video file(s), convert them to MP4,
+               ouput them to assets folder in output directory 
+      favicon  Copy favicon files to output directory
+        fonts  Copy font files to output directory
+           js  Contcatenate all javascript files into a single file
 
 options:
  --help, -h  Show this message
@@ -159,10 +160,9 @@ html () {
   fi
 }
 
-roster() {
-  printf "%-15s %s\n" "Running:" "./scripts/create-roster.js"
-  printf "This scripts isn't ready quite yet (refactoring)\n"
-  # ./scripts/create-roster.js
+collections() {
+  printf "%-15s %s\n" "Running:" "./scripts/collections.js"
+  ./scripts/collections.js all
 }
 
 img() {
@@ -251,11 +251,11 @@ while [[ "$#" -ne 0 ]]; do
 
   ## combos commands
   if [[ "$arg" == "lean" ]] || [[ "$arg" == "all" ]]; then
-    func_array=("roster" "css" "html" "js")
+    func_array=("css" "html" "js")
     shift $#
   fi
   if [[ "$arg" == "all" ]]; then
-    func_array+=("favicon" "fonts" "img" "video")
+    func_array+=("collections" "favicon" "fonts" "img" "video")
     shift $#
   fi
 
@@ -269,14 +269,14 @@ while [[ "$#" -ne 0 ]]; do
   ## individual cmds
   # TODO: should filename name short circuit the loop?
   case $arg in
-    css)      func_array+=(css);     shift ;;
-    html)     func_array+=(html);    shift ;;
-    js)       func_array+=(js);      shift ;;
-    roster)   func_array+=(roster);  shift ;;
-    favicon)  func_array+=(favicon); shift ;;
-    fonts)    func_array+=(fonts);   shift ;;
-    img)      func_array+=(img);     shift ;;
-    video)    func_array+=(video);   shift ;;
+    css)          func_array+=(css);          shift ;;
+    html)         func_array+=(html);         shift ;;
+    js)           func_array+=(js);           shift ;;
+    collections)  func_array+=(collections);  shift ;;
+    favicon)      func_array+=(favicon);      shift ;;
+    fonts)        func_array+=(fonts);        shift ;;
+    img)          func_array+=(img);          shift ;;
+    video)        func_array+=(video);        shift ;;
   esac
   # arg didn't shift the list, so...
   if [[ $count -eq $#  ]]; then
