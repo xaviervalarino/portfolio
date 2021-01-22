@@ -199,7 +199,7 @@ module.exports = (params) => {
     objectMode: true,
     transform (chunk, _, cb) {
       chunk = yaml.dump(chunk).replace(/(?<!:\n)( {2}-)/g, '\n$1');
-      chunk = '---\n' + chunk + '...';
+      chunk = '---\n' + chunk + '...\n';
       cb(null, chunk);
     }
   })
