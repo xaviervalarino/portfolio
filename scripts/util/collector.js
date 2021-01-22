@@ -14,7 +14,7 @@ const path = require('path');
 const yaml = require('js-yaml');
 
 // Run from project root
-process.chdir(path.resolve( path.dirname(__filename), '../../'))
+process.chdir(path.resolve( path.dirname(__filename), '../../'));
 
 // Make sure provided parameters obj have all the right keys
 function checkForInputErrors (obj) {
@@ -23,13 +23,13 @@ function checkForInputErrors (obj) {
     target_keys: 'Collection object doesn\'t have "target_keys"',
     data_file:  'Collection object doesn\'t have "data_file"',
     target_dir: 'Collection object doesn\'t have "target_dir"'
-  }
+  };
   Object.keys(checklist).forEach( item => {
     if ( !obj[item] ) {
-      console.error(`ERROR: ${checklist[item]}`)
-      process.exit(1)
+      console.error(`ERROR: ${checklist[item]}`);
+      process.exit(1);
     }
-  })
+  });
 }
 
 // merge input streams
@@ -41,7 +41,7 @@ function merge (streamArr) {
        if (streamArr.length === i + 1) {
          merged.end();
        }
-    })
+    });
     return merged;
   }, new PassThrough({ objectMode: true }) );
 }
@@ -67,34 +67,36 @@ function partialReadStreams (filenames, delimiterFn) {
           if (delimitedData) {
             data.rawdata = delimitedData;
             marker = true; 
-            readStream.destroy()
+            readStream.destroy();
           } else {
-            data.rawdata += chunk
+            data.rawdata += chunk;
           }
         }
         function writeOutData () { 
           if (marker) {
             pass.write(data);
             pass.end();
-            resolve(pass)
+            resolve(pass);
           }
         }
         fs.createReadStream(filename, { highWaterMark: 300 })
           .on('error', (err) => { console.error(err); })
           .on('data', testDelimiter)
           .on('close', writeOutData)
+        ;
       });
     }
-    const partialStreams = filenames.map(file => streamAsPromise(file))
-    Promise.all(partialStreams).then(resolve)
+    const partialStreams = filenames.map(file => streamAsPromise(file));
+    Promise.all(partialStreams).then(resolve);
   });
 }
 
 async function getInputFilenames (dirname, ext) {
-  const files = await fs.promises.readdir(dirname, { withFileTypes: true })
+  const files = await fs.promises.readdir(dirname, { withFileTypes: true });
   return files
     .filter( file => file.isFile() && path.extname(file.name) === ext )
     .map( file => path.join(dirname, file.name))
+  ;
 }
 
 // find YAML directive markers used to delimit front-matter 
@@ -114,8 +116,8 @@ module.exports = (params) => {
   // about losing data when we open a write stream to the same path
   // if it doesn't exist, log the error and write a new data_file
   const reference = (() => {
-    try { return yaml.load(fs.readFileSync(params.data_file, 'utf8')) }
-    catch (e) { console.error(`${e}\n...Creating new data file`) }
+    try { return yaml.load(fs.readFileSync(params.data_file, 'utf8')); }
+    catch (e) { console.error(`${e}\n...Creating new data file`); }
   })();
 
   const parseYAML = new Transform({
@@ -124,7 +126,7 @@ module.exports = (params) => {
       if (chunk.rawdata) {
         chunk.metadata = yaml.load(chunk.rawdata);
       }
-      cb(null, chunk)
+      cb(null, chunk);
     }
   });
 
@@ -135,14 +137,14 @@ module.exports = (params) => {
     objectMode: true,
     construct (cb) {
       this.data = [];
-      cb()
+      cb();
     },
     transform (chunk, _, cb) {
-      this.data.push(chunk)
-      cb()
+      this.data.push(chunk);
+      cb();
     },
     flush (cb) {
-      cb(null, this.data)
+      cb(null, this.data);
     }
   });
 
@@ -154,17 +156,15 @@ module.exports = (params) => {
       const destPath = (fpath) => {
         const subdir = path.relative('src', path.dirname(fpath));
         const filename = path.basename(fpath, path.extname(fpath)) + '.html';
-        return path.join('/',subdir, filename)
-      }
+        return path.join('/',subdir, filename);
+      };
       const listItem = (chunk) => {
         const item = {};
         params.target_keys.forEach( key => {
-          item[key] = key === 'href' ?
-            destPath(chunk.filename) :
-            chunk.metadata[key] ;
+          item[key] = key === 'href' ? destPath(chunk.filename) : chunk.metadata[key] ;
         });
         return item;
-      }
+      };
       list[params.name] = chunks.map( chunk => listItem(chunk) );
       cb(null, list);
     }
@@ -177,11 +177,11 @@ module.exports = (params) => {
       if (reference && reference[params.name]) {
         list[params.name].sort( (a,b) => {
           let refA = reference[params.name].findIndex(el => {
-            return el.href === a.href
-          })
+            return el.href === a.href;
+          });
           let refB = reference[params.name].findIndex(el => {
-            return el.href === b.href
-          })
+            return el.href === b.href;
+          });
           // doesn't exist, so append it to the list
           // (B is probably before A, alphabetically)
           if ( refA === -1) refA = list[params.name].length;
@@ -189,7 +189,7 @@ module.exports = (params) => {
           return refA - refB;
         })
       }
-      cb(null, list)
+      cb(null, list);
     }
   });
 
@@ -200,7 +200,7 @@ module.exports = (params) => {
     transform (chunk, _, cb) {
       chunk = yaml.dump(chunk).replace(/(?<!:\n)( {2}-)/g, '\n$1');
       chunk = '---\n' + chunk + '...';
-      cb(null, chunk)
+      cb(null, chunk);
     }
   })
 
@@ -214,10 +214,11 @@ module.exports = (params) => {
       dumpYAML,
       fs.createWriteStream(params.data_file),
       (err) => { if (err) console.error(err) }
-    )
+    );
   }
   getInputFilenames(params.target_dir, '.md')
     .then(fmStreams)
     .then(pipeItUp)
     .catch(console.error)
+  ;
 }

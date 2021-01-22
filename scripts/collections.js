@@ -31,24 +31,24 @@ const collections = {
     target_dir: './src/case-studies'
   }
   // only one collection at the moment
-}
+};
 
 // Arguments
 // create/update the collection by name, or batch them with `all`
-const args = process.argv.slice(2)
+const args = process.argv.slice(2);
 
 if ( args.length === 0 ) {
-  console.error('ERROR: no arguments supplied')
-  process.exit(1)
+  console.error('ERROR: no arguments supplied');
+  process.exit(1);
 }
 
 if ( args.includes('all') ) {
-  Object.values(collections).forEach( value => { collector(value) })
+  Object.values(collections).forEach( value => { collector(value) });
 } else {
   args.forEach( cmd => {
     if (!collections[cmd]) {
-      return console.error(`ERROR: "${cmd}" isn't a known collection`)
+      return console.error(`ERROR: "${cmd}" isn't a known collection`);
     }
-    collector(collections[cmd])
+    collector(collections[cmd]);
   });
 }

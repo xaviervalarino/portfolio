@@ -11,11 +11,11 @@ Useful when mocking up different devices
 ex. "./get-scale.js 16 1.4"
 `;
 
-const args = process.argv
+const args = process.argv;
 
 if ( !args[2] || !args[3] ) {
-  console.log(message)
-  process.exit(1)
+  console.log(message);
+  process.exit(1);
 }
 
 function getScale (base, ratio) {
@@ -23,12 +23,12 @@ function getScale (base, ratio) {
   // base = parseFloat(base);
   // ratio = parseFloat(ratio);
   for ( let i = 6; i > 0 ; i--) {
-    scale.push( Number.parseFloat(base / Math.pow(ratio, i) ).toFixed(2) )
-  };
+    scale.push( Number.parseFloat(base / Math.pow(ratio, i) ).toFixed(2) );
+  }
   scale.push(base);
   for ( let i = 1; i < 7; i++) {
-    scale.push( Number.parseFloat(base * Math.pow(ratio, i) ).toFixed(2) )
-  };
+    scale.push( Number.parseFloat(base * Math.pow(ratio, i) ).toFixed(2) );
+  }
   return scale;
 }
-getScale(args[2], args[3]).forEach( (v) => console.log(v) )
+getScale(args[2], args[3]).forEach( (v) => console.log(v) );

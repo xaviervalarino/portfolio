@@ -12,7 +12,7 @@ const { readFile } = require('fs');
  */
 
 /* read process.stdin somehow */
-process.stdin.setEncoding('utf8')
+process.stdin.setEncoding('utf8');
 process.stdin.on('readable', () => {
   const file = process.stdin.read();
   if (file) {
@@ -23,6 +23,6 @@ process.stdin.on('readable', () => {
     h1.textContent = h1.textContent.toUpperCase();
 
     // Pass along modified HTML  
-    process.stdout.write(dom.window.document.documentElement.outerHTML)
+    process.stdout.write(dom.window.document.documentElement.outerHTML);
   }
 });

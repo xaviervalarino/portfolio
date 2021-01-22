@@ -11,20 +11,20 @@ function moveToProjectRoot () {
   const relativeLocation = path.dirname(__filename);
   // File is being executed from the scripts directory
   if ( relativeLocation ===  process.cwd() ) {
-    process.chdir('../')
+    process.chdir('../');
   }
 }
 moveToProjectRoot();
 
 if (!process.argv[2]) {
   console.error('ERROR: You need to specify a source folder to watch');
-  process.exit(1)
+  process.exit(1);
 }
 if (process.argv[3] === '-v' ||  process.argv[3] === '--verbose') {
-  console.log('Verbose turned on')
+  console.log('Verbose turned on');
   verbose = true;
 }
-;
+
 console.log(`Watching files in "${process.argv[2]}/"`);
 
 const watcher = chokidar.watch( process.argv[2], {
@@ -37,11 +37,11 @@ const watcher = chokidar.watch( process.argv[2], {
 watcher
   .on('add', file => {
     if (verbose) { console.log(`\n${file} created`); }
-    build(file)
+    build(file);
   })
   .on('change', file => {
     if (verbose) { console.log(`\n${file} changed`); }
-    build(file)
+    build(file);
   })
 ;
 
