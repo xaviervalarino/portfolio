@@ -55,10 +55,10 @@ I generally move through five phases on a design project. Although their impleme
 <div class="h4 font:light no-list">
 **I've designed software for:**
 
-* [Information Security](https://www.xavier.valarino.com/case-studies/gears-dashboard)
-* [Networking](https://www.xavier.valarino.com/case-studies/netgear-captive-portal)
-* [Natural Language Processing](https://www.xavier.valarino.com/case-studies/botanic)
-* [Genomic Sequencing](https://www.xavier.valarino.com/case-studies/omicia)
+* [Information Security](/case-studies/gears-dashboard.html)
+* [Networking](/case-studies/drafts/netgear-captive-portal.html)
+* [Natural Language Processing](/case-studies/botanic.html)
+* [Genomic Sequencing](/case-studies/omicia.html)
 * 
 </div>
 
