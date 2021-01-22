@@ -89,7 +89,7 @@ The primary use of the dashboard was to, all at once, give a bird's eye view of 
 
 
 <div class="left-third cinch-up">
-![Sketching out how user goals would relate to their networks](../assets/img/GEARS-dashboard-lifecycle.jpeg)
+![Sketching out how user goals map to features over time](../assets/img/GEARS-dashboard-lifecycle.jpeg)
 </div>
 
 I wanted to make sure that these actions remained prominent, while giving enough visual affordance to the chart configuration features. 
