@@ -165,7 +165,7 @@ module.exports = (params) => {
         });
         return item;
       };
-      list[params.name] = chunks.map( chunk => listItem(chunk) );
+      list[params.name] = chunks.map(listItem);
       cb(null, list);
     }
   });
