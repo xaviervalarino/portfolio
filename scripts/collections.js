@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /*
  * Create collections of markdown/content files
- * Generates a YAML data file for each definitiion
+ * Generates a YAML data file for each definition
  */
 const collector = require('./util/collector.js');
 
