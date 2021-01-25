@@ -46,7 +46,7 @@ These scripts might not work on Windows unless run on a Linux subsystem. This is
                   runs: ./scripts/build.sh --clean
 
            serve  Run server on localhost:8080 (usually)
-                  runs: live-server ./dist,
+                  runs: live-server ./dist
 
              dev  Start up development environment 
                   runs: npm run serve & npm run watch
@@ -159,7 +159,7 @@ To demonstrate the concept, here is a simplified example:
 
 
 ### Javascript
-Each file in the JS directory is concatenated into a single JS file in the distribution directory, so, each file should be self-contained. (I suppose it could return a global variable, but, the site is [fundamentally] a series of documents, so... the scripts are self-contained and have explicit purposes.)
+Each file in the JS directory is concatenated into a single JS file in the distribution directory, so, each file should be a self-contained, self-executing anonymous function. (I suppose it could return a global variable, but, the site is [fundamentally] a series of documents, so... the scripts should have explicit purposes.)
 
 For example:
 ```js
@@ -175,7 +175,7 @@ For example:
 Templates are written in [Pandoc's HTML template language](https://pandoc.org/MANUAL.html#templates). It's limited, but gets the job done.
 
 ### Content Files
-Content files are written in Markdown with YAML front-matter
+Content files are written in Markdown with YAML front-matter.
 
 ##### Front-Matter
 Along with template filename, front-matter can include paths to an additional YAML metadata file and Pandoc Lua filter. Filenames must be full paths from project root.
@@ -208,5 +208,5 @@ Must be specified as a `filter` in content front-matter.
 
 <!--
 ### Collections
-Running `./scripts/create-project-list.js` will iterate through all projects in `src/case-studies` and create a new site file and YAML data file to be used by Pand
---
+Running `./scripts/collections.js [collection_name]` will build a collection metadata file. It iterates through the markdown files given directory, scraping their front-matter, and generating a list of keys that are specified in the collections definition.
+-->
