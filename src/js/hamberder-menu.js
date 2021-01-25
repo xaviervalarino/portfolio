@@ -4,7 +4,7 @@
   document.querySelector('.masthead button')
     .addEventListener('click', function () {
       let value = "true" === this.getAttribute('aria-expanded');
-      this.setAttribute('aria-expanded', !value)
+      this.setAttribute('aria-expanded', !value);
     })
   ;
 }());

@@ -7,10 +7,10 @@
     };
   }
   function getFontSize () {
-    var value = parseFloat(getComputedStyle(document.documentElement).fontSize);
+    const value = parseFloat(getComputedStyle(document.documentElement).fontSize);
     return {
       fontSize: Math.round( value * 10)/ 10 // round to one decimal place
-    }
+    };
   }
   function setPropertyReadouts (obj) {
     document.querySelectorAll('[data-t="readout"]')
@@ -24,11 +24,11 @@
         
   // initialize
   setPropertyReadouts(getBodyWidth());
-  setPropertyReadouts(getFontSize())
+  setPropertyReadouts(getFontSize());
 
   window.addEventListener("resize", () => {
     setPropertyReadouts(getBodyWidth());
-    setPropertyReadouts(getFontSize())
+    setPropertyReadouts(getFontSize());
   });
   document.querySelectorAll('footer button')
     .forEach( button => {
@@ -39,7 +39,7 @@
         };
         document.body.classList.toggle(this.dataset.i);
         this.dataset.v = 'false' === this.dataset.v ? true : false;
-        this.textContent = condition[this.dataset.v]
+        this.textContent = condition[this.dataset.v];
       });
     })
   ;
