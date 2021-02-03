@@ -12,6 +12,10 @@ roster:
     subtitle: Making an interface more goal oriented
     href: /case-studies/omicia.html
 
+  - title: Specifications for a flexible captive portal
+    subtitle: Setting limits
+    href: /case-studies/netgear-captive-portal.html
+
   - title: Using research to model a conversational UI
     subtitle: Basing interaction patterns on real-world examples
     href: /case-studies/botanic.html

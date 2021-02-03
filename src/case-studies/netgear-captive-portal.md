@@ -5,15 +5,13 @@ project: Netgear CWM
 template: src/templates/case-study.html
 masthead:
     work: true
-# metadata: src/case-studies/project-roster.yml
-# filter: scripts/filters/get-next-project.lua
+metadata: src/case-studies/project-roster.yml
+filter: scripts/filters/get-next-project.lua
 ---
 
 <section class="grid indenter:3/5 flip-top:kid border-top:3px border-accent:cyan">
 ## Background 
-Alongside offering their own software as a service, OPSWAT was contracted to build a wireless cloud management system for Netgear. 
-
-The application included features for setting up a captive portal—a webpage that newly connected users would have to pass through before gaining access to the broader network. Corporate clients wanted to personalize these entry points.
+I was part of a team contracted to build a wireless cloud management system for Netgear. The application included features for setting up a captive portal—a webpage that newly connected users would have to pass through before gaining access to the broader network. Corporate clients wanted to personalize these entry points.
 
 --- 
 
@@ -23,7 +21,7 @@ Design a way for administrators to customize the captive portal to their network
 ---
 
 ### My role 
-I led design on many of the later sprints.
+Sole design on many of the later sprints.
 
 In this particular sprint, I design the setup wizard for the captive portal, exploring the UX impact of various configuration options to ensure that administrators could successfully create and customize their captive portals.
 
