@@ -56,7 +56,7 @@ I generally move through five phases on a design project. Although their impleme
 **I've designed software for:**
 
 * [Information Security](/case-studies/gears-dashboard.html)
-* [Networking](/case-studies/drafts/netgear-captive-portal.html)
+* [Networking](/case-studies/netgear-captive-portal.html)
 * [Natural Language Processing](/case-studies/botanic.html)
 * [Genomic Sequencing](/case-studies/omicia.html)
 * 
