@@ -82,7 +82,7 @@ My initial concept for selecting furniture components was to have users modify f
 
 
 #### Testing how users selected furniture
-A simple prototype was created to test the concept---it performed poorly. The interface just didn't click for the majority of participants. More than half thought the furniture module was a static readout. 40% hated selecting dimensions through the slide control.
+A simple prototype was created to test the concept---it performed poorly. The interface just didn't click for the majority of participants. More than half thought the furniture module was a static readout and strongly disliked selecting dimensions through the slide control.
 
 ![](../assets/img/mixi-modular-early-version-control-panel-at-the-top.png)
 
