@@ -39,7 +39,7 @@ These scripts might not work on Windows unless run on a Linux subsystem. This is
            build  Run all build commands  
                   runs: ./scripts/build.sh all
 
-            lean  Run frequently used build commands  
+      build:lean  Run frequently used build commands  
                   runs: ./scripts/build.sh lean
 
            clean  Delete "./dist/" directory 
