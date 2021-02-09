@@ -22,7 +22,7 @@ masthead:
 </div>
 
 <section class="grid indenter:3/5 stack border-top">
-## I enjoy learning how complex systems work. { .margin-bottom:size2 }
+## I enjoy learning how complex systems work { .margin-bottom:size2 }
 
 <div class="margin:none">
 In learning a system, you come to understand what guided its designers. Hopefully, you also find ways to explain that logic to others. The hardest part of interface design is knowing when to show the underlying system vs. simplifying the system's complexity so that it doesn't get in the way.
