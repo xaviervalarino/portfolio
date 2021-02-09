@@ -59,7 +59,7 @@ Whereas before clients would scan or fax hand drawn sketches of their custom bui
 ---
 
 ### Constraints 
-Order fulfillment was complicated. Standardizing shipping for the custom builds was near impossible, since larger orders usually needed to be palletized. To add insult to injury, the studio's CMS gave little in the way of configurability and database access.
+Order fulfillment was complicated. Standardizing shipping for the custom builds was near impossible since larger orders usually needed to be palletized. To add insult to injury, the studio's CMS gave little in the way of configurability and database access.
 
 We considering spinning up a separate virtual private server. After running into [_Cross-Origin Resource Sharing_](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) issues, we were forced to reassess our timeline and budget. We decided the best way forward was to build a client-side only application.
 
