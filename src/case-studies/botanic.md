@@ -107,7 +107,7 @@ The initial concept for the application would assess personal affect through ton
 ---
 ### How did research affect the design?
 
-This information was used to draft conversational guidelines for the copywriters, create mood boards for the animator, and outline key functionality in the user flow.
+The information uncovered by research was used to draft conversational guidelines for the copywriters, create mood boards for the animator, and outline key functionality in the user flow.
 
 <div class="two-thirds padding-stack" data-tab="1">
 ![Mood board for the avatar environment ](../assets/img/botanic-environment-mood-board.jpg)

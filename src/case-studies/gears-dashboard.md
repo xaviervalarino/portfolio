@@ -23,7 +23,7 @@ Make the dashboard more useful for a broader set of administrators, especially t
 ---
 
 ### Role 
-In-house User Experience Designer
+In-house user experience designer
 
 Designed the interaction pattern and user interface for dashboard customization.
 
