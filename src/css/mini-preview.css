@@ -1,0 +1,18 @@
+.mini-preview {
+    position: relative;
+}
+.mini-preview > iframe {
+    display: none;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    z-index: 100;
+    width: 700px;
+    height: 500px;
+    border: 2px solid #333;
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
+}
+
+a.mini-preview:hover > iframe, iframe:hover{
+    display: block;
+}
