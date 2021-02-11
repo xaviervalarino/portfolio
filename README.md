@@ -1,5 +1,6 @@
 # Portfolio Website
 My portfolio website, built with a homebrewed static site generator.
+![CLI demo](./cli-demo.gif)
 
 ## Dependencies
 Tools used for building the site:
