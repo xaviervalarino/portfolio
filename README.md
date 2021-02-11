@@ -3,7 +3,7 @@ My portfolio website, built with a homebrewed static site generator.
 ![CLI demo](./cli-demo.gif)
 
 ## Dependencies
-Tools used for building the site:
+Tools used for building and deploying the site:
 
 | tool             | version | used for                                                                       |
 | ---              | ---     | --                                                                             |
