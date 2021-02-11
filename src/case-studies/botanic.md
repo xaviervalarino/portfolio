@@ -94,7 +94,7 @@ _"They helped me think things through on my own"_
 
 <div class="subgrid side-by-side">
 <div class="padding-stack:size2">
-![Notes made during interviews were meant to be quick and dirty](../assets/img/botanic-interview-notes.png)
+![Screenshot of user interview notes](../assets/img/botanic-interview-notes.png)
 </div>
 <div class="null">
 #### Key take-aways
