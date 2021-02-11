@@ -12,7 +12,6 @@ Tools used for building the site:
 | **`nodeJS`**     | 12.11   | running build scripts through NPM, watching for changes, and optimizing images |
 | **`pandoc`**     | 2.11    | converting Markdown to HTML                                                    |
 | **`ffmpeg`**     | 4.3.1   | converting and compressing videos                                              |
-| **`git-lfs`**    | 2.13    | storing binary files ( source files for mockups )                              |
 | **`rsync`**      | 2.6.9   | deploying site to production and testing VPS                                   |
 
 ## Building
