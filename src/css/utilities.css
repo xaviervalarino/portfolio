@@ -76,12 +76,12 @@
 
 /* viewport  dependent */
 
-.flex\:col-to-row\<900px {
+.flex\:row-to-col\<960px  {
   display: flex;
   flex-direction: column;
 }
-@media only screen and (max-width: 900px) {
-  .flex\:col-to-row\<900px {
+@media only screen and (max-width: 960px) {
+  .flex\:row-to-col\<960px {
     flex-direction: row;
   }
 }
