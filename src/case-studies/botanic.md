@@ -40,7 +40,7 @@ Research played an important role in uncovering what aspects mattered in a helpe
 
 1. Designed the avatar's persona to be fun and lighthearted, with the aim of making the application approachable
 2. Used conversational techniques employed by therapists to create dialogue that was appropriate for self-help
-3. Provided a structured curriculum with exercises and worksheets, making users active participants in charting their progress
+3. Provided a structured curriculum with Q&A exercises and worksheets, making users active participants in charting their progress
 
 <div class="cinch-up:70% one-third" data-tab="0">
 ![](../assets/img/botanic-mobile-mockup.png)
@@ -115,18 +115,16 @@ The information uncovered by research was used to draft conversational guideline
 ![Excerpts from the conversation guidelines and design recommendations](../assets/img/botanic-guidelines-and-recommendations.png)
 </div>
 
----
-
-
-### Interaction design
-The interaction flow was designed to lead users towards course material and pre-canned exercises. After completing the course the user would fill out a worksheet as part of the `TestPost` module, which would be compared against the affect data recorded by the system and converted into a baseline number. This data was then graphed in the "Progress" view so that user's could visualize their improvement.
-
 <div class="bkg:grey pano img-height:unset">
 ![](../assets/img/botanic-high-level-user-flow.png)
 <div class="padding-stack">
 ![System state flow diagram showing conversational flow through the MVP](../assets/img/botanic-state-flow-diagram.png)
 </div>
 </div>
+
+### Interaction design
+The interaction flow was designed to lead users towards course material and pre-canned exercises. After completing a course the user would participate in a short question and answer module modeled after the worksheets (T.6 Content Q&A _Worksheet_) and a post check-in (T.7 TestPost). Answers would be compared against other sentiment data recorded by the system and converted into a baseline number. This data was then graphed in the "Progress" view so that user's could visualize their improvement.
+
 
 </section>
 
@@ -136,4 +134,8 @@ The interaction flow was designed to lead users towards course material and pre-
 ## End result
 Modeling the application off of techniques employed by real-world helpers allowed us to create an application that was novel in implementation but still familiar in its structure.
 
-Without user research we would have overlooked the worksheets as a means for data collection. This realization simplified our roadmap for the MVP: we could quickly build the worksheet forms and lower the priority for implementing more complex versions of affect analysis.
+Without user research we would have overlooked the worksheets as a means for data collection. This realization helped focus our efforts for the MVP roadmap: we could quickly build Q&A exercises for data capture and lower the priority for implementing more complex versions of sentiment analysis.
+
+<div class="cinch-up one-third text-align:center" data-tab="0">
+![Screenshot of "worksheet" Exercise module](../assets/img/botanic-worksheet-exercise-screenshot.png)
+</div>
