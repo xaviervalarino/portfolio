@@ -64,7 +64,7 @@ I generally move through five phases on a design project. Although their impleme
 
 **I'm currently looking for an in-house role or long-term contract.**
 
-See my work experience on [LinkedIn](https://www.linkedin.com/in/xavier-valarino-17b10061/)
+See my work experience on [LinkedIn](https://www.linkedin.com/in/xaviervalarino/)
 
 I've spent a fair amount of time as a freelancer and have broad set of expertise.
 In between product design projects, I do contract illustration:
