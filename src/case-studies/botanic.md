@@ -65,7 +65,7 @@ Research played an important role in uncovering what aspects mattered in a helpe
 The research program was qualitative by design, recruiting 18 participants. Since the conversational interface would be based on the relationship between someone providing and someone seeking help, it was import to get perspective on both sides of the relationship. Our participants were broken up into two groups:
 
 - **8 helpers**\
-Including a psychiatrist, psychologist, counselor, a life coach and a buddhist monk
+Including a psychiatrist, psychologist, counselor, a life coach and a Buddhist monk
 
 - **10 end-users**\
 People who had previously sought or were seeking help
@@ -79,9 +79,9 @@ Participants were recruited through various therapy groups, mailing lists and pe
 #### Users valued helpers who
 - Empowered them to solve their own problems 
 - Had a  set curriculum or system for the things that were being taught
-- Assigned Homework and worksheets\
+- Assigned homework and worksheets\
 \
-_"They helped me think things through on my own"_
+_"[Worksheets] helped me think things through on my own"_
 - There was a strong bias towards female helpers, who were perceived as less judgmental / prescriptive
 
 
@@ -97,7 +97,7 @@ _"They helped me think things through on my own"_
 ![Screenshot of user interview notes](../assets/img/botanic-interview-notes.png)
 </div>
 <div class="null">
-#### Key take-aways
+#### Key takeaways
 The research had validated some of our assumptions around how we should model the avatar, but it also uncovered a large blind-spot: worksheets.
 
 The initial concept for the application would assess personal affect through tone of voice, sentiment analysis and facial expression. Research showed that it was more important to have a post-exercise check-in module where users would actively input this information.
