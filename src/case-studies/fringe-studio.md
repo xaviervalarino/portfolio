@@ -29,7 +29,7 @@ End-to-end design and development, which entailed:
 * Understanding friction with ordering
 * Examining project constraints
 * Designing and testing a solution
-* Programming a working application.
+* Programming a working application
 
 ---
 ### Outcome
