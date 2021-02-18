@@ -4,7 +4,7 @@ subtitle: Making an interface more goal oriented
 project: Omicia
 template: src/templates/case-study.html
 masthead:
-    work: true
+  work: true
 metadata: src/case-studies/project-roster.yml
 filter: scripts/filters/get-next-project.lua
 ---

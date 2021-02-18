@@ -4,7 +4,7 @@ subtitle: Understanding how parts make up the whole
 project: GEARS Dashboard v2.0
 template: src/templates/case-study.html
 masthead:
-    work: true
+  work: true
 hero:
   href: /assets/img/gears-dashboard/gears-dashboard-hero.png
   alt: Chart components from GEARS Cloud dashboard

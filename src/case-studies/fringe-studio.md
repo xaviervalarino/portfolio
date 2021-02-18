@@ -4,7 +4,7 @@ subtitle: Working within constraints
 project: Mixi Configurator
 template: src/templates/case-study.html
 masthead:
-    work: true
+  work: true
 hero:
   href: /assets/img/mixi-modular/mixi-modular-hero.png
   alt: Digital rendering beside actual furniture configuation 

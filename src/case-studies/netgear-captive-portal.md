@@ -4,7 +4,7 @@ subtitle: Setting limits
 project: Netgear CWM
 template: src/templates/case-study.html
 masthead:
-    work: true
+  work: true
 metadata: src/case-studies/project-roster.yml
 filter: scripts/filters/get-next-project.lua
 ---
