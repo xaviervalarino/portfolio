@@ -8,7 +8,7 @@
     "stylelint-config-recommended": "^3.0.0"
   },
   "scripts": {
-    "prebuild": "node node_modules/optipng-bin/lib/install.js; node node_modules/jpegtran-bin/lib/install.js",
+    "prebuild": "node node_modules/optipng-bin/lib/install.js; node node_modules/jpegtran-bin/lib/install.js; node node_modules/gifsicle/lib/install.js",
     "build": "./scripts/build.sh all",
     "build:lean": "./scripts/build.sh lean",
     "clean": "./scripts/build.sh --clean",
