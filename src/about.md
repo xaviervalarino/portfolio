@@ -64,20 +64,54 @@ I generally move through five phases on a design project. Although their impleme
 
 **I'm currently looking for an in-house role or long-term contract.**
 
-See my work experience on [LinkedIn](https://www.linkedin.com/in/xaviervalarino/)
+I'm a freelance product designer, sometimes illustrator. In a parallel life I'm a woodworker. Feel free to reach out at <a href="mailto:xavier@valarino.com">xavier@valarino.com</a>.
 
-I've spent a fair amount of time as a freelancer and have broad set of expertise.
-In between product design projects, I do contract illustration:
-
-<a href="/assets/xavier-valarino-illustration-work-samples.pdf"
-   class="position:relative">
-  <span class="border-bottom:white position:absolute left:-grid-gap"
-        aria-hidden="true">
-  ↓</span>
-  Illustration Work Samples - PDF
+<a href="https://www.linkedin.com/in/xaviervalarino/">
+	 <span class="border-bottom:white"
+		     aria-hidden="true">
+	  ↗</span>
+	 LinkedIn
 </a>
 
-Feel free to reach out at <a href="mailto:xavier@valarino.com">xavier@valarino.com</a>.
+<a href="/etc/illustration.html">
+	 <span class="border-bottom:white"
+		     aria-hidden="true">
+	  →</span>
+	 Illustration
+</a>
+
+<a href="/etc/woodwork.html">
+	 <span class="border-bottom:white"
+		     aria-hidden="true">
+	  →</span>
+	 Woodwork
+</a>
+
+<!--
+<a href="https://www.linkedin.com/in/xaviervalarino/"
+	 class="position:relative display:inline-block">
+	 <span class="border-bottom:white position:absolute left:-grid-gap"
+		     aria-hidden="true">
+	  ↗</span>
+	  LinkedIn
+</a>
+
+<a href="https://www.linkedin.com/in/xaviervalarino/"
+	 class="position:relative display:inline-block">
+	 <span class="border-bottom:white position:absolute left:-grid-gap"
+		     aria-hidden="true">
+	  ↘</span>
+	  Illustrations
+</a>
+
+<a href="https://www.linkedin.com/in/xaviervalarino/"
+	 class="position:relative display:inline-block">
+	 <span class="border-bottom:white position:absolute left:-grid-gap"
+		     aria-hidden="true">
+	  ↘</span>
+	  Woodwork
+</a>
+-->
 
 </section>
 
