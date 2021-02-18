@@ -49,7 +49,7 @@ Administrators were able to personalize their dashboard metrics and layout, maki
 Interviews had shown us that the dashboard wasn't providing much utility for a large segment of our users. It had only been designed for one use case: a single network in an office building or on a small campus. Making the dashboard configurable would allow users to filter for user-generated compliance policies, groups, and locations.  
 
 <div class="shadow:img margin-stack">
-![Screenshot of the previous dashboard](../assets/img/gears-old-dashboard.png)
+![Screenshot of the previous dashboard](../assets/img/gears-dashboard/gears-old-dashboard.png)
 </div>
 
 ---
@@ -70,16 +70,16 @@ How could I align user goals with the database schema to create something useful
 - Issue Severity
     
 <div class="subgrid side-by-side">
-![Tree diagram showing relationship between recorded data and chart types](../assets/img/GEARS-dashboard-device-tree-diagram.png)
+![Tree diagram showing relationship between recorded data and chart types](../assets/img/gears-dashboard/GEARS-dashboard-device-tree-diagram.png)
  
 I created tree diagrams to map how application data could be represented visually.
 I then used the tree diagrams as a rubric for the controls in the modal editor.
 </div>
  
 <div class="subgrid side-by-side">
-![Modal editor configuring a list of 'lost devices'](../assets/img/GEARS-dashboard-edit-chart-lost-devices.png)
+![Modal editor configuring a list of 'lost devices'](../assets/img/gears-dashboard/GEARS-dashboard-edit-chart-lost-devices.png)
  
-![Modal editor configuring a bar chart of devices with 'unwanted applications'](../assets/img/GEARS-dashboard-edit-chart-potentially-unwanted-applications.png)
+![Modal editor configuring a bar chart of devices with 'unwanted applications'](../assets/img/gears-dashboard/GEARS-dashboard-edit-chart-potentially-unwanted-applications.png)
 </div>
  
 #### Frequency of use
@@ -89,7 +89,7 @@ The primary use of the dashboard was to, all at once, give a bird's eye view of 
 
 
 <div class="left-third cinch-up">
-![Sketching out how user goals map to features over time](../assets/img/GEARS-dashboard-lifecycle.jpeg)
+![Sketching out how user goals map to features over time](../assets/img/gears-dashboard/GEARS-dashboard-lifecycle.jpeg)
 </div>
 
 I wanted to make sure that these actions remained prominent, while giving enough visual affordance to the chart configuration features. 
@@ -99,18 +99,18 @@ I wanted to make sure that these actions remained prominent, while giving enough
 Configuration options were hidden behind an _Edit Dashboard_ button. Designing this modality would safeguard against users accidentally moving the chart widgets when trying to click on chart elements. The colors would dim to cue users of the state change.
  
 <div class='subgrid side-by-side border:img margin-top'>
-![Mockup of the default dashboard](../assets/img/GEARS-default-dashboard.png)
+![Mockup of the default dashboard](../assets/img/gears-dashboard/GEARS-default-dashboard.png)
 
-![Mockup of dashboard in "Edit" state](../assets/img/GEARS-dashboard-move-chart-widget.png)
+![Mockup of dashboard in "Edit" state](../assets/img/gears-dashboard/GEARS-dashboard-move-chart-widget.png)
 </div>
  
 #### Customizing the layout
 Chart widgets were designed to reflow based on a grid system, spanning either two, three, or four columns. 
 
 <div class='subgrid side-by-side border:img margin-top'>
-![Mockup of chart widget being dragged from 4 column space](../assets/img/GEARS-dashboard-chart-reflow-on-grid-2.png)
+![Mockup of chart widget being dragged from 4 column space](../assets/img/gears-dashboard/GEARS-dashboard-chart-reflow-on-grid-2.png)
 
-![Mockup of chart widget being dropped into 3 column space](../assets/img/GEARS-dashboard-chart-reflow-on-grid-1.png)
+![Mockup of chart widget being dropped into 3 column space](../assets/img/gears-dashboard/GEARS-dashboard-chart-reflow-on-grid-1.png)
 </div>
 </section>
 
@@ -126,12 +126,12 @@ My final design broke the dashboard into three modes:
 
 The result was a highly configurable dashboard with an interface that was clean and goal-oriented.
 
-![Modal chart editor with a live preview](../assets/img/GEARS-dashboard-edit-modal-with-preview.png)
+![Modal chart editor with a live preview](../assets/img/gears-dashboard/GEARS-dashboard-edit-modal-with-preview.png)
 
 Once all stakeholders had signed off on the user interaction, I cleaned up the visual style. In order to reduce visual clutter, I switched out the chart borders for a light gray background, and distinguished the left navigation by making it all one color.
 
 <div class="bkg:grey pano shadow:img">
-![The final design with a blue sidebar](../assets/img/GEARS-dashboard-blue-sidebar.png)
+![The final design with a blue sidebar](../assets/img/gears-dashboard/GEARS-dashboard-blue-sidebar.png)
 </div>
 
 </section>
