@@ -11,6 +11,9 @@
     <main tabindex="-1">
       <article class="grid">
 	<h1 class="title">$title$</h1>
+        $if(hero)$
+          <img class="hero" src="$hero.href$" alt="$hero.alt$"/>
+        $endif$
 	$body$
       </article>
     </main>
