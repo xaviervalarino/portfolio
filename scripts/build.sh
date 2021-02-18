@@ -165,16 +165,33 @@ collections() {
   ./scripts/collections.js all
 }
 
-img() {
+_minify_img() {
   local params outfile
-  outfile=$(output $img_dir)
+  outfile=$(output "$(dirname -- "$1")")
   params=()
-  # use $1=filename or default to image directory
-  params+=("${1:-$img_dir/*}")
+  params+=("$1")
   params+=("--out-dir=$outfile")
-  printf "\n%-15s %s\n" "Minifying image(s):" "${params[0]}"
+  printf "\n%-15s %s\n" "Minifying image:" "${params[0]}"
   # Not sure why, but NPM doesn't always create the `.bin` directory
   ./node_modules/imagemin-cli/cli.js "${params[@]}"
+}
+img() {
+  # if no $2=filename recurse through image directory
+  if [[ -z $1 ]]; then
+    # batch 4 process in parallel
+    N=4
+    (
+      for input in "$img_dir"/**/*; do
+        if [[ -f $input ]]; then
+          ((i=i%N))
+          ((i++==0)) && wait
+          _minify_img "$input" &
+        fi
+      done
+    )
+  else
+    _minify_img "$1"
+  fi
 }
 
 js() {
@@ -215,7 +232,7 @@ get_cmd () {
   case $dir in
     "$css_dir")     echo "css $1"     ; shift ;;
     "$favicon_dir") echo "favicon $1" ; shift ;;
-    "$img_dir")     echo "img $1"     ; shift ;;
+    "$img_dir"*)    echo "img $1"     ; shift ;;
     "$js_dir")      echo "js"         ; shift ;;
     "$video_dir")   echo "video $1"   ; shift ;;
   esac
