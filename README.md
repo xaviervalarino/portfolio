@@ -139,9 +139,7 @@ To demonstrate the concept, here is a simplified example:
 .grid,
 .subgrid {
   display: grid;
-  /* Give priority to the subgrid template columns
-     if it's not specified, fall back to grid template columns */
-  grid-template-columns: repeat( var(--subgrid-tc, var(--grid-tc)), 1fr );
+  grid-template-columns: repeat( var(--grid-tc), 1fr );
 }
 
 
