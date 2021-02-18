@@ -73,14 +73,14 @@ I'm a freelance product designer, sometimes illustrator. In a parallel life I'm 
 	 LinkedIn
 </a>
 
-<a href="/etc/illustration.html">
+<a href="/etcetera/illustration.html">
 	 <span class="border-bottom:white"
 		     aria-hidden="true">
 	  →</span>
 	 Illustration
 </a>
 
-<a href="/etc/woodwork.html">
+<a href="/etcetera/woodwork.html">
 	 <span class="border-bottom:white"
 		     aria-hidden="true">
 	  →</span>
