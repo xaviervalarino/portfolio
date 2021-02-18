@@ -82,3 +82,22 @@
 .subgrid [span$="/4"] { --subgrid-ce: 5; }
 .subgrid [span$="/5"] { --subgrid-ce: 6; }
 .subgrid [span$="/6"] { --subgrid-ce: 7; }
+
+/* unset column-end for all span classes */
+.grid > [class*="span:"] { --grid-ce: unset }
+
+.grid > .span\:1  { --grid-cs: span 1 }
+.grid > .span\:2  { --grid-cs: span 2 }
+.grid > .span\:3  { --grid-cs: span 3 }
+.grid > .span\:4  { --grid-cs: span 4 }
+.grid > .span\:5  { --grid-cs: span 5 }
+.grid > .span\:6  { --grid-cs: span 6 }
+
+.grid > .span-row\:2 { grid-row-start: span 2 }
+.grid > .span-row\:3 { grid-row-start: span 3 }
+
+@media only screen and (max-width: 800px) {
+  .grid > .media\<800px_span\:all {
+    --grid-cs: span 6;
+  }
+}
