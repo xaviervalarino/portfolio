@@ -52,7 +52,7 @@ The updated user interface put the clinician's job first, giving them control ov
 ### Drawbacks of the existing user interface
 
 <div class="shadow:img five-sixths padding-stack">
-![Screenshot of the previous table](../assets/img/omicia-previous-data-table.png)
+![Screenshot of the previous table](../assets/img/omicia/omicia-previous-data-table.png)
 </div>
 During interviews, clinicians expressed frustration with three areas:
 
@@ -60,7 +60,7 @@ During interviews, clinicians expressed frustration with three areas:
 1. Not being able to pivot data on the table columns.
 1. Selecting genetic variants for the report was cumbersome, requiring ticking a checkbox, using dropdowns, and then saving them to an intermediate list.
 
-![Screenshot of the previous variant details modal window](../assets/img/omicia-previous-variant-modal.png)
+![Screenshot of the previous variant details modal window](../assets/img/omicia/omicia-previous-variant-modal.png)
 
 --- 
 
@@ -74,7 +74,7 @@ I designed a new configuration modal which would toggle which fields were visibl
 </div>
 
 <div class="pano bkg:grey shadow:img img-height:unset">
-![Wireframe for the configuration modal](../assets/img/omicia-configuring-table-fields.png)
+![Wireframe for the configuration modal](../assets/img/omicia/omicia-configuring-table-fields.png)
 </div>
 
 ### Improving the interface
@@ -83,7 +83,7 @@ I designed a new configuration modal which would toggle which fields were visibl
 I recommended limiting the colors to yellow and red, which were the only two that provided actionable information. I also suggested removing links in table cells, and instead making the whole table row a link target that would open the variant modal. Links to other information would be placed inside that view.
 
 <div class="border:img padding-stack">
-![Detail of previous data table](../assets/img/omicia-previous-table-color-detail.png)
+![Detail of previous data table](../assets/img/omicia/omicia-previous-table-color-detail.png)
 </div>
  
 #### Improving legibility
@@ -93,14 +93,14 @@ At small scale (or for those with poor vision), the two words look almost identi
 
 I designed an icon that was easy enough to associate with the genotype and would quickly convey zygosity. The icon had the added bonus of taking up less horizontal screen real estate. 
 
-![Sometimes icons are more legible](../assets/img/omicia-zygosity-legibility.png)
+![Sometimes icons are more legible](../assets/img/omicia/omicia-zygosity-legibility.png)
 
 
 #### Moving buttons to one location
 All controls that didn't affect individual variant entries were moved to a button cluster above the table.
 
 <div class="pano bkg:grey shadow:img">
-![My design for the table view](../assets/img/omicia-updated-data-table.png)
+![My design for the table view](../assets/img/omicia/omicia-updated-data-table.png)
 </div>
 
 #### Editing reported fields
@@ -108,7 +108,7 @@ An optional design was included: a feature to toggle which fields were added to 
 
 
 <div class="pano bkg:grey shadow:img img-height:unset">
-![Wireframes for the variant detail view](../assets/img/omicia-updated-variant-modal.png)
+![Wireframes for the variant detail view](../assets/img/omicia/omicia-updated-variant-modal.png)
 </div>
 
 
