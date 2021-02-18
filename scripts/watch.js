@@ -29,7 +29,7 @@ console.log(`Watching files in "${process.argv[2]}/"`);
 
 const watcher = chokidar.watch( process.argv[2], {
   persistent: true,
-  ignored: '.DS_store',
+  ignored: '.DS_Store',
   ignoreInitial: true
 });
 
