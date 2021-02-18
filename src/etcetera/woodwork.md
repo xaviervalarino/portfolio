@@ -64,15 +64,16 @@ masthead:
      alt="Using vertical reach to place the bell tower"/>
 </div>
 
+<div class="span:2 media<800px_span:all padding-stack">
+## Refinishing outdoor teak furniture
+_"Best hardwood bar none"_
+</div>
+
 <div class="span:4 span-row:2">
 <img src="/assets/img/woodwork/corporate-teak-before.jpg"
      alt="Before---weathered and gray"/>
 </div>
 
-<div class="span:2 media<800px_span:all padding-stack">
-## Refinishing outdoor teak furniture
-_"Best hardwood bar none"_
-</div>
 
 <div class="span:2 margin-bottom:grid-gap">
 <img src="/assets/img/woodwork/corporate-teak-sanded.jpg"
