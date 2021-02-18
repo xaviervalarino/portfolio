@@ -5,6 +5,9 @@ project: GEARS Dashboard v2.0
 template: src/templates/case-study.html
 masthead:
     work: true
+hero:
+  href: /assets/img/gears-dashboard/gears-dashboard-hero.png
+  alt: Chart components from GEARS Cloud dashboard
 metadata: src/case-studies/project-roster.yml
 filter: scripts/filters/get-next-project.lua
 ---
