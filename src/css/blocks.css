@@ -24,7 +24,6 @@
 
 article .title {
   --grid-cs: 3;
-  margin-bottom: var(--size3);
 }
 article .hero {
   --grid-cs: 3;
