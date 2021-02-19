@@ -6,7 +6,7 @@ template: src/templates/case-study.html
 masthead:
   work: true
 hero:
-  href: /assets//netgear-captive-portal-hero.png
+  href: /assets/img/netgear/netgear-captive-portal-hero.png
   alt: 3D colorized exploded diagram of browser compontents
 metadata: src/case-studies/project-roster.yml
 filter: scripts/filters/get-next-project.lua
