@@ -43,7 +43,7 @@ Research played an important role in uncovering what aspects mattered in a helpe
 3. Provided a formula for delivering content and exercises, giving users structure and making them active participants in their progress
 
 <div class="cinch-up:70% one-third" data-tab="0">
-![](../assets/img/botanic-mobile-mockup.png)
+![](../assets/img/botanic/botanic-mobile-mockup.png)
 </div>
 
 </section>
@@ -94,7 +94,7 @@ _"[Worksheets] helped me think things through on my own"_
 
 <div class="subgrid side-by-side">
 <div class="padding-stack:size2">
-![Screenshot of user interview notes](../assets/img/botanic-interview-notes.png)
+![Screenshot of user interview notes](../assets/img/botanic/botanic-interview-notes.png)
 </div>
 <div class="null">
 #### Key takeaways
@@ -110,15 +110,15 @@ The initial concept for the application would assess personal affect through ton
 The information uncovered by research was used to draft conversational guidelines for the copywriters, create mood boards for the animator, and outline key functionality in the user flow.
 
 <div class="two-thirds padding-stack" data-tab="1">
-![Mood board for the avatar environment ](../assets/img/botanic-environment-mood-board.jpg)
+![Mood board for the avatar environment ](../assets/img/botanic/botanic-environment-mood-board.jpg)
 
-![Excerpts from the conversation guidelines and design recommendations](../assets/img/botanic-guidelines-and-recommendations.png)
+![Excerpts from the conversation guidelines and design recommendations](../assets/img/botanic/botanic-guidelines-and-recommendations.png)
 </div>
 
 <div class="bkg:grey pano img-height:unset">
-![](../assets/img/botanic-high-level-user-flow.png)
+![](../assets/img/botanic/botanic-high-level-user-flow.png)
 <div class="padding-stack">
-![System state flow diagram showing conversational flow through the MVP](../assets/img/botanic-state-flow-diagram.png)
+![System state flow diagram showing conversational flow through the MVP](../assets/img/botanic/botanic-state-flow-diagram.png)
 </div>
 </div>
 
@@ -137,5 +137,5 @@ Modeling the application off of techniques employed by real-world helpers allowe
 Without user research we would have overlooked the worksheets as a means for data collection. This realization helped focus our efforts for the MVP roadmap: we could quickly build the content exercises and lower the priority of more complex versions of sentiment analysis.
 
 <div class="cinch-up one-third text-align:center" data-tab="0">
-![Screenshot of "worksheet" Exercise module](../assets/img/botanic-worksheet-exercise-screenshot.png)
+![Screenshot of "worksheet" Exercise module](../assets/img/botanic/botanic-worksheet-exercise-screenshot.png)
 </div>
