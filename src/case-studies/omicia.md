@@ -5,6 +5,9 @@ project: Omicia
 template: src/templates/case-study.html
 masthead:
   work: true
+hero:
+  href: /assets/img/omicia/omicia-hero.jpg
+  alt: Close up of genetic variant table
 metadata: src/case-studies/project-roster.yml
 filter: scripts/filters/get-next-project.lua
 ---
