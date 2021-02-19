@@ -38,7 +38,7 @@ I created mockups and prototypes to help me understand how the template componen
 
 <div class="half border:img margin-stack:large" data-tab="1">
 
-![Page from specifications document showing three templates](../assets/img/netgear-captive-portal-template-variants.png)
+![Page from specifications document showing three templates](../assets/img/netgear/netgear-captive-portal-template-variants.png)
 </div>
 
 ---
@@ -65,15 +65,15 @@ Along with the prototypes, I drafted a specifications document to send to the en
 I then translated the specifications into discrete and actionable tickets.
 
 <div class="left-third border:img">
-![Cover of the specifications document](../assets/img/netgear-captive-portal-specifications-document-cover.png)
+![Cover of the specifications document](../assets/img/netgear/netgear-captive-portal-specifications-document-cover.png)
 </div>
 
 <div class="margin-top:size3 border:img" data-tab="2">
-![Page from specifications document outlining components used in templates](../assets/img/netgear-captive-portal-components.png)
+![Page from specifications document outlining components used in templates](../assets/img/netgear/netgear-captive-portal-components.png)
 </div>
 
 <div class="margin-top:size3 border:img" data-tab="2">
-![Page from specifications document explaining logic used for mobile prototypes](../assets/img/netgear-captive-portal-template-logic-for-mobile.png)
+![Page from specifications document explaining logic used for mobile prototypes](../assets/img/netgear/netgear-captive-portal-template-logic-for-mobile.png)
 </div>
 
 </section> 
@@ -82,6 +82,6 @@ I then translated the specifications into discrete and actionable tickets.
 ## Outcome 
 The delivered document gave the engineering team blueprints for the templates, allowing them to plug them into the larger CP setup wizard.
 
-![Image uploader used in the captive portal customizer](../assets/img/netgear-captive-portal-image-uploader.jpg)
+![Image uploader used in the captive portal customizer](../assets/img/netgear/netgear-captive-portal-image-uploader.jpg)
 
 </section>
