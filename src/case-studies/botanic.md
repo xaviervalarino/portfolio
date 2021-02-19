@@ -45,12 +45,7 @@ Research played an important role in uncovering what aspects mattered in a helpe
 2. Used conversational techniques employed by therapists to create dialogue that was appropriate for self-help
 3. Provided a formula for delivering content and exercises, giving users structure and making them active participants in their progress
 
-<div class="cinch-up:70% one-third" data-tab="0">
-![](../assets/img/botanic/botanic-mobile-mockup.png)
-</div>
-
 </section>
-
 <section class="grid indenter:3/5 flip-top:kid border-top:3px border-accent:magenta">
 
 ## Process
