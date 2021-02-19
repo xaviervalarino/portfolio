@@ -5,6 +5,9 @@ project: Botanic
 template: src/templates/case-study.html
 masthead:
   work: true
+hero:
+ href: /assets/img/botanic/botanic-guru-hero.png
+ alt: 3D mockup of mobile guru app
 metadata: src/case-studies/project-roster.yml
 filter: scripts/filters/get-next-project.lua
 ---
