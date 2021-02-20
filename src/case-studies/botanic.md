@@ -134,6 +134,4 @@ Modeling the application off of techniques employed by real-world helpers allowe
 
 Without user research we would have overlooked the worksheets as a means for data collection. This realization helped focus our efforts for the MVP roadmap: we could quickly build the content exercises and lower the priority of more complex versions of sentiment analysis.
 
-<div class="cinch-up one-third text-align:center" data-tab="0">
-![Mockup of "worksheet" Exercise module](../assets/img/botanic/botanic-worksheet-exercise-screenshot.png)
-</div>
+![Mockup of "worksheet" Exercise module](../assets/img/botanic/botanic-worksheet-exercise-mockup.png)
