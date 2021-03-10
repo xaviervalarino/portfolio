@@ -82,7 +82,7 @@ I then translated the specifications into discrete and actionable tickets.
 </section> 
 
 <section class="grid indenter:3/5 flip-top:kid border-top:3px border-accent:yellow">
-## Outcome 
+## End result 
 The delivered document gave the engineering team blueprints for the templates, allowing them to plug them into the larger CP setup wizard.
 
 ![Image uploader used in the captive portal customizer](../assets/img/netgear/netgear-captive-portal-image-uploader.jpg)
