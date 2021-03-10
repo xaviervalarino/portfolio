@@ -124,7 +124,7 @@ Assigning multiple colors was done through two separate properties: one through 
 </div>
  
 <div class="bkg:grey pano" data-tab='0'>
-<video autoplay playsinline loop>
+<video autoplay playsinline muted loop>
   <source src="/assets/video/mixi-modular-configurator-demo.mp4" type="video/mp4">
 </video>
 </div>

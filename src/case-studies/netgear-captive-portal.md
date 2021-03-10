@@ -57,7 +57,7 @@ These prototypes gave immediate visual feedback of the limits I'd encounter whil
 
 <!--*What is the goal of these points? what is the value of these endeavors? one more sentence to close the loop...*-->
 
-<video class="" autoplay playsinline loop>
+<video class="" autoplay playsinline muted loop>
   <source src="/assets/video/netgear-captive-portal-prototype.mp4" type="video/mp4">
 </video>
 
