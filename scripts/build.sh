@@ -89,7 +89,7 @@ build_dir() {
 css() {
   # if file, lint for sanity
   [[ -n $1 ]] && ./node_modules/stylelint/bin/stylelint.js "$1"
-  printf "\n%-15s %s\n" "Building CSS:" "$css_dir/*.css > $dist_dir/stylesheet.cssn"
+  printf "\n%-15s %s\n" "Building CSS:" "$css_dir/*.css > $dist_dir/stylesheet.css"
   cat "$css_dir/"*.css > "$dist_dir/stylesheet.css"
 }
 fonts() {
