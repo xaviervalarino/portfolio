@@ -66,7 +66,7 @@ masthead:
 
 <div class="span:2 media<800px_span:all padding-stack">
 ## Refinishing outdoor teak furniture
-_"Best hardwood bar none"_
+_"Best outdoor hardwood bar none"_
 </div>
 
 <div class="span:4 span-row:2">
