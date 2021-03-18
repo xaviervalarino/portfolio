@@ -1,0 +1,54 @@
+.full-hero {
+  z-index: -100;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  opacity: .35;
+  padding-top: var(--padding);
+  height: calc( var(--size4) * 5);
+  object-fit: cover;
+  object-position: 0 25%;
+}
+@media only screen and (max-width: 720px) {
+  .full-hero {
+    padding-top: calc( var(--size4) + var(--size-6) );
+    height: calc( var(--size5) * 4 + var(--size-5) );
+  }
+}
+@media only screen and (max-width: 600px) {
+  .full-hero {
+    padding-top: calc( var(--size5) + var(--size-4) );
+    height: calc( var(--size5) * 5 );
+  }
+}
+@media only screen and (max-width: 400px) {
+  .full-hero {
+    padding-top: calc( var(--size3) + var(--size-2) + var(--padding) );
+    height: calc( var(--size5) * 5 );
+  }
+}
+
+.cover-img {
+  position: relative;
+  height: 30vh;
+  image-rendering: optimizeQuality;
+  top: 0;
+  border-left: var(--border-width) dotted var(--border-color);
+  z-index: -1;
+  margin-top: var(--size0);
+  padding-left: var(--size3);
+}
+
+@media only screen and (max-width: 960px) {
+  .cover-img {
+    border-left: unset;
+    padding-left: unset;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .cover-img {
+    margin-top: 0;
+    image-rendering:otpimizeSpeed;
+  }
+}

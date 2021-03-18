@@ -3,20 +3,35 @@ roster:
   - title: Designing a customizable dashboard
     subtitle: Understanding how parts make up the whole
     href: /case-studies/gears-dashboard.html
+    cover_img:
+      alt: Cover image of GEARS Cloud Dashboard
+      src: /assets/img/gears-dashboard/gears-dashboard-cover.png
 
   - title: Programming an interactive furniture builder
     subtitle: Working within constraints
     href: /case-studies/fringe-studio.html
+    cover_img:
+      alt: Cover image of Mixi-Modular furniture builder
+      src: /assets/img/mixi-modular/mixi-modular-cover.png
 
   - title: Improving genetic reporting for clinicians
     subtitle: Making an interface more goal oriented
     href: /case-studies/omicia.html
+    cover_img:
+      alt: Cover image of Omicia Opal Application
+      src: /assets/img/omicia/omicia-cover.png
 
   - title: Specifications for a flexible captive portal
     subtitle: Setting limits
     href: /case-studies/netgear-captive-portal.html
+    cover_img:
+      alt: Cover image of Netgear Captive Portal
+      src: /assets/img/netgear/netgear-captive-portal-cover.png
 
   - title: Using research to model a conversational UI
     subtitle: Basing interaction patterns on real-world examples
     href: /case-studies/botanic.html
+    cover_img:
+      alt: Cover image of Botanic iWithin Guru
+      src: /assets/img/botanic/botanic-guru-cover.png
 ...
