@@ -13,8 +13,9 @@
   --black:  #1b1e23; /*midnight black*/
   --grey: #e8e8e8;
   --dark-grey: #d1d1d1;
-  /* --border-color: #31363F; /1* --black + 10% lightness *1/ */
-  --border-color: #262A31; /* --black +5% lightness */
+  --border-color: #31363F; /* --black + 10% lightness */
+  /* --border-color: #262A31; /1* --black +5% lightness *1/ */
+  --border-width: 1px;
 
   --font-body: "Inter";
   --font-display: "Uxum Grotesque";

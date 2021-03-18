@@ -1,6 +1,3 @@
-[class*="border"] {
-  --border-width: 1px;
-}
 
 [class*="border-top"] {
   border-top: var(--border-width) solid var(--border-color);
