@@ -34,16 +34,16 @@
   height: 30vh;
   image-rendering: optimizeQuality;
   top: 0;
-  border-left: var(--border-width) dotted var(--border-color);
+  /* border-left: var(--border-width) dotted var(--border-color); */
   z-index: -1;
   margin-top: var(--size0);
-  padding-left: var(--size3);
+  /* padding-left: var(--size3); */
 }
 
 @media only screen and (max-width: 960px) {
   .cover-img {
     border-left: unset;
-    padding-left: unset;
+    /* padding-left: unset; */
   }
 }
 @media only screen and (max-width: 450px) {
