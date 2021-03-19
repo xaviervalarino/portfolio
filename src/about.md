@@ -4,22 +4,11 @@ masthead:
     about: true
 ---
 
-<article class="grid">
-<div class="title subgrid">
-  <h1>About</h1>
-  <div span="/1">
-  <svg class="multiply margin-top:size2"
-     viewBox="0 0 100 100"
-     width="100%"
-     height="1ex"
-     preserveAspectRatio="none"
-     >
-     <rect x="0"  y="0" width="80" height="100" class="bkg:cyan"    fill="cyan"   />
-     <rect x="10" y="0" width="80" height="100" class="bkg:magenta" fill="magenta"/>
-     <rect x="20" y="0" width="80" height="100" class="bkg:yellow"  fill="yellow" />
-  </svg>
-  </div>
-</div>
+<!-- need to clean this up at some point -->
+<article class="grid" style="margin-top: calc( var(--size3) * -1)">
+<p style="max-width:100%; margin-bottom: calc(var(--size2) * -1 - 1px)">
+  <img src="/assets/img/about-img.jpg" alt="Image of Xavier woodworking">
+</p>
 
 <section class="grid indenter:3/5 stack border-top">
 ## I enjoy learning how complex systems work { .margin-bottom:size2 }
