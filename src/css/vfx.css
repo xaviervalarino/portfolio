@@ -109,6 +109,12 @@ svg.multiply * {
   --position: calc( var(--scroll) * 15px );
   color: var(--magenta);
 }
+ 
+.sticky {
+  position: sticky;
+  top: var(--size1);
+  align-self: start; /* make sure it glides */
+}
 
 /* alternate version */
 /* off-register seperates diagonally */
