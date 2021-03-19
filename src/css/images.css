@@ -35,10 +35,8 @@
   max-height: 350px;
   image-rendering: optimizeQuality;
   top: 0;
-  /* border-left: var(--border-width) dotted var(--border-color); */
   z-index: -1;
   margin-top: var(--size0);
-  /* padding-left: var(--size3); */
 }
 
 .cover-img > img {
