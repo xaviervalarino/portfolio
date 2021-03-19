@@ -19,3 +19,8 @@
     --grid-ce: 7 ;
   }
 }
+@media only screen and ( max-width: 600px ) {
+  .grid.bottom-nav > * {
+    margin-left: calc(var(--grid-gap) * 1); 
+  }
+}
