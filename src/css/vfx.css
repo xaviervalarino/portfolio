@@ -66,6 +66,7 @@ svg.multiply * {
     height: 100%;
     margin-top: unset;
     margin-left: var(--size-2);
+    position: absolute;
   }
   .kodak #tall {
     display: initial;
@@ -111,6 +112,7 @@ svg.multiply * {
 }
  
 .sticky {
+  position: -webkit-sticky;
   position: sticky;
   top: var(--size1);
   align-self: start; /* make sure it glides */
