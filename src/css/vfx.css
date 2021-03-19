@@ -76,6 +76,12 @@ svg.multiply * {
   }
 }
 
+@media only screen and (max-width: 600px) {
+  .kodak {
+    width: var(--size-5);
+  }
+}
+
 /* off-register effect */
 
 .registration {
