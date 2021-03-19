@@ -10,7 +10,8 @@ hero:
   src: /assets/img/gears-dashboard/gears-dashboard-hero.png
 cover_img:
   alt: Cover image of GEARS Cloud Dashboard
-  src: /assets/img/gears-dashboard/gears-dashboard-cover.png
+  static_src: /assets/img/gears-dashboard/gears-dashboard-cover.png
+  hover_src: /assets/img/gears-dashboard/gears-dashboard-cover-hover.png
 metadata: src/case-studies/project-roster.yml
 filter: scripts/filters/get-next-project.lua
 ---

@@ -10,7 +10,8 @@ hero:
  src: /assets/img/botanic/botanic-guru-hero.png
 cover_img:
   alt: Cover image of Botanic iWithin Guru
-  src: /assets/img/botanic/botanic-guru-cover.png
+  static_src: /assets/img/botanic/botanic-guru-cover.png
+  hover_src: /assets/img/botanic/botanic-guru-cover-hover.png
 metadata: src/case-studies/project-roster.yml
 filter: scripts/filters/get-next-project.lua
 ---

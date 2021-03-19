@@ -10,7 +10,8 @@ hero:
   src: /assets/img/omicia/omicia-hero.png
 cover_img:
   alt: Cover image of Omicia Opal Application
-  src: /assets/img/omicia/omicia-cover.png
+  static_src: /assets/img/omicia/omicia-cover.png
+  hover_src: /assets/img/omicia/omicia-cover-hover.png
 metadata: src/case-studies/project-roster.yml
 filter: scripts/filters/get-next-project.lua
 ---

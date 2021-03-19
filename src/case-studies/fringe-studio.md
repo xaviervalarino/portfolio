@@ -10,7 +10,8 @@ hero:
   src: /assets/img/mixi-modular/mixi-modular-hero.png
 cover_img:
   alt: Cover image of Mixi-Modular furniture builder
-  src: /assets/img/mixi-modular/mixi-modular-cover.png
+  static_src: /assets/img/mixi-modular/mixi-modular-cover.png
+  hover_src: /assets/img/mixi-modular/mixi-modular-cover-hover.png
 metadata: src/case-studies/project-roster.yml
 filter: scripts/filters/get-next-project.lua
 ---

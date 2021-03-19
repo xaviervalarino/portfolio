@@ -10,7 +10,8 @@ hero:
   src: /assets/img/netgear/netgear-captive-portal-hero.png
 cover_img:
   alt: Cover image of Netgear Captive Portal
-  src: /assets/img/netgear/netgear-captive-portal-cover.png
+  static_src: /assets/img/netgear/netgear-captive-portal-cover.png
+  hover_src: /assets/img/netgear/netgear-captive-portal-cover-hover.png
 metadata: src/case-studies/project-roster.yml
 filter: scripts/filters/get-next-project.lua
 ---

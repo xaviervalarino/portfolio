@@ -41,7 +41,10 @@
             </p>
             <h3>$roster.title$</h3>
             <p>$roster.subtitle$</p>
-            <img class="cover-img" alt="$roster.cover_img.alt$" src="$roster.cover_img.src$"/>
+            <div class="cover-img">
+              <img alt="$roster.cover_img.alt$" src="$roster.cover_img.static_src$"/>
+              <img alt="$roster.cover_img.alt$" src="$roster.cover_img.hover_src$"/>
+            </div>
           </section>
         </a>
         $endfor$

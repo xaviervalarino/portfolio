@@ -41,6 +41,20 @@
   /* padding-left: var(--size3); */
 }
 
+.cover-img > img {
+  height: 100%;
+} 
+
+.cover-img > img:last-child {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    transition: opacity ease-out 0.5s;
+}
+a:hover .cover-img > img:last-child {
+  opacity: 1;
+}
+
 @media only screen and (max-width: 960px) {
   .cover-img {
     border-left: unset;
