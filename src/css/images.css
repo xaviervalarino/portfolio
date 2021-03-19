@@ -32,6 +32,7 @@
 .cover-img {
   position: relative;
   height: 30vh;
+  max-height: 350px;
   image-rendering: optimizeQuality;
   top: 0;
   /* border-left: var(--border-width) dotted var(--border-color); */
