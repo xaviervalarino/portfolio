@@ -101,3 +101,8 @@ figcaption,
 .font\:xsmall {
   font-size: var(--size-2);
 }
+
+.font-arrow {
+  font-size: 0.8em;
+  margin-top: 0.15em;
+}
