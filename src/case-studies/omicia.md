@@ -6,8 +6,8 @@ template: src/templates/case-study.html
 masthead:
   work: true
 hero:
-  href: /assets/img/omicia/omicia-hero.png
   alt: Close up of genetic variant table
+  src: /assets/img/omicia/omicia-hero.png
 cover_img:
   alt: Cover image of Omicia Opal Application
   src: /assets/img/omicia/omicia-cover.png

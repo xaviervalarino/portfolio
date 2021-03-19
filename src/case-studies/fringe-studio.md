@@ -6,8 +6,8 @@ template: src/templates/case-study.html
 masthead:
   work: true
 hero:
-  href: /assets/img/mixi-modular/mixi-modular-hero.png
   alt: Digital rendering beside actual furniture configuation 
+  src: /assets/img/mixi-modular/mixi-modular-hero.png
 cover_img:
   alt: Cover image of Mixi-Modular furniture builder
   src: /assets/img/mixi-modular/mixi-modular-cover.png

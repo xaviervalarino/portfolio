@@ -6,8 +6,8 @@ template: src/templates/case-study.html
 masthead:
   work: true
 hero:
-  href: /assets/img/gears-dashboard/gears-dashboard-hero.png
   alt: Chart components from GEARS Cloud dashboard
+  src: /assets/img/gears-dashboard/gears-dashboard-hero.png
 cover_img:
   alt: Cover image of GEARS Cloud Dashboard
   src: /assets/img/gears-dashboard/gears-dashboard-cover.png

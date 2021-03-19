@@ -6,8 +6,8 @@ template: src/templates/case-study.html
 masthead:
   work: true
 hero:
- href: /assets/img/botanic/botanic-guru-hero.png
  alt: 3D mockup of mobile guru app
+ src: /assets/img/botanic/botanic-guru-hero.png
 cover_img:
   alt: Cover image of Botanic iWithin Guru
   src: /assets/img/botanic/botanic-guru-cover.png

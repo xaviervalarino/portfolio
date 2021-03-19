@@ -6,8 +6,8 @@ template: src/templates/case-study.html
 masthead:
   work: true
 hero:
-  href: /assets/img/netgear/netgear-captive-portal-hero.png
   alt: 3D colorized exploded diagram of browser compontents
+  src: /assets/img/netgear/netgear-captive-portal-hero.png
 cover_img:
   alt: Cover image of Netgear Captive Portal
   src: /assets/img/netgear/netgear-captive-portal-cover.png
