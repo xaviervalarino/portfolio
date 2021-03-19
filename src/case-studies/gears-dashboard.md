@@ -8,6 +8,9 @@ masthead:
 hero:
   href: /assets/img/gears-dashboard/gears-dashboard-hero.png
   alt: Chart components from GEARS Cloud dashboard
+cover_img:
+  alt: Cover image of GEARS Cloud Dashboard
+  src: /assets/img/gears-dashboard/gears-dashboard-cover.png
 metadata: src/case-studies/project-roster.yml
 filter: scripts/filters/get-next-project.lua
 ---

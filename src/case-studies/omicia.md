@@ -8,6 +8,9 @@ masthead:
 hero:
   href: /assets/img/omicia/omicia-hero.png
   alt: Close up of genetic variant table
+cover_img:
+  alt: Cover image of Omicia Opal Application
+  src: /assets/img/omicia/omicia-cover.png
 metadata: src/case-studies/project-roster.yml
 filter: scripts/filters/get-next-project.lua
 ---

@@ -8,6 +8,9 @@ masthead:
 hero:
  href: /assets/img/botanic/botanic-guru-hero.png
  alt: 3D mockup of mobile guru app
+cover_img:
+  alt: Cover image of Botanic iWithin Guru
+  src: /assets/img/botanic/botanic-guru-cover.png
 metadata: src/case-studies/project-roster.yml
 filter: scripts/filters/get-next-project.lua
 ---

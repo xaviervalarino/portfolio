@@ -8,6 +8,9 @@ masthead:
 hero:
   href: /assets/img/netgear/netgear-captive-portal-hero.png
   alt: 3D colorized exploded diagram of browser compontents
+cover_img:
+  alt: Cover image of Netgear Captive Portal
+  src: /assets/img/netgear/netgear-captive-portal-cover.png
 metadata: src/case-studies/project-roster.yml
 filter: scripts/filters/get-next-project.lua
 ---

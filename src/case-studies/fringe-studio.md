@@ -8,6 +8,9 @@ masthead:
 hero:
   href: /assets/img/mixi-modular/mixi-modular-hero.png
   alt: Digital rendering beside actual furniture configuation 
+cover_img:
+  alt: Cover image of Mixi-Modular furniture builder
+  src: /assets/img/mixi-modular/mixi-modular-cover.png
 metadata: src/case-studies/project-roster.yml
 filter: scripts/filters/get-next-project.lua
 ---

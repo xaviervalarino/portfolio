@@ -26,7 +26,7 @@ const collector = require('./util/collector.js');
 const collections = {
   project_roster: {
     name: 'roster',
-    target_keys: [ 'title', 'subtitle', 'href'],
+    target_keys: [ 'title', 'subtitle', 'href', 'cover_img' ],
     data_file: './src/case-studies/project-roster.yml',
     target_dir: './src/case-studies'
   }
