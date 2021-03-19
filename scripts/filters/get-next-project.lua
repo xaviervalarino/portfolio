@@ -43,7 +43,12 @@ function Meta(m)
   m.nextProject = {
     title = m.roster[nextPosition].title,
     subtitle = m.roster[nextPosition].subtitle,
-    href = m.roster[nextPosition].href
+    href = m.roster[nextPosition].href,
+    cover_img = {
+      alt = m.roster[nextPosition].cover_img.alt,
+      static_src = m.roster[nextPosition].cover_img.static_src,
+      hover_src = m.roster[nextPosition].cover_img.hover_src
+    }
   }
   return m
 end
