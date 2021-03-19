@@ -33,7 +33,6 @@
   position: relative;
   height: 30vh;
   max-height: 350px;
-  image-rendering: optimizeQuality;
   top: 0;
   z-index: -1;
   margin-top: var(--size0);
@@ -41,6 +40,7 @@
 
 .cover-img > img {
   height: 100%;
+  image-rendering: optimizeQuality;
 } 
 
 .cover-img > img:last-child {
