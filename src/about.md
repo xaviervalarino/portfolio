@@ -51,8 +51,6 @@ I generally move through five phases on a design project. Although their impleme
 * 
 </div>
 
-**I'm currently looking for an in-house role or long-term contract.**
-
 I'm a freelance product designer, sometimes illustrator. In a parallel life I'm a woodworker. Feel free to reach out at <a href="mailto:xavier@valarino.com">xavier@valarino.com</a>.
 
 <a href="https://www.linkedin.com/in/xaviervalarino/">
