@@ -79,7 +79,7 @@ commands:
                (exlude long-running and less frequently used commands)
           css  Concatenate all CSS files to single file in output directory
           img  Optimize image files
-         html  Convert markdown and templates files into HTML
+         html  Convert markdown and template files into HTML
   collections  Build project "collections" -- ordered lists of project files
                Used as metadata for Pandoc Lua filters
                See `./scripts/collections.js` for implementation
@@ -191,20 +191,20 @@ filter: path/to/filter.lua
 ```
 
 #### Lua Filter
-[Pandoc Lua filter](https://pandoc.org/lua-filters.html)
+[Pandoc Lua filter Docs](https://pandoc.org/lua-filters.html)
 
-Filters can be found in `scripts/filters/` directory. 
+`Lua` Filters can be found in `scripts/filters/` directory: 
 
 ##### `absolute-links.lua`
-Convert image and anchor link into absolute paths.  This is done so that images can be viewed locally while editing Markdown, while not having to worry about reference issues once they're up on the internet.
+Convert image and anchor links into absolute paths.  This is done so that images can be viewed locally while editing Markdown, without having to worry about reference issues once they're up on the internet.
 
 This filter is run on all content files.
 
 ##### `get-next-project.lua`
 Adds the next project `title`,`subtitle`, and `href` to the case-studies template.
-Uses `src/case-studies/project-roster.yml` to get the current file's position in relation to the others.
+Uses `src/case-studies/project-roster.yml` to get the current file's position in relation to the other projects.
 
-Must be specified as a `filter` in content front-matter. 
+Must be specified as a `filter` option in a page's front-matter. 
 
 <!--
 ### Collections
