@@ -6,9 +6,14 @@ masthead:
 
 <!-- need to clean this up at some point -->
 <article class="grid" style="margin-top: calc( var(--size3) * -1)">
-<p style="max-width:100%; margin-bottom: calc(var(--size2) * -1 - 1px)">
+<p style="max-width:100%;">
   <img src="/assets/img/about-img.jpg" alt="Image of Xavier woodworking">
 </p>
+<div class="margin-stack">
+## I currently work at Pinterest, designing the next version of their public API
+</div>
+</section>
+  
 
 <section class="grid indenter:3/5 stack border-top">
 ## I enjoy learning how complex systems work { .margin-bottom:size2 }
