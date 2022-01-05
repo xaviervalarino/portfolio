@@ -9,8 +9,10 @@ masthead:
 <p style="max-width:100%;">
   <img src="/assets/img/about-img.jpg" alt="Image of Xavier woodworking">
 </p>
-<div class="margin-stack">
-## I currently work at Pinterest, designing the next version of their public API
+<div class="margin-stack h1">
+Product designer in Oakland, CA\
+
+Currently at Pinterest, designing a new public API
 </div>
 </section>
   
