@@ -39,6 +39,7 @@ End-to-end design and development, which entailed:
 * Programming a working application
 
 ---
+
 ### Outcome
 Whereas before clients would scan or fax hand drawn sketches of their custom builds, the application created a standard document that was easy for the studio to understand visually. After review, the studio would submit the list of parts to the fabricator without worrying that something might have been lost in translation.
 
