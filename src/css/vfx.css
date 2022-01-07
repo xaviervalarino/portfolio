@@ -124,17 +124,4 @@ svg.multiply * {
   align-self: start; /* make sure it glides */
 }
 
-/* alternate version */
-/* off-register seperates diagonally */
 
-/* /1* .registration::before { *1/ */
-/* .registration::before { */
-/*   --position: calc( var(--scroll) * 10px ); */
-/*   color: var(--magenta); */
-/*   transform: translate(var(--position), var(--position)); */
-/* } */
-/* .registration::after { */
-/*   --position: calc( var(--scroll) * -10px ); */
-/*   color: var(--yellow); */
-/*   transform: translate(var(--position), var(--position)); */
-/* } */
