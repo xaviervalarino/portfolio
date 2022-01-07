@@ -10,7 +10,7 @@ masthead:
   <img src="/assets/img/about-img.jpg" alt="Image of Xavier woodworking">
 </p>
 <div class="margin-stack h1">
-Product designer in Oakland, CA\
+I am a product designer\
 
 Currently at Pinterest, designing a new public API
 </div>
@@ -58,7 +58,7 @@ I generally move through five phases on a design project. Although their impleme
 * 
 </div>
 
-I'm a freelance product designer, sometimes illustrator. In a parallel life I'm a woodworker. Feel free to reach out at <a href="mailto:xavier@valarino.com">xavier@valarino.com</a>.
+I moonlight as an illustrator. In a parallel life I'm a woodworker. Feel free to reach out at <a href="mailto:xavier@valarino.com">xavier@valarino.com</a>.
 
 <a href="https://www.linkedin.com/in/xaviervalarino/">
 	 <span class="border-bottom:white"
