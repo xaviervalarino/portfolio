@@ -106,22 +106,32 @@ svg.multiply * {
   transform: translateX(var(--position));
 }
 
-/* off-register seperates vertically */
+ /* (prefers-reduced-motion: reduce) */
+  .registration::before {
+    --position: 10px;
+    color: var(--yellow);
+  }
+  .registration::after {
+    --position: 5px;
+    color: var(--magenta);
+  }
 
-.registration::before {
-  --position: calc( var(--scroll) * 30px );
-  color: var(--yellow);
-}
-.registration::after {
-  --position: calc( var(--scroll) * 15px );
-  color: var(--magenta);
-}
- 
-.sticky {
-  position: -webkit-sticky;
-  position: sticky;
-  top: var(--size1);
-  align-self: start; /* make sure it glides */
-}
+@media (prefers-reduced-motion: no-preference) {
 
+  /* off-register seperates vertically */
+  .registration::before {
+    --position: calc( var(--scroll) * 30px );
+    color: var(--yellow);
+  }
+  .registration::after {
+    --position: calc( var(--scroll) * 15px );
+    color: var(--magenta);
+  }
 
+  .sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: var(--size1);
+    align-self: start; /* make sure it glides */
+  }
+}
