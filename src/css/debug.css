@@ -24,7 +24,7 @@
     gainsboro calc( var(--base) + 1px )
   );
   background-repeat: repeat-y;
-  /* background-size: 100% var(--base); */
+  background-size: 100% var(--base);
   background-position: 0 var(--base);
 }
 
