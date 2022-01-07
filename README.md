@@ -159,7 +159,7 @@ To demonstrate the concept, here is a simplified example:
 
 
 ### Javascript
-Each file in the JS directory is concatenated into a single JS file in the distribution directory, so, each file should be a self-contained, self-executing anonymous function. (I suppose it could return a global variable, but, the site is [fundamentally] a series of documents, so... the scripts should have explicit purposes.)
+Each file in the JS directory is concatenated into a single JS file in the distribution directory, so, each file should be a self-contained, self-executing anonymous function. (I suppose it could return a global variable, but, the site is [fundamentally] a series of documents, so the scripts have explicit purposes.)
 
 For example:
 ```js
