@@ -38,7 +38,7 @@
           false: 'off'
         };
         document.body.classList.toggle(this.dataset.i);
-        this.dataset.v = 'false' === this.dataset.v ? true : false;
+        this.dataset.v = 'false' === this.dataset.v;
         this.textContent = condition[this.dataset.v];
       });
     })
