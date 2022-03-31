@@ -18,7 +18,7 @@ Tools used for building and deploying the site:
 If you have `brew` and `NodeJS`, getting it running on your machine might look something like:
 
 ```
-brew install pandoc ffmpeg
+brew install bash pandoc ffmpeg
 npm install
 npm run build
 npm run serve
