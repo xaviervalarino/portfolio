@@ -10,9 +10,7 @@ masthead:
   <img src="/assets/img/about-img.jpg" alt="Image of Xavier woodworking">
 </p>
 <div class="margin-stack h1">
-I am a product designer\
-
-Currently at Pinterest, designing a new public API
+I'm a product designer, working on developer experience at [Abound](https://www.withabound.com/)
 </div>
 </section>
   
