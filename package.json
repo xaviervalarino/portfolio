@@ -12,7 +12,7 @@
     "build": "./scripts/build.sh all",
     "build:lean": "./scripts/build.sh lean",
     "clean": "./scripts/build.sh --clean",
-    "serve": "live-server ./dist",
+    "serve": "node node_modules/live-server/live-server.js ./dist",
     "dev": "npm run serve & npm run watch",
     "prewatch": "npm run build:lean",
     "watch": "source .paths; ./scripts/watch.js $src_dir",
