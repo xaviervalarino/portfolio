@@ -6,11 +6,11 @@ masthead:
 
 <!-- need to clean this up at some point -->
 <article class="grid" style="margin-top: calc( var(--size3) * -1)">
-<p style="max-width:100%;">
-  <img src="/assets/img/about-img.jpg" alt="Image of Xavier woodworking">
-</p>
+<!-- <p style="max-width:100%;"> -->
+<!--   <img src="/assets/img/about-img.jpg" alt="Image of Xavier woodworking"> -->
+<!-- </p> -->
 <div class="margin-stack h1">
-I'm a product designer, working on developer experience at [Abound](https://www.withabound.com/)
+I'm a product designer, designing tools for developers at [Abound](https://www.withabound.com/)
 </div>
 </section>
   
