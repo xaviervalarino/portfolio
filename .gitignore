@@ -1,3 +1,4 @@
 .env
 dist
 fonts/
+node_modules
