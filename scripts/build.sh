@@ -64,7 +64,7 @@ output() {
   path=$1
   ext=$2
   subdir=$(dirname -- "$path")
-  subdir="${subdir#$src_dir/}"
+  subdir="${subdir#"$src_dir/"}"
   # file doesn't have a subdir
   [[ "$subdir" == "$src_dir" ]] && subdir=""
   basename=$(basename -- "$path")
@@ -94,9 +94,13 @@ css() {
 }
 fonts() {
   local output
-  output=$(output $fonts_dir)
+  output=$(output $fonts_dir/)
   # TODO: save this for a less verbose version
   # printf "Copying Fonts:\n$fonts_dir --> $output\n"
+  if [[ -d $output ]]; then
+    rm -rf "$output"
+    echo "Deleting $output"
+  fi
   cp -rfv "$fonts_dir"  "$output"
 }
 favicon() {
