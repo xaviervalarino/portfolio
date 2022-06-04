@@ -16,8 +16,8 @@
     "dev": "npm run serve & npm run watch",
     "prewatch": "npm run build:lean",
     "watch": "source .paths; ./scripts/watch.js $src_dir",
-    "deploy": "source .env; source .paths; rsync -azvhP --exclude=.htaccess $dist_dir/ $production",
-    "deploy:testing": "source .env; source .paths; rsync -azvhP --exclude=.htaccess $dist_dir/ $testing"
+    "deploy": "source .env; source .paths; rsync -azvhcP --exclude=.htaccess $dist_dir/ $production",
+    "deploy:testing": "source .env; source .paths; rsync -azvhcP --exclude=.htaccess $dist_dir/ $testing"
   },
   "stylelint": {
     "extends": "stylelint-config-recommended",
