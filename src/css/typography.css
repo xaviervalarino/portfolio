@@ -37,7 +37,7 @@ h2, .h2 {
 }
 h3, .h3 {
   font-size: var(--size2);
-  font-weight: 500;
+  font-weight: 400;
   letter-spacing: -0.02em;
 }
 h4, .h4 {
