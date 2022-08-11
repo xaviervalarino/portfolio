@@ -113,9 +113,9 @@ I moonlight as an illustrator. In a parallel life I'm a woodworker. Feel free to
 <div>
 **About the site:**
 
-The display font is [Uxum Grotesque](https://uxum.mdn.market/) by [Bureau Nuits](https://www.bureaunuits.com/).
+The display font is [Uxum Grotesque](https://uxum.bespoke.supply/) by [Bureau Nuits](https://www.instagram.com/bureaunuits/?hl=en).
 
-The body font is [Inter](https://rsms.me/inter/) by Rasmus Andersson.
+The body font is [Inter](https://rsms.me/inter/) by [Rasmus Andersson](https://rsms.me/).
 
 The site is hand-written in Markdown, HTML, and CSS. It's built with a Bash script that orchestrates [Pandoc](https://pandoc.org/) and [NodeJS](https://nodejs.org/en/about/). The source code is hosted on [Github](https://github.com/xaviervalarino/portfolio).
 </div>
