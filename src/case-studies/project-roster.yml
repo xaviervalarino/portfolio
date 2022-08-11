@@ -1,12 +1,12 @@
 ---
 roster:
-  - title: Designing a customizable dashboard
-    subtitle: Understanding how parts make up the whole
-    href: /case-studies/gears-dashboard.html
+  - title: Using research to model a conversational UI
+    subtitle: Basing interaction patterns on real-world examples
+    href: /case-studies/botanic.html
     cover_img:
-      alt: Cover image of GEARS Cloud Dashboard
-      static_src: /assets/img/gears-dashboard/gears-dashboard-cover.png
-      hover_src: /assets/img/gears-dashboard/gears-dashboard-cover-hover.png
+      alt: Cover image of Botanic iWithin Guru
+      static_src: /assets/img/botanic/botanic-guru-cover.png
+      hover_src: /assets/img/botanic/botanic-guru-cover-hover.png
 
   - title: Programming an interactive furniture builder
     subtitle: Working within constraints
@@ -24,6 +24,14 @@ roster:
       static_src: /assets/img/omicia/omicia-cover.png
       hover_src: /assets/img/omicia/omicia-cover-hover.png
 
+  - title: Designing a customizable dashboard
+    subtitle: Understanding how parts make up the whole
+    href: /case-studies/gears-dashboard.html
+    cover_img:
+      alt: Cover image of GEARS Cloud Dashboard
+      static_src: /assets/img/gears-dashboard/gears-dashboard-cover.png
+      hover_src: /assets/img/gears-dashboard/gears-dashboard-cover-hover.png
+
   - title: Specifications for a flexible captive portal
     subtitle: Setting limits
     href: /case-studies/netgear-captive-portal.html
@@ -31,12 +39,4 @@ roster:
       alt: Cover image of Netgear Captive Portal
       static_src: /assets/img/netgear/netgear-captive-portal-cover.png
       hover_src: /assets/img/netgear/netgear-captive-portal-cover-hover.png
-
-  - title: Using research to model a conversational UI
-    subtitle: Basing interaction patterns on real-world examples
-    href: /case-studies/botanic.html
-    cover_img:
-      alt: Cover image of Botanic iWithin Guru
-      static_src: /assets/img/botanic/botanic-guru-cover.png
-      hover_src: /assets/img/botanic/botanic-guru-cover-hover.png
 ...
