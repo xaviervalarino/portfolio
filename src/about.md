@@ -9,8 +9,8 @@ masthead:
 <!-- <p style="max-width:100%;"> -->
 <!--   <img src="/assets/img/about-img.jpg" alt="Image of Xavier woodworking"> -->
 <!-- </p> -->
-<div class="margin-stack h1">
-I'm a product designer, designing tools for developers at [Abound](https://www.withabound.com/)
+<div class="margin-stack h2">
+I'm a technical product designer. Previously at [Abound](https://www.withabound.com/) and [Pinterest](https://developers.pinterest.com/).
 </div>
 </section>
   
