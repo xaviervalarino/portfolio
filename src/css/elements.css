@@ -86,7 +86,9 @@ button.simple {
   text-decoration: none;
   color: var(--cyan);
   background: unset;
-  border-bottom: 1px dotted;
+  border: 1px solid;
+  padding: 0.1em 0.3rem;
+  border-radius: 3px;
   font-size: inherit;
   cursor: pointer;
   transition: background 250ms ease-in-out, 
