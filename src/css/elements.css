@@ -66,6 +66,7 @@ a {
 
 a:not(nav a) {
   text-decoration: auto underline solid transparent;
+  text-decoration-thickness: from-font;
   text-underline-offset: 0.25em;
   transition: text-decoration-color 200ms ease-in;
 }
