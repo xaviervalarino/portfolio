@@ -65,12 +65,17 @@ a {
 }
 a:visited {
   color: var(--cyan);
+
+a:not(nav a) {
+  text-decoration: auto underline solid transparent;
+  text-underline-offset: 0.25em;
+  transition: text-decoration-color 200ms ease-in;
 }
 a:active:not(nav a),
 a:hover:not(nav a) {
-  text-decoration: auto underline solid;
-  text-underline-offset: 0.245em;
+  text-decoration-color: initial;
 }
+
 nav a,
 nav a:visited {
   color: unset;
