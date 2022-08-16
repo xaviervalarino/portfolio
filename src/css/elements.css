@@ -60,15 +60,22 @@ main {
 /* interactive */
 
 a {
-  color: initial;
-  text-decoration: none;
-  border-bottom: 1px dotted;
-}
-nav a {
-  border-bottom: unset;
+  color: var(--cyan);
+  text-decoration: unset;
 }
 a:visited {
-  color: initial;
+  color: var(--cyan);
+}
+a:active:not(nav a),
+a:hover:not(nav a) {
+  text-decoration: auto underline solid;
+  text-underline-offset: 0.245em;
+}
+nav a,
+nav a:visited {
+  color: unset;
+  border-bottom: unset;
+  text-decoration: unset;
 }
 
 button.simple { 
