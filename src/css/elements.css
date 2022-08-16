@@ -63,8 +63,6 @@ a {
   color: var(--cyan);
   text-decoration: unset;
 }
-a:visited {
-  color: var(--cyan);
 
 a:not(nav a) {
   text-decoration: auto underline solid transparent;
@@ -76,6 +74,10 @@ a:hover:not(nav a) {
   text-decoration-color: initial;
 }
 
+a:visited {
+  color: var(--cyan);
+}
+
 nav a,
 nav a:visited {
   color: unset;
@@ -84,8 +86,6 @@ nav a:visited {
 }
 
 button.simple { 
-  border: none;
-  padding: 0;
   margin: 0;
   text-align: right;
   text-decoration: none;
