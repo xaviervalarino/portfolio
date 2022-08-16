@@ -64,54 +64,16 @@ I've designed software for:
 * 
 </div>
 
-I moonlight as an illustrator. In a parallel life I'm a woodworker. Feel free to reach out at <a href="mailto:xavier@valarino.com">xavier@valarino.com</a>.
+I sometimes moonlight as an illustrator. In a parallel life I'm a woodworker. Feel free to reach out at <a href="mailto:xavier@valarino.com">xavier@valarino.com</a>.
 
-<a href="https://www.linkedin.com/in/xaviervalarino/">
-	 <span class="border-bottom:white"
-		     aria-hidden="true">
-	  ↗</span>
-	 LinkedIn
-</a>
+ <span aria-hidden="true">↗</span>
+[LinkedIn](https://www.linkedin.com/in/xaviervalarino/)
 
-<a href="/etcetera/illustration.html">
-	 <span class="border-bottom:white"
-		     aria-hidden="true">
-	  →</span>
-	 Illustration
-</a>
+ <span aria-hidden="true">→</span>
+[Illustration](/etcetera/illustration.html)
 
-<a href="/etcetera/woodwork.html">
-	 <span class="border-bottom:white"
-		     aria-hidden="true">
-	  →</span>
-	 Woodwork
-</a>
-
-<!--
-<a href="https://www.linkedin.com/in/xaviervalarino/"
-	 class="position:relative display:inline-block">
-	 <span class="border-bottom:white position:absolute left:-grid-gap"
-		     aria-hidden="true">
-	  ↗</span>
-	  LinkedIn
-</a>
-
-<a href="https://www.linkedin.com/in/xaviervalarino/"
-	 class="position:relative display:inline-block">
-	 <span class="border-bottom:white position:absolute left:-grid-gap"
-		     aria-hidden="true">
-	  ↘</span>
-	  Illustrations
-</a>
-
-<a href="https://www.linkedin.com/in/xaviervalarino/"
-	 class="position:relative display:inline-block">
-	 <span class="border-bottom:white position:absolute left:-grid-gap"
-		     aria-hidden="true">
-	  ↘</span>
-	  Woodwork
-</a>
--->
+<span aria-hidden="true">→</span>
+[Woodwork](/etcetera/woodwork.html)
 
 </section>
 
