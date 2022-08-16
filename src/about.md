@@ -16,7 +16,9 @@ I'm a technical product designer. Previously at [Abound](https://www.withabound.
   
 
 <section class="grid indenter:3/5 stack border-top">
-## I enjoy learning how complex systems work { .margin-bottom:size2 }
+<div class="tab1">
+### I enjoy learning how complex systems work
+</div>
 
 <div class="margin:none">
 In learning a system, you come to understand what guided its designers. Hopefully, you also find ways to explain that logic to others. The hardest part of interface design is knowing when to show the underlying system vs. simplifying the system's complexity so that it doesn't get in the way.
@@ -32,8 +34,11 @@ Because life is too short for crappy software.
 </section>
 
 <section class="grid indenter:3/5 split-lists stack border-top">
-## My design process
+<div class="tab1">
+### My design process
+</div>
 
+<div class="margin:none">
 I generally move through five phases on a design project. Although their implementation is never really the same, I'd describe them as:
 
 1. **Research** the problem, the client's domain, the user's needs, the limitations.
@@ -45,9 +50,12 @@ I generally move through five phases on a design project. Although their impleme
 </section>
 
 <section class="grid indenter:3/5 stack border-top">
-## Experience
-<div class="h4 font:light no-list">
-**I've designed software for:**
+<div class="tab1">
+### Experience
+</div>
+
+<div class="h4 font:light no-list margin:none">
+I've designed software for:
 
 * [Information Security](/case-studies/gears-dashboard.html)
 * [Networking](/case-studies/netgear-captive-portal.html)
@@ -108,9 +116,11 @@ I moonlight as an illustrator. In a parallel life I'm a woodworker. Feel free to
 </section>
 
 <section class="grid indenter:3/5 stack border-top">
-## Colophon
+<div class="tab1">
+### Colophon
+</div>
 
-<div>
+<div class="margin:none">
 **About the site:**
 
 The display font is [Uxum Grotesque](https://uxum.bespoke.supply/) by [Bureau Nuits](https://www.instagram.com/bureaunuits/?hl=en).
