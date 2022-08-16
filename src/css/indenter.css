@@ -211,8 +211,10 @@
     --tab3: 2;
   }
   /* note: .tab1 and .tab2 do not go full-width like headings */
-  [class*="indenter"] > h2, 
-  [class*="indenter"] > h3 {
+  [class*="indenter"] > h2,
+  [class*="indenter"] > h3,
+  [class*="indenter"] > .tab1,
+  [class*="indenter"] > .tab2 {
     --grid-ce: 7;
     margin-bottom: var(--size1)
   }
