@@ -20,7 +20,6 @@ I'm a technical product designer. Previously at [Abound](https://www.withabound.
 ### I enjoy learning how complex systems work
 </div>
 
-<div class="margin:none">
 In learning a system, you come to understand what guided its designers. Hopefully, you also find ways to explain that logic to others. The hardest part of interface design is knowing when to show the underlying system vs. simplifying the system's complexity so that it doesn't get in the way.
 
 I got my start in print. Bless the engineer at Adobe who put Javascript and GREP into InDesign---once I realized the potential, it was turtles all the way down.
@@ -29,7 +28,6 @@ I've spent the last decade diving into Unix-like systems and web technologies. I
 
 **I want to design systems that improve the human condition.**<br/>
 Because life is too short for crappy software.
-</div>
 
 </section>
 
@@ -38,7 +36,6 @@ Because life is too short for crappy software.
 ### My design process
 </div>
 
-<div class="margin:none">
 I generally move through five phases on a design project. Although their implementation is never really the same, I'd describe them as:
 
 1. **Research** the problem, the client's domain, the user's needs, the limitations.
@@ -46,7 +43,6 @@ I generally move through five phases on a design project. Although their impleme
 3. **Design** a prototype to solve the problem.
 4. **Test** the prototype to figure out where the model succeeded and where  it fails.
 5. **Rinse and repeat**---tweak the design until it produces the desired outcome.
-</div>
 </section>
 
 <section class="grid indenter:3/5 stack border-top">
@@ -54,7 +50,7 @@ I generally move through five phases on a design project. Although their impleme
 ### Experience
 </div>
 
-<div class="h4 font:light no-list margin:none">
+<div class="h4 font:light no-list">
 I've designed software for:
 
 * [Information Security](/case-studies/gears-dashboard.html)
