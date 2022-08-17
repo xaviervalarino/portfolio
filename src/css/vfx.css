@@ -1,4 +1,3 @@
-
 /*
  * Visual effects
  * ::::::::::::::
@@ -37,15 +36,14 @@ svg.multiply * {
   margin-top: var(--size2);
   height: var(--size-2);
   /* width is the first column and the gap */
-  width: calc( 50% + ( var(--grid-gap) / 2 ) );
+  width: calc(50% + (var(--grid-gap) / 2));
   overflow: visible;
 }
 .kodak #tall {
-  display:none;
+  display: none;
 }
 
 @media only screen and (max-width: 960px) {
-
   .flip-top\:kid > *:first-child {
     writing-mode: vertical-lr;
     margin-top: unset;
@@ -55,10 +53,10 @@ svg.multiply * {
   }
   /* cinch up element after the flip-top-kid */
   .flip-top\:kid > *:first-child + p {
-    margin-top: calc( (var(--size-3) * -1) - 1.4ex );
+    margin-top: calc((var(--size-3) * -1) - 1.4ex);
   }
-  .flip-top\:kid >  *:first-child + ol {
-    margin-top: calc( (var(--size3) + var(--size1)) * -1 );
+  .flip-top\:kid > *:first-child + ol {
+    margin-top: calc((var(--size3) + var(--size1)) * -1);
   }
 
   .kodak {
@@ -94,8 +92,9 @@ svg.multiply * {
   transition: transform 500ms ease-out;
   /* clean up overshoot wierdness */
   /* animation-iteration-count: 1; */
-  /* animation-fill-mode: both; */  
+  /* animation-fill-mode: both; */
 }
+
 .registration::before,
 .registration::after {
   content: attr(data-echo);
@@ -106,25 +105,24 @@ svg.multiply * {
   transform: translateX(var(--position));
 }
 
- /* (prefers-reduced-motion: reduce) */
-  .registration::before {
-    --position: 10px;
-    color: var(--yellow);
-  }
-  .registration::after {
-    --position: 5px;
-    color: var(--magenta);
-  }
+/* (prefers-reduced-motion: reduce) */
+.registration::before {
+  --position: 10px;
+  color: var(--yellow);
+}
+.registration::after {
+  --position: 5px;
+  color: var(--magenta);
+}
 
 @media (prefers-reduced-motion: no-preference) {
-
   /* off-register seperates vertically */
   .registration::before {
-    --position: calc( var(--scroll) * 30px );
+    --position: calc(var(--scroll) * 30px);
     color: var(--yellow);
   }
   .registration::after {
-    --position: calc( var(--scroll) * 15px );
+    --position: calc(var(--scroll) * 15px);
     color: var(--magenta);
   }
 
