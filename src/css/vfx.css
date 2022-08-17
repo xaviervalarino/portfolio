@@ -135,7 +135,7 @@ svg.multiply * {
     }
   }
   .first-time {
-    --animation-settings: 1.15s ease-in 1;
+    --animation-settings: 1s ease-in-out 1;
   }
   .registration::before {
     --position: calc(var(--scroll) * 50px);
