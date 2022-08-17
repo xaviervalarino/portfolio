@@ -116,7 +116,7 @@ svg.multiply * {
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  /* off-register seperates vertically */
+  /* off-register separates vertically */
 
   @keyframes first-time-register--100 {
     from {
