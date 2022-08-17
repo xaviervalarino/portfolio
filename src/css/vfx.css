@@ -117,13 +117,39 @@ svg.multiply * {
 
 @media (prefers-reduced-motion: no-preference) {
   /* off-register seperates vertically */
+
+  @keyframes first-time-register--100 {
+    from {
+      transform: translateX(100px);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  @keyframes first-time-register--50 {
+    from {
+      transform: translateX(50px);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  .first-time {
+    --animation-settings: 1.15s ease-in 1;
+  }
   .registration::before {
     --position: calc(var(--scroll) * 50px);
     color: var(--yellow);
   }
+  .registration.first-time::before {
+    animation:  first-time-register--100 var(--animation-settings);
+  }
   .registration::after {
     --position: calc(var(--scroll) * 25px);
     color: var(--magenta);
+  }
+  .registration.first-time::after {
+    animation: first-time-register--50 var(--animation-settings);
   }
 
   .sticky {
