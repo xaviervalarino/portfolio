@@ -118,11 +118,11 @@ svg.multiply * {
 @media (prefers-reduced-motion: no-preference) {
   /* off-register seperates vertically */
   .registration::before {
-    --position: calc(var(--scroll) * 30px);
+    --position: calc(var(--scroll) * 50px);
     color: var(--yellow);
   }
   .registration::after {
-    --position: calc(var(--scroll) * 15px);
+    --position: calc(var(--scroll) * 25px);
     color: var(--magenta);
   }
 
