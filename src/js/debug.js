@@ -35,8 +35,8 @@
     false: "off",
   };
 
-  const debugSettings = localStorage.getItem("debugSettings")
-    ? localStorage.getItem("debugSettings").split(",")
+  const debugSettings = sessionStorage.getItem("debugSettings")
+    ? sessionStorage.getItem("debugSettings").split(",")
     : [];
   if (debugSettings) {
     document.body.classList.add(...debugSettings);
@@ -56,7 +56,7 @@
       ? debugSettings.push(target.dataset.i)
       : debugSettings.splice(debugSettings.indexOf(target.dataset.i), 1);
 
-    localStorage.setItem("debugSettings", debugSettings);
+    sessionStorage.setItem("debugSettings", debugSettings);
   }
 
   document
