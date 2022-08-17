@@ -118,39 +118,45 @@ svg.multiply * {
 @media (prefers-reduced-motion: no-preference) {
   /* off-register separates vertically */
 
-  @keyframes first-time-register--100 {
-    from {
-      transform: translateX(100px);
-    }
-    to {
-      transform: translateX(0);
-    }
-  }
-  @keyframes first-time-register--50 {
-    from {
-      transform: translateX(50px);
-    }
-    to {
-      transform: translateX(0);
-    }
-  }
-  .first-time {
-    --animation-settings: 1s ease-in-out 1;
-  }
   .registration::before {
-    --position: calc(var(--scroll) * 50px);
+    --scroll-distance: 50px;
+    --position: calc(var(--scroll) * var(--scroll-distance));
     color: var(--yellow);
   }
-  .registration.first-time::before {
-    animation:  first-time-register--100 var(--animation-settings);
-  }
   .registration::after {
-    --position: calc(var(--scroll) * 25px);
+    --scroll-distance: 25px;
+    --position: calc(var(--scroll) * var(--scroll-distance));
     color: var(--magenta);
   }
-  .registration.first-time::after {
-    animation: first-time-register--50 var(--animation-settings);
+
+  /* first time position and initial animation */
+  @keyframes first-time-register {
+    from {
+      transform: translateX(--first-time-distance);
+    }
+    to {
+      transform: translateX(calc(var(--scroll) * var(--scroll-distance)))
+    }
   }
+  .registration.first-time,
+  .registration.first-time::before,
+  .registration.first-time::after {
+    --animation-settings: 1s ease-in-out 0.5s 1 forwards;
+    transition: none;
+  }
+  .registration.first-time::before {
+    --first-time-distance: 100px;
+    transform: translateX(var(--first-time-distance));
+  }
+  .registration.first-time::after {
+    --first-time-distance: 50px;
+    transform: translateX(var(--first-time-distance));
+  }
+  .registration.first-time.animation::before, 
+  .registration.first-time.animation::after {
+    animation: first-time-register var(--animation-settings);
+  }
+
 
   .sticky {
     position: -webkit-sticky;
