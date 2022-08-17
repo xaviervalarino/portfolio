@@ -8,4 +8,10 @@ $for(css)$
   <link rel="stylesheet" href="$css$" />
 $endfor$
 ${ partials/analytics() }
-${ partials/preload() }
+
+$for(img-preload)$
+  <link rel="preload" as="image" href="$img-preload$" />
+$endfor$
+$if(hero)$
+  <link rel="preload" as="image" href="$hero.src$" />
+$endif$
