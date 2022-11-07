@@ -10,7 +10,7 @@ masthead:
 <!--   <img src="/assets/img/about-img.jpg" alt="Image of Xavier woodworking"> -->
 <!-- </p> -->
 <div class="margin-stack h2">
-I'm a technical product designer. Previously at [Abound](https://www.withabound.com/) and [Pinterest](https://developers.pinterest.com/).
+I'm a technical product designer, currently at [Tonic.ai](https://www.tonic.ai/).
 </div>
 </section>
   
