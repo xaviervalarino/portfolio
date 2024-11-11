@@ -1,7 +1,7 @@
 ---
 title: About
 masthead:
-    about: true
+  about: true
 ---
 
 <!-- need to clean this up at some point -->
@@ -10,10 +10,9 @@ masthead:
 <!--   <img src="/assets/img/about-img.jpg" alt="Image of Xavier woodworking"> -->
 <!-- </p> -->
 <div class="margin-stack h2">
-I'm a technical product designer, currently at [Tonic.ai](https://www.tonic.ai/).
+I'm a technical product designer
 </div>
 </section>
-  
 
 <section class="grid indenter:3/5 stack border-top">
 <div class="tab1">
@@ -41,36 +40,8 @@ I generally move through five phases on a design project. Although their impleme
 1. **Research** the problem, the client's domain, the user's needs, the limitations.
 2. **Analyze** how to solve for _x_.
 3. **Design** a prototype to solve the problem.
-4. **Test** the prototype to figure out where the model succeeded and where  it fails.
+4. **Test** the prototype to figure out where the model succeeded and where it fails.
 5. **Rinse and repeat**---tweak the design until it produces the desired outcome.
-</section>
-
-<section class="grid indenter:3/5 stack border-top">
-<div class="tab1">
-### Experience
-</div>
-
-<div class="h4 font:light no-list">
-I've designed software for:
-
-* [Information Security](/case-studies/gears-dashboard.html)
-* [Networking](/case-studies/netgear-captive-portal.html)
-* [Natural Language Processing](/case-studies/botanic.html)
-* [Genomic Sequencing](/case-studies/omicia.html)
-* 
-</div>
-
-I sometimes moonlight as an illustrator. In a parallel life I'm a woodworker. Feel free to reach out at <a href="mailto:xavier@valarino.com">xavier@valarino.com</a>.
-
- <span aria-hidden="true">↗</span>
-[LinkedIn](https://www.linkedin.com/in/xaviervalarino/)
-
- <span aria-hidden="true">→</span>
-[Illustration](/etcetera/illustration.html)
-
-<span aria-hidden="true">→</span>
-[Woodwork](/etcetera/woodwork.html)
-
 </section>
 
 <section class="grid indenter:3/5 stack border-top">
@@ -86,6 +57,7 @@ The display font is [Uxum Grotesque](https://uxum.bespoke.supply/) by [Bureau Nu
 The body font is [Inter](https://rsms.me/inter/) by [Rasmus Andersson](https://rsms.me/).
 
 The site is hand-written in Markdown, HTML, and CSS. It's built with a Bash script that orchestrates [Pandoc](https://pandoc.org/) and [NodeJS](https://nodejs.org/en/about/). The source code is hosted on [Github](https://github.com/xaviervalarino/portfolio).
+
 </div>
 
 </section>
